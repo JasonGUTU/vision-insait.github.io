@@ -123,6 +123,7 @@ defaults:
 
 exclude:
   - template
+  - vendor
   - Gemfile
   - Gemfile.lock
   - README.md
