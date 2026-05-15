@@ -15,9 +15,9 @@ Cross-site projects on open-vocabulary segmentation, retrieval interfaces for cu
 
 <div class="topic-cooperation-logos">
   <a href="https://example.org/sponsor-a" target="_blank" rel="noopener" title="Example Research Fund">
-    <img src="/site-covers/sponsors/brand-logo-1.svg" alt="Example Research Fund" loading="lazy" decoding="async" />
+    <img src="{ '/site-covers/sponsors/brand-logo-1.svg' | relative_url }" alt="Example Research Fund" loading="lazy" decoding="async" />
   </a>
   <a href="https://example.org/agile-lab" target="_blank" rel="noopener" title="Agile Systems Lab">
-    <img src="/site-covers/sponsors/brand-logo-3.svg" alt="Agile Systems Lab" loading="lazy" decoding="async" />
+    <img src="{ '/site-covers/sponsors/brand-logo-3.svg' | relative_url }" alt="Agile Systems Lab" loading="lazy" decoding="async" />
   </a>
 </div>

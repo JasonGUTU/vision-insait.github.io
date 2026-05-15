@@ -15,7 +15,7 @@ Tooling collaborations with broadcast archives and mobile OEMs on perceptual met
 
 <div class="topic-cooperation-logos">
   <a href="https://example.org/sponsor-b" target="_blank" rel="noopener" title="Vision Industry Partner">
-    <img src="/site-covers/sponsors/brand-logo-3.svg" alt="Vision Industry Partner" loading="lazy" decoding="async" />
+    <img src="{ '/site-covers/sponsors/brand-logo-3.svg' | relative_url }" alt="Vision Industry Partner" loading="lazy" decoding="async" />
   </a>
-  <img src="/site-covers/sponsors/brand-logo-5.svg" alt="University Initiative" loading="lazy" decoding="async" />
+  <img src="{ '/site-covers/sponsors/brand-logo-5.svg' | relative_url }" alt="University Initiative" loading="lazy" decoding="async" />
 </div>

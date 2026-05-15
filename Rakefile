@@ -8,9 +8,9 @@ task :build do
   sh "bundle exec jekyll build"
 end
 
-desc "Serve locally"
+desc "Serve locally (matches GitHub Pages baseurl)"
 task :serve do
-  sh "bundle exec jekyll serve --livereload"
+  sh "bundle exec jekyll serve --livereload --baseurl /vision-insait.github.io"
 end
 
 task default: :build

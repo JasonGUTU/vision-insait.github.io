@@ -2,8 +2,9 @@ title: Vision Group
 email: vision@example.edu
 description: >-
   Research group website (Jekyll + Block template assets).
-baseurl: ""
-url: ""
+# Project site: https://www.jasongt.com/vision-insait.github.io/ (repo name is the path)
+url: "https://www.jasongt.com"
+baseurl: "/vision-insait.github.io"
 
 # VLab logos (assets/images/logo/)
 logo:

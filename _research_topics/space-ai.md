@@ -15,7 +15,7 @@ Collaborations with remote-sensing groups on change detection benchmarks, uncert
 
 <div class="topic-cooperation-logos">
   <a href="https://example.org/orbital" target="_blank" rel="noopener" title="Orbital Analytics Consortium">
-    <img src="/site-covers/sponsors/brand-logo-5.svg" alt="Orbital Analytics Consortium" loading="lazy" decoding="async" />
+    <img src="{ '/site-covers/sponsors/brand-logo-5.svg' | relative_url }" alt="Orbital Analytics Consortium" loading="lazy" decoding="async" />
   </a>
-  <img src="/site-covers/sponsors/brand-logo-3.svg" alt="University Initiative" loading="lazy" decoding="async" />
+  <img src="{ '/site-covers/sponsors/brand-logo-3.svg' | relative_url }" alt="University Initiative" loading="lazy" decoding="async" />
 </div>
