@@ -24,6 +24,9 @@ landing:
   secondary_cta_url: "/research/"
   services_kicker: "Research directions"
   services_heading: "A comprehensive view of the topics we work on."
+  latest_news_kicker: "News"
+  latest_news_heading: "Latest news"
+  latest_news_limit: 4
 
 # Optional: shown on the home page below research cards
 sponsors:
@@ -84,6 +87,9 @@ collections:
   news:
     output: true
     permalink: /news/:path/
+  # Non-output snippets for the home layout (Markdown bodies edited here)
+  home_content:
+    output: false
 
 defaults:
   - scope:

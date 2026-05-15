@@ -33,14 +33,14 @@
             </div>
          </section>
 
-         <section class="py-xl-9 py-5 home-research-topics">
+         <section class="py-xl-9 py-5 home-research-topics home-landing-band">
             <div class="container">
-               <div class="row">
-                  <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-12">
-                     <div class="text-center mb-xl-9 mb-5">
-                        <small class="text-uppercase ls-md fw-semibold text-primary">{{ site.landing.services_kicker }}</small>
-                        <h2 class="mb-0 mt-3 px-xxl-8">{{ site.landing.services_heading }}</h2>
-                     </div>
+               <div class="row justify-content-center">
+                  <div class="col-12 col-lg-10 col-xl-8">
+                     <header class="home-section-head text-center mb-xl-9 mb-5">
+                        <p class="home-section-kicker text-uppercase ls-md fw-semibold text-primary mb-0">{{ site.landing.services_kicker }}</p>
+                        <h2 class="home-section-title mt-3 mb-0">{{ site.landing.services_heading }}</h2>
+                     </header>
                   </div>
                </div>
                <div class="row">
@@ -78,6 +78,88 @@
                </div>
             </div>
          </section>
+
+         {% include news-docs-sorted.html %}
+         {% assign home_news_md = site.home_content | where: "slug", "latest-news" | first %}
+         {% assign latest_news_n = site.landing.latest_news_limit | default: 4 %}
+         {% assign has_featured_news = false %}
+         {% if news_docs_sorted.size > 0 %}
+         {% assign has_featured_news = true %}
+         {% endif %}
+         {% assign has_text_column = false %}
+         {% if home_news_md %}
+         {% assign home_news_body = home_news_md.content | strip %}
+         {% if home_news_body != "" %}
+         {% assign has_text_column = true %}
+         {% endif %}
+         {% endif %}
+         {% if has_featured_news or has_text_column %}
+         <section class="py-xl-9 py-5 home-latest-news home-landing-band border-top bg-body-tertiary">
+            <div class="container">
+               <div class="row justify-content-center">
+                  <div class="col-12 col-lg-10 col-xl-8">
+                     <header class="home-section-head text-center mb-xl-9 mb-5">
+                        <p class="home-section-kicker text-uppercase ls-md fw-semibold text-primary mb-0">{{ site.landing.latest_news_kicker | default: "News" }}</p>
+                        <h2 class="home-section-title mt-3 mb-0">{{ site.landing.latest_news_heading | default: "Latest news" }}</h2>
+                     </header>
+                  </div>
+               </div>
+               <div class="row g-4 g-lg-5 align-items-start">
+                  {% if has_featured_news %}
+                  <div class="{% if has_text_column %}col-lg-8{% else %}col-12{% endif %}">
+                     <div class="row g-4 home-latest-news-feature-grid">
+                        {% for item in news_docs_sorted limit: latest_news_n %}
+                        {% assign ni = forloop.index0 | modulo: 9 | plus: 1 %}
+                        {% if item.cover_image %}
+                        {% assign ncover = item.cover_image %}
+                        {% else %}
+                        {% assign ncover = '/assets/images/blog/blog-img-' | append: ni | append: '.jpg' %}
+                        {% endif %}
+                        <div class="col-12 col-md-6">
+                           <article class="card h-100 border-0 shadow-sm home-news-feature-card overflow-hidden">
+                              <a href="{{ item.url | relative_url }}" class="home-news-feature-card__media d-block">
+                                 <img src="{{ ncover | relative_url }}" alt="" class="w-100 home-news-feature-card__img" loading="lazy" />
+                              </a>
+                              <div class="card-body p-4 d-flex flex-column">
+                                 <p class="small text-muted mb-2">{% if item.date %}{{ item.date | date: "%B %-d, %Y" }}{% endif %}</p>
+                                 <h3 class="h5 mb-2">
+                                    <a href="{{ item.url | relative_url }}" class="text-reset text-decoration-none">{{ item.title }}</a>
+                                 </h3>
+                                 {% if item.excerpt %}
+                                 <p class="text-muted small mb-3">{{ item.excerpt }}</p>
+                                 {% endif %}
+                                 <a href="{{ item.url | relative_url }}" class="icon-link icon-link-hover card-grid-link small mt-auto">
+                                    Read more
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                       <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                                    </svg>
+                                 </a>
+                              </div>
+                           </article>
+                        </div>
+                        {% endfor %}
+                     </div>
+                     <div class="mt-4">
+                        <a href="{{ '/news/' | relative_url }}" class="icon-link icon-link-hover card-grid-link">
+                           All news
+                           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+                  {% endif %}
+                  {% if has_text_column %}
+                  <div class="{% if has_featured_news %}col-lg-4{% else %}col-12 col-lg-10 col-xl-8 mx-auto{% endif %}">
+                     <div class="home-latest-news-text h-100 border rounded-3 bg-body p-4 p-lg-4">
+                        <div class="home-latest-news-text__body text-body-secondary small lh-lg">{{ home_news_md.content | markdownify }}</div>
+                     </div>
+                  </div>
+                  {% endif %}
+               </div>
+            </div>
+         </section>
+         {% endif %}
 
          {% if site.sponsors and site.sponsors.size > 0 %}
          <section class="py-7 py-lg-8 bg-light border-top">
