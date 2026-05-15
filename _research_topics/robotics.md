@@ -81,7 +81,7 @@ Grounding free-form language in scene graphs and affordances for multi-step rear
 Live example:
 
 <figure class="my-4 mb-0">
-  <img src="{ '/assets/images/blog/blog-img-7.jpg' | relative_url }" alt="Representative robotics scene" class="img-fluid rounded-3 w-100" loading="lazy" decoding="async" />
+  <img src="{{ '/assets/images/blog/blog-img-7.jpg' | relative_url }}" alt="Representative robotics scene" class="img-fluid rounded-3 w-100" loading="lazy" decoding="async" />
 </figure>
 
 Upload your own files under `site-covers/topics/<topic-id>/` and use paths starting with `/`.
@@ -92,8 +92,8 @@ Do not use a bare `<video>` tag (it will not size correctly). Wrap the player in
 
 ```html
 <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm bg-dark my-4">
-  <video class="object-fit-cover" controls playsinline muted loop poster="/assets/images/blog/blog-img-7.jpg">
-    <source src="{ '/site-covers/home/hero-video.mp4' | relative_url }" type="video/mp4" />
+  <video class="object-fit-cover" controls playsinline muted loop poster="{{ '/assets/images/blog/blog-img-7.jpg' | relative_url }}">
+    <source src="{{ '/site-covers/home/hero-video.mp4' | relative_url }}" type="video/mp4" />
   </video>
 </div>
 ```
@@ -101,8 +101,8 @@ Do not use a bare `<video>` tag (it will not size correctly). Wrap the player in
 Example embed (paths already in the repo):
 
 <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm bg-dark my-4">
-  <video class="object-fit-cover" controls playsinline muted loop poster="/assets/images/blog/blog-img-7.jpg">
-    <source src="{ '/site-covers/home/hero-video.mp4' | relative_url }" type="video/mp4" />
+  <video class="object-fit-cover" controls playsinline muted loop poster="{{ '/assets/images/blog/blog-img-7.jpg' | relative_url }}">
+    <source src="{{ '/site-covers/home/hero-video.mp4' | relative_url }}" type="video/mp4" />
   </video>
 </div>
 
@@ -114,9 +114,9 @@ Joint workshops with ETH Robotics and industry partners on sim-to-real transfer,
 
 <div class="topic-cooperation-logos">
   <a href="https://example.org/agile-lab" target="_blank" rel="noopener" title="Agile Systems Lab">
-    <img src="{ '/site-covers/sponsors/brand-logo-1.svg' | relative_url }" alt="Agile Systems Lab" loading="lazy" decoding="async" />
+    <img src="{{ '/site-covers/sponsors/brand-logo-1.svg' | relative_url }}" alt="Agile Systems Lab" loading="lazy" decoding="async" />
   </a>
-  <img src="{ '/site-covers/sponsors/brand-logo-3.svg' | relative_url }" alt="Eurobotics Initiative" loading="lazy" decoding="async" />
+  <img src="{{ '/site-covers/sponsors/brand-logo-3.svg' | relative_url }}" alt="Eurobotics Initiative" loading="lazy" decoding="async" />
 </div>
 
 - With a website: wrap `<img>` in `<a href="..." target="_blank" rel="noopener">`

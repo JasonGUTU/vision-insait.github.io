@@ -14,8 +14,8 @@ Egocentric vision asks models to **see with the user**: hands in frame, shifting
 Active data-sharing agreements with museums and assistive-living pilots; annotation partners for long-form narration, hand–object contact, and nighttime ego capture.
 
 <div class="topic-cooperation-logos">
-  <img src="{ '/site-covers/sponsors/brand-logo-5.svg' | relative_url }" alt="Ego4D-style Consortium (placeholder)" loading="lazy" decoding="async" />
+  <img src="{{ '/site-covers/sponsors/brand-logo-5.svg' | relative_url }}" alt="Ego4D-style Consortium (placeholder)" loading="lazy" decoding="async" />
   <a href="https://example.org/sponsor-a" target="_blank" rel="noopener" title="Example Research Fund">
-    <img src="{ '/site-covers/sponsors/brand-logo-1.svg' | relative_url }" alt="Example Research Fund" loading="lazy" decoding="async" />
+    <img src="{{ '/site-covers/sponsors/brand-logo-1.svg' | relative_url }}" alt="Example Research Fund" loading="lazy" decoding="async" />
   </a>
 </div>
