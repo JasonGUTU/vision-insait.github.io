@@ -2,9 +2,9 @@ title: Vision Group
 email: vision@example.edu
 description: >-
   Research group website (Jekyll + Block template assets).
-# Production: custom domain (see CNAME). baseurl "" = site at domain root.
-url: "https://vision.insait.ai"
-baseurl: ""
+# GitHub Pages project site (until repo moves to production domain).
+url: "https://www.jasongt.com"
+baseurl: "/vision-insait.github.io"
 
 # VLab logos (assets/images/logo/)
 logo:
