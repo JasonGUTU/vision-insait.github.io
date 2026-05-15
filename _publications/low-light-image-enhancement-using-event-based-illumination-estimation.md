@@ -1,14 +1,15 @@
 ---
 title: "Low-Light Image Enhancement using Event-Based Illumination Estimation"
 year: 2025
-venue: "In: International Conference on Computer Vision (ICCV 2025)"
+venue: "International Conference on Computer Vision (ICCV 2025)"
+venue_display: "International Conference on Computer Vision (ICCV 2025)"
+venue_chronicle: "International Conference on Computer Vision"
 venue_abbr: "ICCV"
+publication_date: "2025-10-13"
 author_line_full: "Lei Sun, Yuhan Bao, Jiajun Zhai, Jingyun Liang, Yulun Zhang, Kaiwei Wang, Danda Pani Paudel, Luc Van Gool"
 authors:
-  - luc-van-gool
+  - lei-sun
   - danda-paudel
-topics:
-  - visual-media
+  - luc-van-gool
+paper_url: "https://arxiv.org/pdf/2504.09379"
 ---
-
-Imported from INSAIT publications listing (faculty-related).

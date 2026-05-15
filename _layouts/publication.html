@@ -20,7 +20,8 @@ layout: default
             <div class="d-flex flex-wrap align-items-center gap-3 gap-lg-4 border-top border-bottom py-3">
                <div>
                   <span class="small text-muted d-block text-uppercase">Year & venue</span>
-                  <div class="fw-semibold">{{ page.year }}{% if page.venue %} · {{ page.venue }}{% endif %}</div>
+                  {% assign pub_venue_line = page.venue_display | default: page.venue %}
+                  <div class="fw-semibold">{{ page.year }}{% if pub_venue_line %} · {{ pub_venue_line }}{% endif %}</div>
                </div>
                {% if page.paper_url %}
                <div class="ms-md-auto">

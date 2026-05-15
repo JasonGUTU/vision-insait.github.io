@@ -1,13 +1,13 @@
 ---
 title: "Towards Online Real-Time Memory-based Video Inpainting Transformers"
 year: 2024
-venue: "In: Computer Vision and Pattern Recognition Conference (CVPR 2024) (workshop)_"
-venue_abbr: "CVPR"
+venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshop (CVPRW 2024)"
+venue_display: "IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshop (CVPRW 2024)"
+venue_chronicle: "IEEE/CVF Conference on Computer Vision and Pattern Recognition"
+venue_abbr: "CVPRW"
+publication_date: "2024-06-15"
 author_line_full: "Guillaume Thiry, Hao Tang, Radu Timofte, Luc Van Gool"
 authors:
   - luc-van-gool
-topics:
-  - visual-media
+paper_url: "https://ieeexplore.ieee.org/document/10678062"
 ---
-
-Imported from INSAIT publications listing (faculty-related).

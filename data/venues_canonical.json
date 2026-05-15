@@ -1,0 +1,43 @@
+{
+  "main_venues": [
+    "AAAI Conference on Artificial Intelligence",
+    "AAAI Conference on Artificial Intelligence (Technical Track on Computer Vision III)",
+    "ACM SIGGRAPH Conference and Exhibition on Computer Graphics and Interactive Techniques in Asia",
+    "Annual Meeting of the Association for Computational Linguistics",
+    "Asian Conference on Computer Vision",
+    "British Machine Vision Conference",
+    "Computer Vision and Image Understanding",
+    "Conference on Neural Information Processing Systems",
+    "Conference on Neural Information Processing Systems (Datasets and Benchmarks Track)",
+    "Conference on Robot Learning",
+    "European Conference on Computer Vision",
+    "IEEE Robotics and Automation Letters",
+    "IEEE Transactions on Multimedia",
+    "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+    "IEEE/RSJ International Conference on Intelligent Robots and Systems",
+    "International Conference on 3D Imaging, Modeling, Processing, Visualization and Transmission",
+    "International Conference on 3D Vision",
+    "International Conference on Computer Vision",
+    "International Conference on Image Processing",
+    "International Conference on Learning Representations",
+    "International Conference on Machine Learning",
+    "International Conference on Medical Image Computing and Computer Assisted Intervention",
+    "International Conference on Pattern Recognition",
+    "International Conference on Robotics and Automation",
+    "International Journal of Computer Vision",
+    "International Symposium on Mixed and Augmented Reality",
+    "Winter Conference on Applications of Computer Vision"
+  ],
+  "workshop_venues": [
+    "Conference on Neural Information Processing Systems",
+    "European Conference on Computer Vision",
+    "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+    "Winter Conference on Applications of Computer Vision"
+  ],
+  "counts": {
+    "main_distinct": 28,
+    "workshop_distinct": 4,
+    "papers": 156
+  }
+}

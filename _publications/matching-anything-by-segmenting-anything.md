@@ -1,13 +1,13 @@
 ---
 title: "Matching Anything by Segmenting Anything"
 year: 2024
-venue: "In: Computer Vision and Pattern Recognition Conference (CVPR 2024)_"
+venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2024)"
+venue_display: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2024)"
+venue_chronicle: "IEEE/CVF Conference on Computer Vision and Pattern Recognition"
 venue_abbr: "CVPR"
+publication_date: "2024-06-15"
 author_line_full: "Siyuan Li, Lei Ke, Martin Danelljan, Luigi Piccinelli, Mattia Segu, Luc Van Gool, Fisher Yu"
 authors:
   - luc-van-gool
-topics:
-  - visual-media
+paper_url: "https://arxiv.org/pdf/2406.04221"
 ---
-
-Imported from INSAIT publications listing (faculty-related).

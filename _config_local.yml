@@ -1,0 +1,7 @@
+# Local overrides — use with:
+#   bundle exec jekyll serve --config _config.yml,_config_local.yml
+#
+# Keep production url/baseurl in _config.yml only.
+
+url: "http://127.0.0.1:4000"
+baseurl: ""

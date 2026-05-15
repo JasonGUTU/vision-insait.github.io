@@ -1,0 +1,3738 @@
+[
+  {
+    "title": "Evaluating Parameter Efficient Methods for RLVR",
+    "year": 2026,
+    "venue": "Forty-Third International Conference on Machine Learning (ICML 2026)",
+    "authors": [
+      "Qingyu Yin",
+      "Yulun Wu",
+      "Zhennan Shen",
+      "Sunbowen Lee",
+      "Zhilin Wang",
+      "Yanshu Li",
+      "Chak Tou Leong",
+      "Jiale Kang",
+      "Jinjin Gu"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2512.23165",
+      "code": "https://github.com/MikaStars39/PeRL"
+    }
+  },
+  {
+    "title": "EngiAgent: Fully Connected Coordination of LLM Agents for Solving Open-ended Engineering Problems with Feasible Solutions",
+    "year": 2026,
+    "venue": "Forty-Third International Conference on Machine Learning (ICML 2026)",
+    "authors": [
+      "Xiyuan Zhou",
+      "Ruixi Zou",
+      "Xinlei Wang",
+      "Yuheng Cheng",
+      "Yan Xu",
+      "Junhua Zhao",
+      "Jinjin Gu"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2605.02289"
+    }
+  },
+  {
+    "title": "Enhanced Latent-Space Adversarial Training for Super-Resolution",
+    "year": 2026,
+    "venue": "Forty-Third International Conference on Machine Learning (ICML 2026)",
+    "authors": [
+      "Liangbin Xie",
+      "Zheyuan Li",
+      "Fanghua Yu",
+      "Xinqi Lin",
+      "Jun-hao Zhuang",
+      "Jinfan Hu",
+      "Jinjin Gu",
+      "Jiantao Zhou",
+      "Chao Dong"
+    ],
+    "links": {}
+  },
+  {
+    "title": "Hugging Carbon: Quantifying the Training Carbon Emissions of AI Models at Scale",
+    "year": 2026,
+    "venue": "Forty-Third International Conference on Machine Learning (ICML 2026)",
+    "authors": [
+      "Xinlei Wang",
+      "Ruibo Ming",
+      "Jing Qiu",
+      "Junhua Zhao",
+      "Jinjin Gu"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2605.01549"
+    }
+  },
+  {
+    "title": "BrokenMath: A Benchmark for Sycophancy in Theorem Proving with LLMs",
+    "year": 2026,
+    "venue": "Forty-Third International Conference on Machine Learning (ICML 2026) (Spotlight)",
+    "authors": [
+      "Ivo Petrov",
+      "Jasper Dekoninck",
+      "Martin Vechev"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2510.04721",
+      "project": "https://www.sycophanticmath.ai/",
+      "dataset": "https://huggingface.co/datasets/INSAIT-Institute/BrokenMath",
+      "code": "https://github.com/insait-institute/broken-math"
+    }
+  },
+  {
+    "title": "SOVA: Image size agnostic and task driven vision encoder",
+    "year": 2026,
+    "venue": "Forty-Third International Conference on Machine Learning (ICML 2026)",
+    "authors": [
+      "Nedyalko Prisadnikov",
+      "Danda Pani Paudel",
+      "Yuqian Fu",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2508.16317"
+    }
+  },
+  {
+    "title": "White-Box Adversarial Streaming Lower Bounds beyond Two-Party Communication",
+    "year": 2026,
+    "venue": "The 53rd International Colloquium on Automata, Languages, and Programming (ICALP 2026)",
+    "authors": [
+      "Klim Efremenko",
+      "Gillat Kol",
+      "Raghuvansh R. Saxena",
+      "Zhijun Zhang"
+    ],
+    "links": {
+      "paper": "https://eccc.weizmann.ac.il/report/2026/060/download"
+    }
+  },
+  {
+    "title": "Constant Rate Isometric Embeddings of Hamming Metric into Edit Metric",
+    "year": 2026,
+    "venue": "The 53rd International Colloquium on Automata, Languages, and Programming (ICALP 2026)",
+    "authors": [
+      "Sudatta Bhattacharya",
+      "Sanjana Dey",
+      "Elazar Goldenberg",
+      "Mursalin Habib",
+      "Bernhard Haeupler",
+      "Karthik C. S",
+      "Michal Koucký"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2504.03605"
+    }
+  },
+  {
+    "title": "Better Diameter Bounds for Efficient Shortcuts and a Structural Criterion for Constructiveness",
+    "year": 2026,
+    "venue": "The 53rd International Colloquium on Automata, Languages, and Programming (ICALP 2026)",
+    "authors": [
+      "Bernhard Haeupler",
+      "Antti Roeyskoe",
+      "Zhijun Zhang"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2602.10747"
+    }
+  },
+  {
+    "title": "Fast and Simple Sorting Using Partial Information",
+    "year": 2026,
+    "venue": "Algorithmica International Journal",
+    "authors": [
+      "Bernhard Haeupler",
+      "Richard Hladík",
+      "John Iacono",
+      "Vaclav Rozhon",
+      "Robert Tarjan",
+      "Jakub Tětek"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2404.04552"
+    }
+  },
+  {
+    "title": "Density-Aware Video Desnowing with Robust Alignment on a Large-Scale Dataset",
+    "year": 2026,
+    "venue": "IEEE Transactions on Multimedia (TMM 2026)",
+    "authors": [
+      "Haoyu Chen",
+      "Jingjing Ren",
+      "Jiaxing Shen",
+      "Sixiang Chen",
+      "Jinjin Gu",
+      "Ping Tan",
+      "Lei Zhu"
+    ],
+    "links": {}
+  },
+  {
+    "title": "Revisiting the Generalization Problem of Low-level Vision Models Through the Lens of Image Deraining",
+    "year": 2026,
+    "venue": "International Conference on Pattern Recognition (ICPR 2026)",
+    "authors": [
+      "Jinfan Hu",
+      "Zhiyuan You",
+      "Jinjin Gu",
+      "Kaiwen Zhu",
+      "Tianfan Xue",
+      "Chao Dong"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2502.12600"
+    }
+  },
+  {
+    "title": "EngiBench: A Benchmark for Evaluating Large Language Models on Engineering Problem Solving",
+    "year": 2026,
+    "venue": "The 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026) (Findings)",
+    "authors": [
+      "Xiyuan Zhou",
+      "Xinlei Wang",
+      "Yirui He",
+      "Ruixi Zou",
+      "Yang Wu",
+      "Yuheng Cheng",
+      "Yulu Xie",
+      "Wenxuan Liu",
+      "Huan Zhao",
+      "Yan Xu",
+      "Jinjin Gu",
+      "Junhua Zhao"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2509.17677"
+    }
+  },
+  {
+    "title": "Recovered in Translation: Efficient Pipeline for Automated Translation of Benchmarks and Datasets",
+    "year": 2026,
+    "venue": "The 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026)",
+    "authors": [
+      "Hanna Yukhymenko",
+      "Anton Alexandrov",
+      "Martin Vechev"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2602.22207",
+      "project": "https://ritranslation.insait.ai/",
+      "code": "https://github.com/insait-institute/ritranslation"
+    }
+  },
+  {
+    "title": "Hyper Separation Logic",
+    "year": 2026,
+    "venue": "Conference on Programming Language Design and Implementation (PLDI 2026)",
+    "authors": [
+      "Trayan Gospodinov",
+      "Peter Müller",
+      "Thibault Dardinier"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2604.12870",
+      "code": "https://github.com/insait-institute/Hyper-Separation-Logic-mechanization-"
+    }
+  },
+  {
+    "title": "Universally Optimal Streaming Algorithm for Random Walks in Dense Graphs",
+    "year": 2026,
+    "venue": "Innovations in Theoretical Computer Science (ITCS  2026)",
+    "authors": [
+      "Klim Efremenko",
+      "Gillat Kol",
+      "Raghuvansh R. Saxena",
+      "Zhijun Zhang"
+    ],
+    "links": {
+      "paper": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol362-itcs2026/LIPIcs.ITCS.2026.55/LIPIcs.ITCS.2026.55.pdf"
+    }
+  },
+  {
+    "title": "Seeing Beyond: Extrapolative Domain Adaptive Panoramic Segmentation",
+    "year": 2026,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)",
+    "authors": [
+      "Yuanfan Zheng",
+      "Kunyu Peng",
+      "Xu Zheng",
+      "Kailun Yang"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2603.15475"
+    }
+  },
+  {
+    "title": "Towards Robust Multi-Modal Semantic Segmentation with Teacher-Student Framework and Hybrid Prototype Distillation",
+    "year": 2026,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)",
+    "authors": [
+      "Jiaqi Tan",
+      "Xu Zheng",
+      "Yang Liu"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2505.12861"
+    }
+  },
+  {
+    "title": "Learning Latent Transmission and Glare Maps for Lens Veiling Glare Removal",
+    "year": 2026,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)",
+    "authors": [
+      "Xiaolong Qian",
+      "Qi Jiang",
+      "Lei Sun",
+      "Zongxi Yu",
+      "Kailun Yang",
+      "Peixuan Wu",
+      "Jiacheng Zhou",
+      "Yao Gao",
+      "Yaoguang Ma",
+      "Ming-Hsuan Yang",
+      "Kaiwei Wang"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2511.17353"
+    }
+  },
+  {
+    "title": "Rethinking Image Evaluation in Super-Resolution",
+    "year": 2026,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)",
+    "authors": [
+      "Shaolin Su",
+      "Josep M. Rocafort",
+      "David Serrano-Lozano",
+      "Lei Sun",
+      "Danna Xue",
+      "Javier Vazquez-Corral"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2503.13074"
+    }
+  },
+  {
+    "title": "Intelligent Photo Retouching with Language Model-Based Artist Agents (findings)",
+    "year": 2026,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)",
+    "authors": [
+      "Haoyu Chen",
+      "Keda Tao",
+      "Yizao Wang",
+      "Xinlei Wang",
+      "Lei Zhu",
+      "Jinjin Gu"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2505.23130"
+    }
+  },
+  {
+    "title": "PhotoFramer: Multi-modal Image Composition Instruction",
+    "year": 2026,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)",
+    "authors": [
+      "Zhiyuan You",
+      "Ke Wang",
+      "He Zhang",
+      "Xin Cai",
+      "Jinjin Gu",
+      "Tianfan Xue",
+      "Chao Dong",
+      "Zhoutong Zhang"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2512.00993"
+    }
+  },
+  {
+    "title": "How Far Have We Gone in Generative Image Restoration? A Study on Its Capability, Limitations and Evaluation Practices (findings)",
+    "year": 2026,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)",
+    "authors": [
+      "Xiang Yin",
+      "Jinfan Hu",
+      "Zhiyuan You",
+      "Kainan Yan",
+      "Yu Tang",
+      "Chao Dong",
+      "Jinjin Gu"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2603.05010"
+    }
+  },
+  {
+    "title": "Are Multimodal Large Language Models Ready for Omnidirectional Spatial Reasoning? (findings)",
+    "year": 2026,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)",
+    "authors": [
+      "Zihao Dongfang",
+      "Xu Zheng",
+      "Ziqiao Weng",
+      "Yuanhuiyi Lyu",
+      "Danda Pani Paudel",
+      "Luc Van Gool",
+      "Kailun Yang",
+      "Xuming Hu"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2505.11907"
+    }
+  },
+  {
+    "title": "Clivis: Unleashing cognitive map through linguistic-visual synergy for embodied visual reasoning",
+    "year": 2026,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)",
+    "authors": [
+      "Kailing Li",
+      "Qi’ao Xu",
+      "Tianwen Qian",
+      "Yuqian Fu",
+      "Yang Jiao",
+      "Xiaoling Wang"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2506.17629?"
+    }
+  },
+  {
+    "title": "EgoSound: Benchmarking Sound Understanding in Egocentric Videos",
+    "year": 2026,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)",
+    "authors": [
+      "Bingwen Zhu",
+      "Bingwen_Zhu",
+      "Yuqian Fu",
+      "Qiaole Dong",
+      "Guolei Sun",
+      "Tianwen Qian",
+      "Yuzheng Wu",
+      "Danda Pani Paudel",
+      "Yanwei Fu",
+      "Xiangyang Xue"
+    ],
+    "links": {
+      "paper": "https://www.arxiv.org/pdf/2602.14122"
+    }
+  },
+  {
+    "title": "ConceptPose: Training-Free Zero-Shot Object Pose Estimation using Concept Vectors",
+    "year": 2026,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)",
+    "authors": [
+      "Liming Kuang",
+      "Dani Velikova",
+      "Mahdi Saleh",
+      "Jan-Nico Zaech",
+      "Danda Pani Paudel",
+      "Benjamin Busam"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2512.09056"
+    }
+  },
+  {
+    "title": "Inferring Compositional 4D Scenes without Ever Seeing One",
+    "year": 2026,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)",
+    "authors": [
+      "Ahmet Berke Gokmen",
+      "Ajad Chhatkuli",
+      "Luc Van Gool",
+      "Danda Pani Paudel"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2512.05272",
+      "project": "https://com4d.insait.ai/",
+      "code": "https://github.com/insait-institute/COM4D"
+    }
+  },
+  {
+    "title": "SPEAR-1: Scaling Beyond Robot Demonstrations via 3D Understanding",
+    "year": 2026,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)",
+    "authors": [
+      "Nikolay Nikolov",
+      "Giuliano Albanese",
+      "Sombit Dey",
+      "Aleksandar Yanev",
+      "Luc Van Gool",
+      "Jan-Nico Zaech",
+      "Danda Pani Paudel"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2511.17411",
+      "project": "https://spear.insait.ai/"
+    }
+  },
+  {
+    "title": "V^{2}-SAM: Marrying SAM2 with Multi-Prompt Experts for Cross-View Object Correspondence",
+    "year": 2026,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)",
+    "authors": [
+      "Jiancheng Pan",
+      "Runze Wang",
+      "Tianwen Qian",
+      "Mohammad Mahdi",
+      "Yanwei Fu",
+      "Xiangyang Xue",
+      "Xiaomeng Huang",
+      "Luc Van Gool",
+      "Danda Pani Paudel",
+      "Yuqian Fu"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2511.20886"
+    }
+  },
+  {
+    "title": "ProOOD: Prototype-Guided Out-of-Distribution 3D Occupancy Prediction",
+    "year": 2026,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)",
+    "authors": [
+      "Yuheng Zhang",
+      "Mengfei Duan",
+      "Kunyu Peng",
+      "Yuhang Wang",
+      "Ruiping Liu",
+      "Fei Teng",
+      "Kai Luo",
+      "Zhiyong Li",
+      "Kailun Yang"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2506.21185"
+    }
+  },
+  {
+    "title": "Universal Computational Aberration Correction: A Comprehensive Benchmark Analysis",
+    "year": 2026,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)",
+    "authors": [
+      "Xiaolong Qian",
+      "Qi Jiang",
+      "Yao Gao",
+      "Lei Sun",
+      "Zhonghua Yi",
+      "Kailun Yang",
+      "Luc Van Gool",
+      "Kaiwei Wang"
+    ],
+    "links": {}
+  },
+  {
+    "title": "GeoVLM-R1: Reinforcement Fine-Tuning for Improved Remote Sensing Reasoning",
+    "year": 2026,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)",
+    "authors": [
+      "Mustansar Fiaz",
+      "Hiyam Debary",
+      "Paolo Fraccaro",
+      "Danda Paudel",
+      "Luc Van Gool",
+      "Fahad Khan",
+      "Salman Khan"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2509.25026"
+    }
+  },
+  {
+    "title": "FireScope: Wildfire Risk Raster Prediction With a Chain-of-Thought Oracle",
+    "year": 2026,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)",
+    "authors": [
+      "Mario Markov",
+      "Stefan Maria Ailuro",
+      "Luc Van Gool",
+      "Konrad Schindler",
+      "Danda Pani Paudel"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2511.17171"
+    }
+  },
+  {
+    "title": "Chorus: Multi-Teacher Pretraining for Holistic 3D Gaussian Scene Encoding",
+    "year": 2026,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)",
+    "authors": [
+      "Yue Li",
+      "Qi Ma",
+      "Runyi Yang",
+      "Mengjiao Ma",
+      "Bin Ren",
+      "Nikola Popovic",
+      "Nicu Sebe",
+      "Theo Gevers",
+      "Luc Van Gool",
+      "Danda Pani Paudel",
+      "Martin R. Oswald"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2512.17817"
+    }
+  },
+  {
+    "title": "FERD: Fairness-Enhanced Data-Free Adversarial Robustness Distillation",
+    "year": 2026,
+    "venue": "The Fourteenth International Conference on Learning Representations (ICLR 2026)",
+    "authors": [
+      "Zhengxiao Li",
+      "Zhengxiao Li",
+      "Liming Lu",
+      "Xu Zheng",
+      "Si Yuan Liang",
+      "Taric Chen",
+      "Yongbin Zhou",
+      "Shuchao Pang"
+    ],
+    "links": {
+      "paper": "https://openreview.net/forum?id=jGXTx64gal&referrer=%5Bthe%20profile%20of%20Xu%20Zheng%5D(%2Fprofile%3Fid%3D~Xu_Zheng2)"
+    }
+  },
+  {
+    "title": "DiMeR: Disentangled Mesh Reconstruction Model with Normal-only Geometry Training",
+    "year": 2026,
+    "venue": "The Fourteenth International Conference on Learning Representations (ICLR 2026)",
+    "authors": [
+      "Lutao Jiang",
+      "Lutao Jiang",
+      "Jiantao Lin",
+      "Kanghao Chen",
+      "Wenhang Ge",
+      "Xin Yang",
+      "Yifan Jiang",
+      "Yuanhuiyi Lyu",
+      "Xu Zheng",
+      "LI JING",
+      "Yinchuan Li",
+      "Ying-Cong Chen"
+    ],
+    "links": {
+      "paper": "https://openreview.net/forum?id=fK2pCgoavb&referrer=%5Bthe%20profile%20of%20Yifan%20Jiang%5D(%2Fprofile%3Fid%3D~Yifan_Jiang6)"
+    }
+  },
+  {
+    "title": "The Open Proof Corpus: A Large-Scale Study of LLM-Generated Mathematical Proofs",
+    "year": 2026,
+    "venue": "The Fourteenth International Conference on Learning Representations (ICLR 2026)",
+    "authors": [
+      "Jasper Dekoninck",
+      "Ivo Petrov",
+      "Kristian Minchev",
+      "Mislav Balunovic",
+      "Martin Vechev",
+      "Miroslav Marinov",
+      "Maria Drencheva",
+      "Lyuba Konova",
+      "Milen Shumanov",
+      "Kaloyan Tsvetkov",
+      "Nikolay Drenchev",
+      "Lazar Todorov",
+      "Kalina Nikolova",
+      "Nikolay Georgiev",
+      "Vanesa Kalinkova",
+      "Margulan Ismoldayev"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2506.21621",
+      "project": "https://proofcorpus.ai/",
+      "code": "https://github.com/insait-institute/open-proof-corpus"
+    }
+  },
+  {
+    "title": "Efficient Degradation-agnostic Image Restoration via Channel-Wise Functional Decomposition and Manifold Regularization",
+    "year": 2026,
+    "venue": "The Fourteenth International Conference on Learning Representations (ICLR 2026)",
+    "authors": [
+      "Bin Ren",
+      "Yawei Li",
+      "Xu Zheng",
+      "Yuqian Fu",
+      "Danda Pani Paudel",
+      "Hong Liu",
+      "Ming-Hsuan Yang",
+      "Luc Van Gool",
+      "Nicu Sebe"
+    ],
+    "links": {
+      "paper": "https://openreview.net/pdf?id=jDMAvoLsVj"
+    }
+  },
+  {
+    "title": "Rethinking Expressivity and Degradation-Awareness in Attention for All-in-One Blind Image Restoration",
+    "year": 2026,
+    "venue": "The Fourteenth International Conference on Learning Representations (ICLR 2026)",
+    "authors": [
+      "Bin Ren",
+      "Runyi Yang",
+      "Qi Ma",
+      "Xu Zheng",
+      "Mengyuan Liu",
+      "Danda Pani Paudel",
+      "Luc Van Gool",
+      "Rita Cucchiara",
+      "Nicu Sebe"
+    ],
+    "links": {
+      "paper": "https://openreview.net/pdf?id=IBzmQVia88"
+    }
+  },
+  {
+    "title": "LENS: Multi-level Evaluation of Multimodal Reasoning with Large Language Models",
+    "year": 2026,
+    "venue": "The Fourteenth International Conference on Learning Representations (ICLR 2026)",
+    "authors": [
+      "Ruilin Yao",
+      "Bo Zhang",
+      "Jirui Huang",
+      "Xinwei Long",
+      "Yifang Zhang",
+      "Tianyu Zou",
+      "Yufei Wu",
+      "Shichao Su",
+      "Yifan Xu",
+      "Wenxi Zeng",
+      "Zhaoyu Yang",
+      "Guoyou Li",
+      "Shilan Zhang",
+      "Zichan Li",
+      "Yaxiong Chen",
+      "Shengwu Xiong",
+      "Peng Xu",
+      "Jiajun Zhang",
+      "Bowen Zhou",
+      "David Clifton",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2505.15616"
+    }
+  },
+  {
+    "title": "A Fano-Style Accuracy Upper Bound for LLM Single-Pass Reasoning in Multi-Hop QA",
+    "year": 2026,
+    "venue": "The Fourteenth International Conference on Learning Representations (ICLR 2026)",
+    "authors": [
+      "Kaiyang Wan",
+      "Lang Gao",
+      "Honglin Mu",
+      "Preslav Nakov",
+      "Yuxia Wang",
+      "Xiuying Chen"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2509.21199"
+    }
+  },
+  {
+    "title": "EgoNight: Towards Egocentric Vision Understanding at Night with a Challenging Benchmark",
+    "year": 2026,
+    "venue": "The Fourteenth International Conference on Learning Representations (ICLR 2026)",
+    "authors": [
+      "Deheng Zhang",
+      "Yuqian Fu",
+      "Runyi Yang",
+      "Yang Miao",
+      "Tianwen Qian",
+      "Xu Zheng",
+      "Guolei Sun",
+      "Ajad Chhatkuli",
+      "Xuanjing Huang",
+      "Yu-Gang Jiang",
+      "Luc Van Gool",
+      "Danda Pani Paudel"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2510.06218",
+      "project": "https://insait-institute.github.io/EgoNight/index.html",
+      "code": "https://github.com/insait-institute/EgoNight"
+    }
+  },
+  {
+    "title": "Breaking Barriers for Distributed MIS by Faster Degree Reduction",
+    "year": 2026,
+    "venue": "58th ACM Symposium on Theory of Computing (STOC 2026)",
+    "authors": [
+      "Seri Khoury",
+      "Aaron Schild"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2505.15652"
+    }
+  },
+  {
+    "title": "DAG Projections: Reducing Distance and Flow Problems to DAGs",
+    "year": 2026,
+    "venue": "58th ACM Symposium on Theory of Computing (STOC 2026)",
+    "authors": [
+      "Yonggang Jiang",
+      "Thatchaphol Saranurak"
+    ],
+    "links": {}
+  },
+  {
+    "title": "A Constant-Approximation Distance Labeling Scheme under Polynomially Many Edge Failures",
+    "year": 2026,
+    "venue": "58th ACM Symposium on Theory of Computing (STOC 2026)",
+    "authors": [
+      "Yaowei Long",
+      "Antti Roeyskoe",
+      "Thatchaphol Saranurak"
+    ],
+    "links": {}
+  },
+  {
+    "title": "Deterministic Negative-Weight Shortest Paths in Nearly Linear Time via Path Covers",
+    "year": 2026,
+    "venue": "58th ACM Symposium on Theory of Computing (STOC 2026)",
+    "authors": [
+      "Bernhard Haeupler",
+      "Yonggang Jiang",
+      "Thatchaphol Saranurak"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2511.08551"
+    }
+  },
+  {
+    "title": "Reviving Thorup’s Shortcut Conjecture",
+    "year": 2026,
+    "venue": "58th ACM Symposium on Theory of Computing (STOC 2026)",
+    "authors": [
+      "Aaron Bernstein",
+      "Henry Fleischmann",
+      "Maximilian Probst Gutenberg",
+      "Bernhard Haeupler",
+      "Gary Hoppenworth",
+      "Yonggang Jiang",
+      "George Z. Li",
+      "Seth Pettie",
+      "Thatchaphol Saranurak",
+      "Leon Schiller"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2510.24954"
+    }
+  },
+  {
+    "title": "Do generative video models understand physical principles?",
+    "year": 2026,
+    "venue": "The Winter Conference on Applications of Computer Vision (WACV 2026)",
+    "authors": [
+      "Saman Motamed",
+      "Laura Culp",
+      "Kevin Swersky",
+      "Priyank Jaini",
+      "Robert Geirhos"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2501.09038"
+    }
+  },
+  {
+    "title": "AICD Bench: A Challenging Benchmark for AI-Generated Code Detection",
+    "year": 2026,
+    "venue": "The 19th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2026)",
+    "authors": [
+      "Daniil Orel",
+      "Dilshod Azizov",
+      "Indraneil Paul",
+      "Yuxia Wang",
+      "Iryna Gurevych",
+      "Preslav Nakov"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2602.02079"
+    }
+  },
+  {
+    "title": "FAID: Fine-grained AI-generated Text Detection using Multi-task Auxiliary and Multi-level Contrastive Learning",
+    "year": 2026,
+    "venue": "The 19th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2026)",
+    "authors": [
+      "Minh Ngoc Ta",
+      "Dong Cao Van",
+      "Duc-Anh Hoang",
+      "Minh Le-Anh",
+      "Truong Nguyen",
+      "My Anh Tran Nguyen",
+      "Yuxia Wang",
+      "Preslav Nakov",
+      "Sang Dinh"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2505.14271"
+    }
+  },
+  {
+    "title": "How Quantization Shapes Bias in Large Language Models",
+    "year": 2026,
+    "venue": "The 19th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2026)",
+    "authors": [
+      "Federico Marcuzzi",
+      "Xuefei Ning",
+      "Roy Schwartz",
+      "Iryna Gurevych"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2508.18088"
+    }
+  },
+  {
+    "title": "Adversarially-Robust Gossip Algorithms for Approximate Quantile and Mean Computations",
+    "year": 2026,
+    "venue": "The 17th Innovations in Theoretical Computer Science (ITCS 2026)",
+    "authors": [
+      "Bernhard Haeupler",
+      "Marc Kaufmann",
+      "Raghu Raman Ravi",
+      "Ulysse Schaller"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2502.15320"
+    }
+  },
+  {
+    "title": "Autonomous Vehicle Path Planning by Searching With Differentiable Simulation",
+    "year": 2026,
+    "venue": "The 40th Annual AAAI Conference on Artificial Intelligence (AAAI 2026)",
+    "authors": [
+      "Asen Nachkov",
+      "Jan-Nico Zaech",
+      "Danda Pani Paudel",
+      "Xi Wang",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2511.11043"
+    }
+  },
+  {
+    "title": "Unlocking Efficient Vehicle Dynamics Modeling via Analytic World Models",
+    "year": 2026,
+    "venue": "The 40th Annual AAAI Conference on Artificial Intelligence (AAAI 2026)",
+    "authors": [
+      "Asen Nachkov",
+      "Danda Pani Paudel",
+      "Jan-Nico Zaech",
+      "Davide Scaramuzza",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2502.10012"
+    }
+  },
+  {
+    "title": "Autonomous Vehicle Controllers From End-to-End Differentiable Simulation",
+    "year": 2025,
+    "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025)",
+    "authors": [
+      "Asen Nachkov",
+      "Danda Pani Paudel",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2409.07965"
+    }
+  },
+  {
+    "title": "Harnessing Diffusion-Yielded Score Priors for Image Restoration",
+    "year": 2025,
+    "venue": "The 18th ACM SIGGRAPH Conference and Exhibition on Computer Graphics and Interactive Techniques in Asia (SIGGRAPH 2025)",
+    "authors": [
+      "Xinqi Lin",
+      "Fanghua Yu",
+      "Jinfan Hu",
+      "Zhiyuan You",
+      "Wu Shi",
+      "Jimmy S. Ren",
+      "Jinjin Gu",
+      "Chao Dong"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2507.20590"
+    }
+  },
+  {
+    "title": "Fine-Grained Spatial and Verbal Losses for 3D Visual Grounding",
+    "year": 2025,
+    "venue": "Winter Conference on Applications of Computer Vision (WACV 2025)",
+    "authors": [
+      "Sombit Dey",
+      "Ozan Unal",
+      "Christos Sakaridis",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10943748"
+    }
+  },
+  {
+    "title": "Diffusion-Based Particle-DETR for BEV Perception",
+    "year": 2025,
+    "venue": "Winter Conference on Applications of Computer Vision (WACV 2025)",
+    "authors": [
+      "Asen Nachkov",
+      "Danda Pani Paudel",
+      "Martin Danelljan",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10943642"
+    }
+  },
+  {
+    "title": "Sun Off, Lights on: Photorealistic Monocular Nighttime Simulation for Robust Semantic Perception",
+    "year": 2025,
+    "venue": "Winter Conference on Applications of Computer Vision (WACV 2025)",
+    "authors": [
+      "Konstantinos Tzevelekakis",
+      "Shutong Zhang",
+      "Luc Van Gool",
+      "Christos Sakaridis"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10944076"
+    }
+  },
+  {
+    "title": "Language-Guided Instance-Aware Domain-Adaptive Panoptic Segmentation",
+    "year": 2025,
+    "venue": "Winter Conference on Applications of Computer Vision (WACV 2025)",
+    "authors": [
+      "Elham Amin Mansour",
+      "Ozan Unal",
+      "Suman Saha",
+      "Benjamin Bejar",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10943456"
+    }
+  },
+  {
+    "title": "Model Weights Reflect a Continuous Space of Input Image Domains",
+    "year": 2025,
+    "venue": "Winter Conference on Applications of Computer Vision (WACV 2025)",
+    "authors": [
+      "Simen Cassiman",
+      "Marc Proesmans",
+      "Tinne Tuytelaars",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10972382"
+    }
+  },
+  {
+    "title": "Samba: Synchronized Set-of-Sequences Modeling for Multiple Object Tracking",
+    "year": 2025,
+    "venue": "International Conference on Learning Representations (ICLR 2025)",
+    "authors": [
+      "Mattia Segu",
+      "Luigi Piccinelli",
+      "Siyuan Li",
+      "Yung-Hsu Yang",
+      "Luc Van Gool",
+      "Bernt Schiele"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2410.01806"
+    }
+  },
+  {
+    "title": "Camera-Only 3D Panoptic Scene Completion for Autonomous Driving through Differentiable Object Shapes",
+    "year": 2025,
+    "venue": "Conference on Computer Vision and Pattern Recognition (CVPR 2025) (Workshop)",
+    "authors": [
+      "Nicola Marinello",
+      "Simen Cassiman",
+      "Jonas Heylen",
+      "Marc Proesmans",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://openaccess.thecvf.com/content/CVPR2025W/WAD/html/Marinello_Camera-Only_3D_Panoptic_Scene_Completion_for_Autonomous_Driving_through_Differentiable_CVPRW_2025_paper.html"
+    }
+  },
+  {
+    "title": "Splat-SLAM: Globally Optimized RGB-only SLAM with 3D Gaussians",
+    "year": 2025,
+    "venue": "Conference on Computer Vision and Pattern Recognition (CVPR 2025) (Workshop)",
+    "authors": [
+      "Erik Sandström",
+      "Ganlin Zhang",
+      "Keisuke Tateno",
+      "Michael Oechsle",
+      "Michael Niemeyer",
+      "Youmin Zhang",
+      "Manthan Patel",
+      "Luc Van Gool",
+      "Martin Oswald",
+      "Federico Tombari"
+    ],
+    "links": {
+      "paper": "https://openaccess.thecvf.com/content/CVPR2025W/VOCVALC/html/Sandstrom_Splat-SLAM_Globally_Optimized_RGB-only_SLAM_with_3D_Gaussians_CVPRW_2025_paper.html"
+    }
+  },
+  {
+    "title": "Benchmarking Multi-modal Semantic Segmentation under Sensor Failures: Missing and Noisy Modality Robustness",
+    "year": 2025,
+    "venue": "Conference on Computer Vision and Pattern Recognition (CVPR 2025) (Workshop)",
+    "authors": [
+      "Chenfei Liao",
+      "Kaiyu Lei",
+      "Xu Zheng",
+      "Junha Moon",
+      "Zhixiong Wang",
+      "Yixuan Wang",
+      "Danda Pani Paudel",
+      "Luc Van Gool",
+      "Xuming Hu"
+    ],
+    "links": {
+      "paper": "https://openaccess.thecvf.com/content/CVPR2025W/TMM-OpenWorld/html/Liao_Benchmarking_Multi-modal_Semantic_Segmentation_under_Sensor_Failures_Missing_and_Noisy_CVPRW_2025_paper.html"
+    }
+  },
+  {
+    "title": "The Tenth NTIRE 2025 Image Denoising Challenge Report",
+    "year": 2025,
+    "venue": "Conference on Computer Vision and Pattern Recognition (CVPR 2025) (Workshop)",
+    "authors": [
+      "Lei Sun",
+      "Hang Guo",
+      "Bin Ren",
+      "Luc Van Gool",
+      "Radu Timofte",
+      "Yawei Li"
+    ],
+    "links": {
+      "paper": "https://openaccess.thecvf.com/content/CVPR2025W/NTIRE/html/Sun_The_Tenth_NTIRE_2025_Image_Denoising_Challenge_Report_CVPRW_2025_paper.html"
+    }
+  },
+  {
+    "title": "Learning to Prompt with Text Only Supervision for Vision-Language Models",
+    "year": 2025,
+    "venue": "AAAI Conference on Artificial Intelligence (Technical Track on Computer Vision III)",
+    "authors": [
+      "Muhammad Uzair Khattak",
+      "Muhammad Ferjad Naeem",
+      "Muzammal Naseer",
+      "Luc Van Gool",
+      "Federico Tombari"
+    ],
+    "links": {
+      "paper": "https://ojs.aaai.org/index.php/AAAI/article/view/32444"
+    }
+  },
+  {
+    "title": "EgoGaussian: Dynamic Scene Understanding from Egocentric Video with 3D Gaussian Splatting",
+    "year": 2025,
+    "venue": "International Conference on 3D Imaging, Modeling, Processing, Visualization and Transmission (3DIMPVT 2025)",
+    "authors": [
+      "Daiwei Zhang",
+      "Gengyan Li",
+      "Jiajie Li",
+      "Mickaël Bressieux",
+      "Otmar Hilliges",
+      "Marc Pollefeys",
+      "Luc Van Gool",
+      "Xi Wang"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/11125625/authors#authors"
+    }
+  },
+  {
+    "title": "Mipmap-GS: Let Gaussians Deform with Scale-Specific Mipmap for Anti-Aliasing Rendering",
+    "year": 2025,
+    "venue": "International Conference on 3D Vision (3DV 2025)",
+    "authors": [
+      "Jiameng Li",
+      "Yue Shi",
+      "Jiezhang Cao",
+      "Bingbing Ni",
+      "Wenjun Zhang",
+      "Kai Zhang",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/11125005"
+    }
+  },
+  {
+    "title": "A Large-Scale Dataset of Gaussian Splats and Their Self-Supervised Pretraining",
+    "year": 2025,
+    "venue": "International Conference on 3D Vision (3DV 2025)",
+    "authors": [
+      "Qi Ma",
+      "Yue Li",
+      "Bin Ren",
+      "Nicu Sebe",
+      "Ender Konukoglu",
+      "Theo Gevers",
+      "Luc Van Gool",
+      "Danda Pani Paudel"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/11125572/authors#authors"
+    }
+  },
+  {
+    "title": "Spatial-Temporal Graph Mamba for Music-Guided Dance Video Synthesis",
+    "year": 2025,
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "authors": [
+      "Hao Tang",
+      "Ling Shao",
+      "Zhenyu Zhang",
+      "Luc Van Gool",
+      "Nicu Sebe"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/11079799"
+    }
+  },
+  {
+    "title": "Test-Time Training for Hyperspectral Image Super-Resolution",
+    "year": 2025,
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "authors": [
+      "Ke Li",
+      "Luc Van Gool",
+      "Dengxin Dai"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10685469"
+    }
+  },
+  {
+    "title": "Guest Editorial: Introduction to the Special Section on Large-Scale Multimodal Learning: Universality, Robustness, Efficiency, and Beyond",
+    "year": 2025,
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "authors": [
+      "Peng Xu",
+      "Song Bai",
+      "Bowen Zhou",
+      "David Clifton",
+      "Andrea Vedaldi",
+      "Mihaela van der Schaar",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/11026038/authors#authors"
+    }
+  },
+  {
+    "title": "Enhanced Multi-Scale Cross-Attention for Person Image Generation",
+    "year": 2025,
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "authors": [
+      "Hao Tang",
+      "Ling Shao",
+      "Nicu Sebe",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10847781"
+    }
+  },
+  {
+    "title": "Condition-Invariant Semantic Segmentation",
+    "year": 2025,
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "authors": [
+      "Christos Sakaridis",
+      "David Bruggemann",
+      "Fisher Yu",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10840277"
+    }
+  },
+  {
+    "title": "When super-resolution meets camouflaged object detection: A comparison study",
+    "year": 2025,
+    "venue": "Computer Vision and Image Understanding",
+    "authors": [
+      "Juan Wen",
+      "Shupeng Cheng",
+      "Weiyan Hou",
+      "Luc Van Gool",
+      "Radu Timofte"
+    ],
+    "links": {
+      "paper": "https://www.sciencedirect.com/science/article/pii/S107731422500044X?via%3Dihub"
+    }
+  },
+  {
+    "title": "New Applications of 3SUM-Counting in Fine-Grained Complexity and Pattern Matching",
+    "year": 2025,
+    "venue": "ACM-SIAM Symposium on Discrete Algorithms (SODA 2025)",
+    "authors": [
+      "Nick Fischer",
+      "Ce Jin",
+      "Yinzhan Xu"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2410.20764"
+    }
+  },
+  {
+    "title": "Sumsets, 3SUM, Subset Sum: Now for Real!",
+    "year": 2025,
+    "venue": "ACM-SIAM Symposium on Discrete Algorithms (SODA 2025)",
+    "authors": [
+      "Nick Fischer"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2410.21953"
+    }
+  },
+  {
+    "title": "Recognizing Sumsets is NP-Complete",
+    "year": 2025,
+    "venue": "ACM-SIAM Symposium on Discrete Algorithms (SODA 2025)",
+    "authors": [
+      "Amir Abboud",
+      "Nick Fischer",
+      "Ron Safier",
+      "Nathan Wallheimer"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2410.18661"
+    }
+  },
+  {
+    "title": "Beating Bellman’s Algorithm for Subset Sum",
+    "year": 2025,
+    "venue": "ACM-SIAM Symposium on Discrete Algorithms (SODA 2025)",
+    "authors": [
+      "Karl Bringmann",
+      "Nick Fischer",
+      "Vasileios Nakos"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2410.21942"
+    }
+  },
+  {
+    "title": "A Cut-Matching Game for Constant-Hop Expanders",
+    "year": 2025,
+    "venue": "ACM-SIAM Symposium on Discrete Algorithms (SODA 2025)",
+    "authors": [
+      "Bernhard Haeupler",
+      "Jonas Huebotter",
+      "Mohsen Ghaffari"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2211.11726"
+    }
+  },
+  {
+    "title": "Fast and Simple Sorting Using Partial Information",
+    "year": 2025,
+    "venue": "ACM-SIAM Symposium on Discrete Algorithms (SODA 2025)",
+    "authors": [
+      "Bernhard Haeupler",
+      "Richard Hladík",
+      "John Iacono",
+      "Vaclav Rozhon",
+      "Robert Tarjan",
+      "Jakub Tětek"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2404.04552"
+    }
+  },
+  {
+    "title": "Testing Identity of Continuous Distributions in Polylogarithmic Space",
+    "year": 2025,
+    "venue": "SIAM Symposium on Simplicity in Algorithms (SOSA 2025)",
+    "authors": [
+      "Christian Janos Lebeda",
+      "Jakub Tetek"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2410.22123"
+    }
+  },
+  {
+    "title": "A Simple Parallel Algorithm with Near-Linear Work for Negative-Weight",
+    "year": 2025,
+    "venue": "SIAM Symposium on Simplicity in Algorithms (SOSA 2025)",
+    "authors": [
+      "Nick Fischer",
+      "Bernhard Haeupler",
+      "Rustam Latypov",
+      "Antti Roeyskoe",
+      "Aurelio Sulser"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2410.20959"
+    }
+  },
+  {
+    "title": "Faster Edge Coloring by Partition Sieving",
+    "year": 2025,
+    "venue": "42nd International Symposium on Theoretical Aspects of Computer Science (STACS 2025)",
+    "authors": [
+      "Shyan Akmal",
+      "Tomohiro Koana"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2501.05570"
+    }
+  },
+  {
+    "title": "GRAIN: Exact Graph Reconstruction from Gradients",
+    "year": 2025,
+    "venue": "International Conference on Learning Representations (ICLR 2025)",
+    "authors": [
+      "Maria Drencheva",
+      "Ivo Petrov",
+      "Maximilian Baader",
+      "Dimitar I. Dimitrov",
+      "Martin Vechev"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2503.01838"
+    }
+  },
+  {
+    "title": "Locate Anything on Earth: Advancing Open-Vocabulary Object Detection for Remote Sensing Community",
+    "year": 2025,
+    "venue": "AAAI Conference on Artificial Intelligence (AAAI 2025)",
+    "authors": [
+      "Jiancheng Pan",
+      "Yanxing Liu",
+      "Yuqian Fu",
+      "Muyuan Ma",
+      "Jiahao Li",
+      "Danda Pani Paudel",
+      "Luc Van Gool",
+      "Xiaomeng Huang"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2408.09110"
+    }
+  },
+  {
+    "title": "CAFuser: Condition-Aware Multimodal Fusion for Robust Semantic Perception of Driving Scenes",
+    "year": 2025,
+    "venue": "The IEEE Robotics and Automation Letters (RA-L)",
+    "authors": [
+      "Tim Broedermann",
+      "Christos Sakaridis",
+      "Yuqian Fu",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2410.10791"
+    }
+  },
+  {
+    "title": "One2Any: One-Reference 6D Pose Estimation for Any Object",
+    "year": 2025,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2025)",
+    "authors": [
+      "Mengya Liu",
+      "Siyuan Li",
+      "Ajad Chhatkuli",
+      "Prune Truong",
+      "Luc Van Gool",
+      "Federico Tombari"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2505.04109"
+    }
+  },
+  {
+    "title": "PBR-NeRF: Inverse Rendering with Physics-Based Neural Fields",
+    "year": 2025,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2025)",
+    "authors": [
+      "Sean Wu",
+      "Shamik Basu",
+      "Tim Broedermann",
+      "Luc Van Gool",
+      "Christos Sakaridis"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2412.09680"
+    }
+  },
+  {
+    "title": "MarkushGrapher: Joint Visual and Textual Recognition of Markush Structures",
+    "year": 2025,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2025)",
+    "authors": [
+      "Lucas Morin",
+      "Valéry Weber",
+      "Ahmed Nassar",
+      "Gerhard Ingmar Meijer",
+      "Luc Van Gool",
+      "Yawei Li",
+      "Peter Staar"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2503.16096"
+    }
+  },
+  {
+    "title": "UniK3D: Universal Camera Monocular 3D Estimation",
+    "year": 2025,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2025)",
+    "authors": [
+      "Luigi Piccinelli",
+      "Christos Sakaridis",
+      "Mattia Segu",
+      "Yung-Hsu Yang",
+      "Siyuan Li",
+      "Wim Abbeloos",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2503.16591"
+    }
+  },
+  {
+    "title": "Think Small, Act Big: Primitive Prompt Learning for Lifelong Robot Manipulation",
+    "year": 2025,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2025)",
+    "authors": [
+      "Yuanqi Yao",
+      "Siao Liu",
+      "Haoming Song",
+      "Delin Qu",
+      "Qizhi Chen",
+      "Yan Ding",
+      "Bin Zhao",
+      "Zhigang Wang",
+      "Xuelong Li",
+      "Dong Wang"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2504.00420"
+    }
+  },
+  {
+    "title": "GaussianVLM: Scene-centric 3D Vision-Language Models using Language-aligned Gaussian Splats for Embodied Reasoning and Beyond",
+    "year": 2025,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2025)",
+    "authors": [
+      "Anna-Maria Halacheva",
+      "Jan-Nico Zaech",
+      "Xi Wang",
+      "Danda Pani Paudel",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2507.00886"
+    }
+  },
+  {
+    "title": "Leveraging Driver Field-of-View for Multimodal Ego-Trajectory Prediction",
+    "year": 2025,
+    "venue": "The International Conference on Learning Representations (ICLR 2025)",
+    "authors": [
+      "M. Eren Akbiyik",
+      "Nedko Savov",
+      "Danda Pani Paudel",
+      "Nikola Popovic",
+      "Christian Vater",
+      "Otmar Hilliges",
+      "Luc Van Gool",
+      "Xi Wang"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2312.08558"
+    }
+  },
+  {
+    "title": "Exploration-Driven Generative Interactive Environments",
+    "year": 2025,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2025)",
+    "authors": [
+      "Nedko Savov",
+      "Naser Kazemi",
+      "Mohammad Mahdi",
+      "Danda Pani Paudel",
+      "Xi Wang",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2504.02515"
+    }
+  },
+  {
+    "title": "Complexity Experts are Task-Discriminative Learners for Any Image Restoration",
+    "year": 2025,
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2025)",
+    "authors": [
+      "Eduard Zamfir",
+      "Zongwei Wu",
+      "Nancy Mehta",
+      "Yuedong Tan",
+      "Danda Pani Paudel",
+      "Yulun Zhang",
+      "Radu Timofte"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2411.18466"
+    }
+  },
+  {
+    "title": "Simulating the non-Hermitian dynamics of financial option pricing with quantum computers",
+    "year": 2025,
+    "venue": "Nature Scientific Reports (2025)",
+    "authors": [
+      "Swagat Kumar",
+      "Colin Michael Wilmott"
+    ],
+    "links": {
+      "paper": "https://www.nature.com/articles/s41598-025-97245-3"
+    }
+  },
+  {
+    "title": "ReVLA: Reverting Visual Domain Limitation of Robotic Foundation Models",
+    "year": 2025,
+    "venue": "International Conference on Robotics and Automation (ICRA 2025)",
+    "authors": [
+      "Sombit Dey",
+      "Jan-Nico Zaech",
+      "Nikolay Nikolov",
+      "Luc Van Gool",
+      "Danda Pani Paudel"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2409.15250"
+    }
+  },
+  {
+    "title": "Near-Optimal Directed Low-Diameter Decompositions",
+    "year": 2025,
+    "venue": "EATCS International Colloquium on Automata, Languages and Programming (ICALP 2025)",
+    "authors": [
+      "Karl Bringmann",
+      "Nick Fischer",
+      "Bernhard Haeupler",
+      "Rustam Latypov"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2502.05687"
+    }
+  },
+  {
+    "title": "Bounded Edit Distance: Optimal Static and Dynamic Algorithms for Small Integer Weights",
+    "year": 2025,
+    "venue": "ACM Symposium on Theory of Computing (STOC 2025)",
+    "authors": [
+      "Egor Gorbachev",
+      "Tomasz Kociumaka"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2404.06401"
+    }
+  },
+  {
+    "title": "On the Hardness Hierarchy for the O(n √log n) Complexity in the Word RAM",
+    "year": 2025,
+    "venue": "ACM Symposium on Theory of Computing (STOC 2025)",
+    "authors": [
+      "Dominik Kempa",
+      "Tomasz Kociumaka"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2503.21049"
+    }
+  },
+  {
+    "title": "Near-Universally-Optimal Differentially Private Minimum Spanning Trees",
+    "year": 2025,
+    "venue": "6th Symposium on Foundations of Responsible Computing (FORC 2025)",
+    "authors": [
+      "Richard Hladík",
+      "Jakub Tětek"
+    ],
+    "links": {
+      "paper": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol329-forc2025/LIPIcs.FORC.2025.6/LIPIcs.FORC.2025.6.pdf"
+    },
+    "note": "(Best Student Paper award)"
+  },
+  {
+    "title": "Smooth Sensitivity Revisited: Towards Optimality",
+    "year": 2025,
+    "venue": "6th Symposium on Foundations of Responsible Computing (FORC 2025)",
+    "authors": [
+      "Richard Hladík",
+      "Jakub Tětek"
+    ],
+    "links": {
+      "paper": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol329-forc2025/LIPIcs.FORC.2025.2/LIPIcs.FORC.2025.2.pdf"
+    }
+  },
+  {
+    "title": "On the Impact of Performative Risk Minimization for Binary Random Variables",
+    "year": 2025,
+    "venue": "International Conference on Machine Learning (ICML 2025)",
+    "authors": [
+      "Nikita Tsoy",
+      "Ivan Kirev",
+      "Negin Rahimiyazdi",
+      "Nikola Konstantinov"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2502.02331"
+    }
+  },
+  {
+    "title": "MathConstruct: Challenging LLM Reasoning with Constructive Proofs",
+    "year": 2025,
+    "venue": "International Conference on Machine Learning (ICML 2025); ICLR 2025 (Workshop)",
+    "authors": [
+      "Mislav Balunović",
+      "Jasper Dekoninck",
+      "Nikola Jovanović",
+      "Ivo Petrov",
+      "Martin Vechev"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2502.10197"
+    }
+  },
+  {
+    "title": "LARP: Learner-Agnostic Robust Data Prefiltering",
+    "year": 2025,
+    "venue": "International Conference on Machine Learning (ICML 2025) (Workshop)",
+    "authors": [
+      "Kristian Minchev",
+      "Dimitar Iliev Dimitrov",
+      "Nikola Konstantinov"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2506.20573"
+    }
+  },
+  {
+    "title": "Proof or Bluff? Evaluating LLMs on 2025 USA Math Olympiad",
+    "year": 2025,
+    "venue": "International Conference on Machine Learning (ICML 2025) (Workshop)",
+    "authors": [
+      "Ivo Petrov",
+      "Jasper Dekoninck",
+      "Lyuben Baltadzhiev",
+      "Maria Drencheva",
+      "Kristian Minchev",
+      "Mislav Balunović",
+      "Nikola Jovanović",
+      "Martin Vechev"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2503.21934"
+    }
+  },
+  {
+    "title": "The Open Proof Corpus: A Large-Scale Study of LLM-Generated Mathematical Proofs",
+    "year": 2025,
+    "venue": "International Conference on Machine Learning (ICML 2025) (Workshop)",
+    "authors": [
+      "Jasper Dekoninck",
+      "Ivo Petrov",
+      "Kristian Minchev",
+      "Mislav Balunovic",
+      "Martin Vechev",
+      "Miroslav Marinov",
+      "Maria Drencheva",
+      "Lyuba Konova",
+      "Milen Shumanov",
+      "Kaloyan Tsvetkov",
+      "Nikolay Drenchev",
+      "Lazar Todorov",
+      "Kalina Nikolova",
+      "Nikolay Georgiev",
+      "Vanesa Kalinkova",
+      "Margulan Ismoldayev"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2506.21621"
+    }
+  },
+  {
+    "title": "Sequential Multi-Object Grasping with One Dexterous Hand",
+    "year": 2025,
+    "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025)",
+    "authors": [
+      "Sicheng He",
+      "Zeyu Shangguan",
+      "Kuanning Wang",
+      "Yongchong Gu",
+      "Yuqian Fu",
+      "Yanwei Fu",
+      "Daniel Seita"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2503.09078"
+    }
+  },
+  {
+    "title": "RAG-6DPose: Retrieval-Augmented 6D Pose Estimation via Leveraging CAD as Knowledge Base",
+    "year": 2025,
+    "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025)",
+    "authors": [
+      "Kuanning Wang",
+      "Yuqian Fu",
+      "Tianyu Wang",
+      "Yanwei Fu",
+      "Longfei Liang",
+      "Yu-Gang Jiang",
+      "Xiangyang Xue"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2506.18856"
+    }
+  },
+  {
+    "title": "XTrack: Multimodal Training Boosts RGB-X Video Object Trackers",
+    "year": 2025,
+    "venue": "International Conference on Computer Vision (ICCV 2025)",
+    "authors": [
+      "Yuedong Tan",
+      "Zongwei Wu",
+      "Yuqian Fu",
+      "Zhuyun Zhou",
+      "Guolei Sun",
+      "Eduard Zamfi",
+      "Chao Ma",
+      "Danda Pani Paudel",
+      "Luc Van Gool",
+      "Radu Timofte"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2405.17773"
+    }
+  },
+  {
+    "title": "ObjectRelator: Enabling Cross-View Object Relation Understanding in Ego-Centric and Exo-Centric Videos",
+    "year": 2025,
+    "venue": "International Conference on Computer Vision (ICCV 2025)",
+    "authors": [
+      "Yuqian Fu",
+      "Runze Wang",
+      "Yanwei Fu",
+      "Danda Pani Paudel",
+      "Xuanjing Huang",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2411.19083"
+    }
+  },
+  {
+    "title": "Reducing Unimodal Bias in Multi-Modal Semantic Segmentation with Multi-Scale Functional Entropy Regularization",
+    "year": 2025,
+    "venue": "International Conference on Computer Vision (ICCV 2025)",
+    "authors": [
+      "Xu Zheng",
+      "Yuanhuiyi Lyu",
+      "Lutao Jiang",
+      "Danda Pani Paudel",
+      "Luc Van Gool",
+      "Xuming Hu"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2505.06635"
+    }
+  },
+  {
+    "title": "OmniSAM: Omnidirectional Segment Anything Model for UDA in Panoramic Semantic Segmentation",
+    "year": 2025,
+    "venue": "International Conference on Computer Vision (ICCV 2025)",
+    "authors": [
+      "Ding Zhong",
+      "Xu Zheng",
+      "Chenfei Liao",
+      "Yuanhuiyi Lyu",
+      "Jialei Chen",
+      "Shengyang Wu",
+      "Linfeng Zhang",
+      "Xuming Hu"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2503.07098"
+    }
+  },
+  {
+    "title": "Unlocking Constraints: Source-Free Occlusion-Aware Seamless Segmentation",
+    "year": 2025,
+    "venue": "International Conference on Computer Vision (ICCV 2025)",
+    "authors": [
+      "Yihong Cao",
+      "Jiaming Zhang",
+      "Xu Zheng",
+      "Hao Shi",
+      "Kunyu Peng",
+      "Hang Liu",
+      "Kailun Yang",
+      "Hui Zhang"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2506.21198"
+    }
+  },
+  {
+    "title": "CIARD: Cyclic Iterative Adversarial Robustness Distillation",
+    "year": 2025,
+    "venue": "International Conference on Computer Vision (ICCV 2025)",
+    "authors": [
+      "Liming Lu",
+      "Shuchao Pang",
+      "Xu Zheng",
+      "Xiang GU",
+      "Anan Du",
+      "Yunhuai Liu",
+      "Yongbin Zhou"
+    ],
+    "links": {}
+  },
+  {
+    "title": "Low-Light Image Enhancement using Event-Based Illumination Estimation",
+    "year": 2025,
+    "venue": "International Conference on Computer Vision (ICCV 2025)",
+    "authors": [
+      "Lei Sun",
+      "Yuhan Bao",
+      "Jiajun Zhai",
+      "Jingyun Liang",
+      "Yulun Zhang",
+      "Kaiwei Wang",
+      "Danda Pani Paudel",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2504.09379"
+    }
+  },
+  {
+    "title": "What You Have is What You Track: Adaptive and Robust Multimodal Tracking",
+    "year": 2025,
+    "venue": "International Conference on Computer Vision (ICCV 2025)",
+    "authors": [
+      "Yuedong Tan",
+      "Jiawei Shao",
+      "Eduard Zamfir",
+      "Ruanjun Li",
+      "Zhaochong An",
+      "Chao Ma",
+      "Danda Pani Paudel",
+      "Luc Van Gool",
+      "Radu Timofte",
+      "Zongwei Wu"
+    ],
+    "links": {}
+  },
+  {
+    "title": "SceneSplat: Gaussian Splatting-based Scene Understanding with Vision-Language Pretraining",
+    "year": 2025,
+    "venue": "International Conference on Computer Vision (ICCV 2025)",
+    "authors": [
+      "Yue Li",
+      "Qi Ma",
+      "Runyi Yang",
+      "Huapeng Li",
+      "Mengjiao Ma",
+      "Bin Ren",
+      "Nikola Popovic",
+      "Nicu Sebe",
+      "Ender Konukoglu",
+      "Theo Gevers",
+      "Luc Van Gool",
+      "Martin R. Oswald",
+      "Danda Pani Paudel"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2503.18052"
+    }
+  },
+  {
+    "title": "Articulate3D: Holistic Understanding of 3D Scenes as Universal Scene Description",
+    "year": 2025,
+    "venue": "International Conference on Computer Vision (ICCV 2025)",
+    "authors": [
+      "Anna-Maria Halacheva",
+      "Yang Miao",
+      "Jan-Nico Zaech",
+      "Xi Wang",
+      "Luc Van Gool",
+      "Danda Pani Paudel"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2412.01398"
+    }
+  },
+  {
+    "title": "Understanding Museum Exhibits using Vision-Language Reasoning",
+    "year": 2025,
+    "venue": "International Conference on Computer Vision (ICCV 2025)",
+    "authors": [
+      "Ada-Astrid Balauca",
+      "Sanjana Garai",
+      "Stefan Balauca",
+      "Rasesh Udayakumar Shetty",
+      "Naitik Agrawal",
+      "Dhwanil Subhashbhai Shah",
+      "Yuqian Fu",
+      "Xi Wang",
+      "Kristina Toutanova",
+      "Danda Pani Paudel",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2412.01370"
+    }
+  },
+  {
+    "title": "3D-MOOD: Lifting 2D to 3D for Monocular Open-Set Object Detection",
+    "year": 2025,
+    "venue": "International Conference on Computer Vision (ICCV 2025)",
+    "authors": [
+      "Yung-Hsu Yang",
+      "Luigi Piccinelli",
+      "Mattia Segu",
+      "Siyuan Li",
+      "Rui Huang",
+      "Yuqian Fu",
+      "Marc Pollefeys",
+      "Hermann Blum",
+      "Zuria Bauer"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2507.23567"
+    }
+  },
+  {
+    "title": "MOBIUS: Big-to-Mobile Universal Image Segmentation via Multi-modal Bottleneck Fusion and Calibrated Decoder Pruning",
+    "year": 2025,
+    "venue": "International Conference on Computer Vision (ICCV 2025)",
+    "authors": [
+      "Mattia Segu",
+      "Marta Tintore Gazulla",
+      "Yongqin Xian",
+      "Luc Van Gool",
+      "Federico Tombari"
+    ],
+    "links": {}
+  },
+  {
+    "title": "Split Matching for Inductive Zero-shot Semantic Segmentation",
+    "year": 2025,
+    "venue": "The British Machine Vision Conference (BMVC 2025)",
+    "authors": [
+      "Jialei Chen",
+      "Xu Zheng",
+      "Dongyue Li",
+      "Chong Yi",
+      "Seigo Ito",
+      "Danda Pani Paudel",
+      "Luc Van Gool",
+      "Hiroshi Murase",
+      "Daisuke Deguchi"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2505.05023"
+    }
+  },
+  {
+    "title": "Occam’s LGS: An Efficient Approach for Language Gaussian Splatting",
+    "year": 2025,
+    "venue": "The British Machine Vision Conference (BMVC 2025)",
+    "authors": [
+      "Jiahuan Cheng",
+      "Jan-Nico Zaech",
+      "Luc Van Gool",
+      "Danda Pani Paudel"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2412.01807"
+    }
+  },
+  {
+    "title": "Round Elimination via Self-Reduction: Closing Gaps for Distributed Maximal Matching",
+    "year": 2025,
+    "venue": "IEEE Symposium on Foundations of Computer Science (FOCS 2025)",
+    "authors": [
+      "Seri Khoury",
+      "Aaron Schild"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2505.15654"
+    }
+  },
+  {
+    "title": "Hardness of Median and Center in the Ulam Metric",
+    "year": 2025,
+    "venue": "The European Symposium on Algorithms (ESA 2025)",
+    "authors": [
+      "Nick Fischer",
+      "Elazar Goldenberg",
+      "Mursalin Habib",
+      "Karthik C. S"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2504.16437"
+    }
+  },
+  {
+    "title": "ℓ2/ℓ2 Sparse Recovery via Weighted Hypergraph Peeling",
+    "year": 2025,
+    "venue": "The 57th ACM Symposium on Theory of Computing (STOC 2025)",
+    "authors": [
+      "Nick Fischer",
+      "Vasileios Nakos"
+    ],
+    "links": {}
+  },
+  {
+    "title": "Near-Optimal Directed Low-Diameter Decompositions",
+    "year": 2025,
+    "venue": "International Colloquium on Automata, Languages and Programming (ICALP 2025)",
+    "authors": [
+      "Karl Bringmann",
+      "Nick Fischer",
+      "Bernhard Haeupler",
+      "Rustam Latypov"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2502.05687"
+    }
+  },
+  {
+    "title": "Length-Constrained Directed Expander Decomposition and Length-Constrained Vertex-Capacitated Flow Shortcuts",
+    "year": 2025,
+    "venue": "European Symposium on Algorithms (ESA 2025)",
+    "authors": [
+      "Bernhard Haeupler",
+      "Yaowei Long",
+      "Thatchaphol Saranurak",
+      "Shengzhe Wang"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2503.23217"
+    }
+  },
+  {
+    "title": "Parallel (1+ε)-Approximate Multi-Commodity Mincost Flow in Almost Optimal Depth and Work",
+    "year": 2025,
+    "venue": "IEEE Symposium on Foundations of Computer Science (FOCS 2025)",
+    "authors": [
+      "Bernhard Haeupler",
+      "Yonggang Jiang",
+      "Yaowei Long",
+      "Thatchaphol Saranurak",
+      "Shengzhe Wang"
+    ],
+    "links": {}
+  },
+  {
+    "title": "A Faster Algorithm for Constrained Correlation Clustering",
+    "year": 2025,
+    "venue": "Symposium on Theoretical Aspects of Computer Science (STACS 2025)",
+    "authors": [
+      "Nick Fischer",
+      "Evangelos Kipouridis",
+      "Jonas Klausen",
+      "Mikkel Thorup"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2501.03154"
+    }
+  },
+  {
+    "title": "All-Pairs Shortest Paths with Few Weights per Node",
+    "year": 2025,
+    "venue": "The 57th ACM Symposium on Theory of Computing (STOC 2025)",
+    "authors": [
+      "Amir Abboud",
+      "Nick Fischer",
+      "Ce Jin",
+      "Virginia Vassilevska Williams",
+      "Zoe Xi"
+    ],
+    "links": {}
+  },
+  {
+    "title": "The Role of Regularity in (Hyper-)Clique Detection and Implications for Optimizing Boolean CSPs",
+    "year": 2025,
+    "venue": "International Colloquium on Automata, Languages and Programming (ICALP 2025)",
+    "authors": [
+      "Nick Fischer",
+      "Marvin Künnemann",
+      "Mirza Redzic",
+      "Julian Stieß"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2505.17314"
+    }
+  },
+  {
+    "title": "A Simple Algorithm for Trimmed Multipoint Evaluation",
+    "year": 2025,
+    "venue": "European Symposium on Algorithms (ESA 2025)",
+    "authors": [
+      "Nick Fischer",
+      "Melvin Kallmayer",
+      "Leo Wennmann"
+    ],
+    "links": {}
+  },
+  {
+    "title": "qblaze: An Efficient and Scalable Sparse Quantum Simulator",
+    "year": 2025,
+    "venue": "OOPSLA (SPLASH 2025)",
+    "authors": [
+      "Hristo Venev",
+      "Thien Udomsrirungruang",
+      "Dimitar Dimitrov",
+      "Timon Gehr",
+      "Martin Vechev"
+    ],
+    "links": {
+      "paper": "https://qblaze.org/oopsla2025.pdf",
+      "project": "https://qblaze.org/",
+      "code": "https://github.com/insait-institute/qblaze"
+    }
+  },
+  {
+    "title": "Graph Coloring Below Guarantees via Co-Triangle Packing",
+    "year": 2025,
+    "venue": "The International Symposium on Algorithms and Computation (ISAAC 2025)",
+    "authors": [
+      "Shyan Akmal",
+      "Tomohiro Koana"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2509.12347"
+    }
+  },
+  {
+    "title": "Generalist Robot Manipulation beyond Action Labeled Data",
+    "year": 2025,
+    "venue": "The Conference on Robot Learning (CoRL 2025)",
+    "authors": [
+      "Alexander Spiridonov",
+      "Jan-Nico Zaech",
+      "Nikolay Nikolov",
+      "Luc Van Gool",
+      "Danda Pani Paudel"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2509.19958"
+    }
+  },
+  {
+    "title": "strategic-fl-sim: An Extensible Package for Simulating Strategic Behavior in Federated Learning",
+    "year": 2025,
+    "venue": "The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025) (Workshop)",
+    "authors": [
+      "Dimitar Chakarov",
+      "Nikola Konstantinov"
+    ],
+    "links": {
+      "paper": "https://openreview.net/pdf?id=wkDcZyEbeY"
+    }
+  },
+  {
+    "title": "Don’t Just Chase “Highlighted Tokens” in MLLMs: Revisiting Visual Holistic Context Retention",
+    "year": 2025,
+    "venue": "The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025)",
+    "authors": [
+      "Xin Zou",
+      "Di Lu",
+      "Yizhou Wang",
+      "Yibo Yan",
+      "Yuanhuiyi Lyu",
+      "Xu Zheng",
+      "Linfeng Zhang",
+      "Xuming Hu"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2510.02912"
+    }
+  },
+  {
+    "title": "StateSpaceDiffuser: Bringing Long Context to Diffusion World Models",
+    "year": 2025,
+    "venue": "The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025)",
+    "authors": [
+      "Nedko Savov",
+      "Naser Kazemi",
+      "Deheng Zhang",
+      "Danda Pani Paudel",
+      "Xi Wang",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2505.22246"
+    }
+  },
+  {
+    "title": "Domain-RAG: Retrieval-Guided Compositional Image Generation for Cross-Domain Few-Shot Object Detection",
+    "year": 2025,
+    "venue": "The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025)",
+    "authors": [
+      "Yu Li",
+      "Xingyu Qiu",
+      "Yuqian Fu",
+      "Jie Chen",
+      "Tianwen Qian",
+      "Xu Zheng",
+      "Danda Pani Paudel",
+      "Yanwei Fu",
+      "Xuanjing Huang",
+      "Luc Van Gool",
+      "Yu-Gang Jiang"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2506.05872"
+    }
+  },
+  {
+    "title": "LangHOPS: Language Grounded Hierarchical Open-Vocabulary Part Segmentation",
+    "year": 2025,
+    "venue": "The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025)",
+    "authors": [
+      "Yang Miao",
+      "Jan-Nico Zaech",
+      "Xi Wang",
+      "Fabien Despinoy",
+      "Danda Pani Paudel",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://neurips.cc/virtual/2025/poster/115443"
+    }
+  },
+  {
+    "title": "MixAT: Combining Continuous and Discrete Adversarial Training for LLMs",
+    "year": 2025,
+    "venue": "The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025)",
+    "authors": [
+      "Csaba Dékány",
+      "Stefan Balauca",
+      "Robin Staab",
+      "Dimitar I. Dimitrov",
+      "Martin Vechev"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2505.16947"
+    }
+  },
+  {
+    "title": "GaussianWorld: A Large Dataset and Comprehensive Benchmark for Language Gaussian Splatting",
+    "year": 2025,
+    "venue": "NeurIPS 2025 (Dataset and benchmark track)",
+    "authors": [
+      "Mengjiao Ma",
+      "Qi Ma",
+      "Yue Li",
+      "Jiahuan Cheng",
+      "Runyi Yang",
+      "Bin Ren",
+      "Nikola Popovic",
+      "Mingqiang Wei",
+      "Nicu Sebe",
+      "Ender Konukoglu",
+      "Luc Van Gool",
+      "Theo Gevers",
+      "Martin R. Oswald",
+      "Danda Pani Paudel"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2506.08710"
+    }
+  },
+  {
+    "title": "SPEAR++: Scaling Gradient Inversion via Sparse Dictionary Learning",
+    "year": 2025,
+    "venue": "NeurIPS 2025 (Workshop)",
+    "authors": [
+      "Dimitar I. Dimitrov",
+      "Maximilian Baader",
+      "Mark Niklas Müller",
+      "Martin Vechev"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2403.03945"
+    }
+  },
+  {
+    "title": "Autonomous Vehicle Controllers From End-to-End Differentiable Simulation",
+    "year": 2025,
+    "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025)",
+    "authors": [
+      "Asen Nachkov",
+      "Danda Pani Paudel",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2409.07965"
+    }
+  },
+  {
+    "title": "Gaussian Loss Smoothing Enables Certified Training with Tight Convex Relaxations",
+    "year": 2025,
+    "venue": "Transactions on Machine Learning Research (TMLR 2025)",
+    "authors": [
+      "Stefan Balauca",
+      "Mark Niklas Müller",
+      "Yuhao Mao",
+      "Maximilian Baader",
+      "Marc Fischer",
+      "Martin Vechev"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2403.07095"
+    }
+  },
+  {
+    "title": "CTBENCH: A Library and Benchmark for Certified Training",
+    "year": 2025,
+    "venue": "2025 Forty-Second International Conference on Machine Learning (ICML 2025)",
+    "authors": [
+      "Yuhao Mao",
+      "Stefan Balauca",
+      "Martin Vechev"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2406.04848"
+    }
+  },
+  {
+    "title": "2D Feature Distillation for Weakly- and Semi-Supervised 3D Semantic Segmentation",
+    "year": 2024,
+    "venue": "IEEE Workshop on Applications of Computer Vision (WACV 2024)",
+    "authors": [
+      "Ozan Unal",
+      "Dengxin Dai",
+      "Lukas Hoyer",
+      "Yigit Baran Can",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10484032"
+    }
+  },
+  {
+    "title": "Optimizing Long-Term Robot Tracking with Multi-Platform Sensor Fusion",
+    "year": 2024,
+    "venue": "IEEE Workshop on Applications of Computer Vision (WACV 2024)",
+    "authors": [
+      "Giuliano Albanese",
+      "Arka Mitra",
+      "Jan-Nico Zaech",
+      "Yupeng Zhao",
+      "Ajad Chhatkuli",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10483912"
+    }
+  },
+  {
+    "title": "Beyond SOT: Tracking Multiple Generic Objects at Once",
+    "year": 2024,
+    "venue": "IEEE Workshop on Applications of Computer Vision (WACV 2024)",
+    "authors": [
+      "Christoph Mayer",
+      "Martin Danelljan",
+      "Ming-Hsuan Yang",
+      "Vittorio Ferrari",
+      "Luc Van Gool",
+      "Alina Kuznetsova"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10483760"
+    }
+  },
+  {
+    "title": "StyleGenes: Discrete and Efficient Latent Distributions for GANs",
+    "year": 2024,
+    "venue": "IEEE Workshop on Applications of Computer Vision (WACV 2024)",
+    "authors": [
+      "Evangelos Ntavelis",
+      "Mohamad Shahbazi",
+      "Iason Kastanis",
+      "Martin Danelljan",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10484010"
+    }
+  },
+  {
+    "title": "Video Foundation Model for Medical 3D Segmentation",
+    "year": 2024,
+    "venue": "27th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2024)",
+    "authors": [
+      "Qi Ma",
+      "Guolei Sun",
+      "Güney Ik Tombak",
+      "Shipra Jain",
+      "Niko Benjamin Huber",
+      "Luc Van Gool & Ender Konukoglu"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10484010"
+    }
+  },
+  {
+    "title": "Event-Free Moving Object Segmentation from Moving Ego Vehicle",
+    "year": 2024,
+    "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2024)",
+    "authors": [
+      "Zhuyun Zhou",
+      "Zongwei Wu",
+      "Danda Pani Paudel",
+      "Rémi Boutteau",
+      "Fan Yang",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10801383"
+    }
+  },
+  {
+    "title": "Ternary-Type Opacity and Hybrid Odometry for RGB NeRF-SLAM",
+    "year": 2024,
+    "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2024)",
+    "authors": [
+      "Junru Lin",
+      "Asen Nachkov",
+      "Songyou Peng",
+      "Luc Van Gool",
+      "Danda Pani Paudel"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10802493"
+    }
+  },
+  {
+    "title": "The BRAVO Semantic Segmentation Challenge Results in UNCV2024",
+    "year": 2024,
+    "venue": "The European Conference on Computer Vision (ECCV 2024) (workshop)",
+    "authors": [
+      "Tuan-Hung Vu",
+      "Eduardo Valle",
+      "Andrei Bursuc",
+      "Tommie Kerssies",
+      "Daan de Geus",
+      "Gijs Dubbelman",
+      "Long Qian",
+      "Bingke Zhu",
+      "Yingying Chen",
+      "Ming Tang",
+      "Jinqiao Wang",
+      "Tomáš Vojíř",
+      "Jan Šochman",
+      "Jiří Matas",
+      "Michael Smith",
+      "Frank Ferrie",
+      "Shamik Basu",
+      "Christos Sakaridis & Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://link.springer.com/chapter/10.1007/978-3-031-91585-7_18"
+    }
+  },
+  {
+    "title": "Self-supervised Shape Completion via Involution and Implicit Correspondences",
+    "year": 2024,
+    "venue": "The European Conference on Computer Vision (ECCV 2024)",
+    "authors": [
+      "Mengya Liu",
+      "Ajad Chhatkuli",
+      "Janis Postels",
+      "Luc Van Gool & Federico Tombari"
+    ],
+    "links": {
+      "paper": "https://link.springer.com/chapter/10.1007/978-3-031-73636-0_13"
+    }
+  },
+  {
+    "title": "ROMEO: Revisiting Optimization Methods for Reconstructing 3D Human-Object Interaction Models From Images",
+    "year": 2024,
+    "venue": "The European Conference on Computer Vision (ECCV 2024) (workshop)",
+    "authors": [
+      "Alexey Gavryushin",
+      "Yifei Liu",
+      "Daoji Huang",
+      "Yen-Ling Kuo",
+      "Julien Valentin",
+      "Luc Van Gool",
+      "Otmar Hilliges & Xi Wang"
+    ],
+    "links": {
+      "paper": "https://link.springer.com/chapter/10.1007/978-3-031-91575-8_5"
+    }
+  },
+  {
+    "title": "Investigating the Effectiveness of Cross-Attention to Unlock Zero-Shot Editing of Text-to-Video Diffusion Models",
+    "year": 2024,
+    "venue": "Computer Vision and Pattern Recognition Conference (CVPR 2024) (workshop)",
+    "authors": [
+      "Saman Motamed",
+      "Wouter Van Gansbeke",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10678104"
+    }
+  },
+  {
+    "title": "Towards Online Real-Time Memory-based Video Inpainting Transformers",
+    "year": 2024,
+    "venue": "Computer Vision and Pattern Recognition Conference (CVPR 2024) (workshop)",
+    "authors": [
+      "Guillaume Thiry",
+      "Hao Tang",
+      "Radu Timofte",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10678062"
+    }
+  },
+  {
+    "title": "Prompting Diffusion Representations for Cross-Domain Semantic Segmentation",
+    "year": 2024,
+    "venue": "The British Machine Vision Conference (BMVC 2024)",
+    "authors": [
+      "Rui Gong",
+      "Martin Danelljan",
+      "Han Sun",
+      "Julio Delgado Mangas",
+      "Nikolay Marin",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2307.02138"
+    }
+  },
+  {
+    "title": "Bringing Masked Autoencoders Explicit Contrastive Properties for Point Cloud Self-supervised Learning",
+    "year": 2024,
+    "venue": "Asian Conference on Computer Vision (ACCV 2024)",
+    "authors": [
+      "Bin Ren",
+      "Guofeng Mei",
+      "Danda Pani Paudel",
+      "Weijie Wang",
+      "Yawei Li",
+      "Mengyuan Liu",
+      "Rita Cucchiara",
+      "Luc Van Gool & Nicu Sebe"
+    ],
+    "links": {
+      "paper": "https://link.springer.com/chapter/10.1007/978-981-96-0963-5_4"
+    }
+  },
+  {
+    "title": "Physical Adversarial Attack Meets Computer Vision: A Decade Survey",
+    "year": 2024,
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "authors": [
+      "Hui Wei",
+      "Hao Tang",
+      "Xuemei Jia",
+      "Zhixiang Wang",
+      "Hanxun Yu",
+      "Zhubo Li",
+      "Shin’ichi Satoh",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10602786"
+    }
+  },
+  {
+    "title": "Graph Transformer GANs With Graph Masked Modeling for Architectural Layout Generation",
+    "year": 2024,
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "authors": [
+      "Hao Tang",
+      "Ling Shao",
+      "Nicu Sebe",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10401948"
+    }
+  },
+  {
+    "title": "Domain Adaptive and Generalizable Network Architectures and Training Strategies for Semantic Image Segmentation",
+    "year": 2024,
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "authors": [
+      "Lukas Hoyer",
+      "Dengxin Dai",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10266755"
+    }
+  },
+  {
+    "title": "A Unified Framework for Event-Based Frame Interpolation With Ad-Hoc Deblurring in the Wild",
+    "year": 2024,
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "authors": [
+      "Lei Sun",
+      "Daniel Gehrig",
+      "Christos Sakaridis",
+      "Mathias Gehrig",
+      "Jingyun Liang",
+      "Peng Sun",
+      "Zhijie Xu",
+      "Kaiwei Wang",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10794600/authors#authors"
+    }
+  },
+  {
+    "title": "Neural Vector Fields for Implicit Surface Representation and Inference",
+    "year": 2024,
+    "venue": "International Journal of Computer Vision",
+    "authors": [
+      "Edoardo Mello Rella",
+      "Ajad Chhatkuli",
+      "Ender Konukoglu & Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://link.springer.com/article/10.1007/s11263-024-02251-z"
+    }
+  },
+  {
+    "title": "A Unified and Interpretable Emotion Representation and Expression Generation.",
+    "year": 2024,
+    "venue": "Computer Vision and Pattern Recognition Conference (CVPR 2024)",
+    "authors": [
+      "Reni Paskaleva",
+      "Mykyta Holubakha",
+      "Andela Ilic",
+      "Saman Motamed",
+      "Luc Van Gool",
+      "Danda Paudel"
+    ],
+    "links": {
+      "paper": "https://drive.google.com/file/d/1bMC4euf8xcQh3awg2aMOdhfrg22i1JES/view?usp=sharing"
+    }
+  },
+  {
+    "title": "Single-Model and Any-Modality for Video Object Tracking",
+    "year": 2024,
+    "venue": "Computer Vision and Pattern Recognition Conference (CVPR 2024)",
+    "authors": [
+      "Zongwei Wu",
+      "Jilai Zheng",
+      "Xiangxuan Ren",
+      "Florin-Alexandru Vasluianu",
+      "Chao Ma",
+      "Danda Paudel",
+      "Luc Van Gool",
+      "Radu Timofte"
+    ],
+    "links": {
+      "code": "http://Single-Model%20and%20Any-Modality%20for%20Video%20Object%20Tracking"
+    }
+  },
+  {
+    "title": "Continuous Pose for Monocular Cameras in Neural Implicit Representation",
+    "year": 2024,
+    "venue": "Computer Vision and Pattern Recognition Conference (CVPR 2024)",
+    "authors": [
+      "Qi Ma",
+      "Danda Paudel",
+      "Ajad Chhatkuli",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "code": "https://github.com/qimaqi/Continuous-Pose-in-NeRF"
+    }
+  },
+  {
+    "title": "ExtDM: Dual Distribution Extrapolation Diffusion Model for Video Prediction",
+    "year": 2024,
+    "venue": "Computer Vision and Pattern Recognition Conference (CVPR 2024)",
+    "authors": [
+      "Zhicheng Zhang",
+      "Junyao Hu",
+      "Wentao Cheng",
+      "Danda Paudel",
+      "Jufeng Yang"
+    ],
+    "links": {
+      "paper": "https://drive.google.com/file/d/1T1AcaP9EujRiMOfRmN8JObqAAiI_xj7h/view?usp=sharing"
+    }
+  },
+  {
+    "title": "Probabilistic Sampling of Balanced K-Means using Adiabatic Quantum Computing",
+    "year": 2024,
+    "venue": "Computer Vision and Pattern Recognition Conference (CVPR 2024)",
+    "authors": [
+      "Jan-Nico Zaech",
+      "Martin Danelljan",
+      "Tolga Birdal",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2310.12153.pdf"
+    }
+  },
+  {
+    "title": "Deep Equilibrium Diffusion Restoration with Parallel Sampling",
+    "year": 2024,
+    "venue": "Computer Vision and Pattern Recognition Conference (CVPR 2024)",
+    "authors": [
+      "Jiezhang Cao",
+      "Yue Shi",
+      "Kai Zhang",
+      "Yulun Zhang",
+      "Radu Timofte",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "code": "https://github.com/caojiezhang/DeqIR?tab=readme-ov-file"
+    }
+  },
+  {
+    "title": "Know Your Neighbors: Improving Single-View Reconstruction via Spatial Vision-Language Reasoning",
+    "year": 2024,
+    "venue": "Computer Vision and Pattern Recognition Conference (CVPR 2024)",
+    "authors": [
+      "Rui Li",
+      "Tobias Fischer",
+      "Mattia Segu",
+      "Marc Pollefeys",
+      "Luc Van Gool",
+      "Federico Tombari"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2404.03658"
+    }
+  },
+  {
+    "title": "HandDiff: 3D Hand Pose Estimation with Diffusion on Image-Point Cloud",
+    "year": 2024,
+    "venue": "Computer Vision and Pattern Recognition Conference (CVPR 2024)",
+    "authors": [
+      "Wencan Cheng",
+      "Hao Tang",
+      "Luc Van Gool",
+      "Jong Hwan Ko"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2404.03159"
+    }
+  },
+  {
+    "title": "UniDepth: Universal Monocular Metric Depth Estimation",
+    "year": 2024,
+    "venue": "Computer Vision and Pattern Recognition Conference ( CVPR 2024)",
+    "authors": [
+      "Luigi Piccinelli",
+      "Yung-Hsu Yang",
+      "Christos Sakaridis",
+      "Mattia Segu",
+      "Siyuan Li",
+      "Luc Van Gool",
+      "Fisher Yu"
+    ],
+    "links": {}
+  },
+  {
+    "title": "Summarize the Past to Predict the Future: Natural Language Descriptions of Context Boost Multimodal Object Interaction Anticipation",
+    "year": 2024,
+    "venue": "Computer Vision and Pattern Recognition Conference (CVPR 2024)",
+    "authors": [
+      "Razvan Pasca",
+      "Alexey Gavryushin",
+      "Muhammad Hamza",
+      "Yen-Ling Kuo",
+      "Kaichun Mo",
+      "Luc Van Gool",
+      "Otmar Hilliges",
+      "Xi Wang"
+    ],
+    "links": {
+      "project": "https://eth-ait.github.io/transfusion-proj/"
+    }
+  },
+  {
+    "title": "Rethinking Few-shot 3D Point Cloud Semantic Segmentation",
+    "year": 2024,
+    "venue": "Computer Vision and Pattern Recognition Conference (CVPR 2024)",
+    "authors": [
+      "Zhaochong An",
+      "Guolei Sun",
+      "Yun Liu",
+      "Fayao Liu",
+      "Zongwei Wu",
+      "Dan Wang",
+      "Luc Van Gool",
+      "Serge Belongie"
+    ],
+    "links": {
+      "code": "https://github.com/ZhaochongAn/COSeg"
+    }
+  },
+  {
+    "title": "Vanishing-Point-Guided Video Semantic Segmentation of Driving Scenes .",
+    "year": 2024,
+    "venue": "Computer Vision and Pattern Recognition Conference (CVPR 2024)",
+    "authors": [
+      "Diandian Guo",
+      "Deng-Ping Fan",
+      "Tongyu Lu",
+      "Christos Sakaridis",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2401.15261.pdf"
+    }
+  },
+  {
+    "title": "Real-World Mobile Image Denoising Dataset with Efficient Baselines",
+    "year": 2024,
+    "venue": "Computer Vision and Pattern Recognition Conference (CVPR 2024)",
+    "authors": [
+      "Roman Flepp",
+      "Andrey Ignatov",
+      "Radu Timofte",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://openaccess.thecvf.com/content/CVPR2024/papers/Flepp_Real-World_Mobile_Image_Denoising_Dataset_with_Efficient_Baselines_CVPR_2024_paper.pdf"
+    }
+  },
+  {
+    "title": "Loopy-SLAM: Dense Neural SLAM with Loop Closures",
+    "year": 2024,
+    "venue": "Computer Vision and Pattern Recognition Conference (CVPR 2024)",
+    "authors": [
+      "Lorenzo Liso",
+      "Erik Sandström",
+      "Vladimir Yugay",
+      "Luc Van Gool",
+      "Martin R. Oswald"
+    ],
+    "links": {}
+  },
+  {
+    "title": "Matching Anything by Segmenting Anything",
+    "year": 2024,
+    "venue": "Computer Vision and Pattern Recognition Conference (CVPR 2024)",
+    "authors": [
+      "Siyuan Li",
+      "Lei Ke",
+      "Martin Danelljan",
+      "Luigi Piccinelli",
+      "Mattia Segu",
+      "Luc Van Gool",
+      "Fisher Yu"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2406.04221"
+    }
+  },
+  {
+    "title": "Equivariant Multi-Modality Image Fusion",
+    "year": 2024,
+    "venue": "Computer Vision and Pattern Recognition Conference (CVPR 2024)",
+    "authors": [
+      "Zixiang Zhao",
+      "Haowen Bai",
+      "Jiangshe Zhang",
+      "Yulun Zhang",
+      "Kai Zhang",
+      "Shuang Xu",
+      "Dongdong Chen",
+      "Radu Timofte",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2305.11443"
+    }
+  },
+  {
+    "title": "Provable Mutual Benefits from Federated Learning in Privacy-Sensitive Domains",
+    "year": 2024,
+    "venue": "Conference on Artificial Intelligence and Statistics (AISTATS 2024)",
+    "authors": [
+      "Nikita Tsoy",
+      "Anna Mihalkova",
+      "Teodora Todorova",
+      "Nikola Konstantinov"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2403.06672"
+    }
+  },
+  {
+    "title": "Hiding in Plain Sight: Disguising Data Stealing Attacks in Federated Learning",
+    "year": 2024,
+    "venue": "International Conference on Learning Representations (ICLR 2024)",
+    "authors": [
+      "Kostadin Garov",
+      "Dimitar I. Dimitrov",
+      "Nikola Jovanović",
+      "Martin Vechev"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2306.03013"
+    }
+  },
+  {
+    "title": "Ternary-type Opacity and Hybrid Odometry for RGB-only NeRF-SLAM",
+    "year": 2024,
+    "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2024)",
+    "authors": [
+      "Junru Lin",
+      "Asen Nachkov",
+      "Songyou Peng",
+      "Luc Van Gool",
+      "Danda Pani Paudel"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2312.13332"
+    }
+  },
+  {
+    "title": "Lego: Learning to Disentangle and Invert Concepts Beyond Object Appearance in Text-to-Image Diffusion Models",
+    "year": 2024,
+    "venue": "The European Conference on Computer Vision (ECCV 2024)",
+    "authors": [
+      "Saman Motamed",
+      "Danda Pani Paudel",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2311.13833"
+    }
+  },
+  {
+    "title": "SILC: Improving Vision Language Pretraining with Self-Distillation",
+    "year": 2024,
+    "venue": "The European Conference on Computer Vision  (ECCV 2024)",
+    "authors": [
+      "Muhammad Ferjad Naeem",
+      "Yongqin Xian",
+      "Xiaohua Zhai",
+      "Lukas Hoyer",
+      "Luc Van Gool",
+      "Federico Tombari"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2310.13355"
+    }
+  },
+  {
+    "title": "DGInStyle: Domain-Generalizable Semantic Segmentation with Image Diffusion Models and Stylized Semantic Control",
+    "year": 2024,
+    "venue": "The European Conference on Computer Vision  (ECCV 2024)",
+    "authors": [
+      "Yuru Jia",
+      "Lukas Hoyer",
+      "Shengyu Huang",
+      "Tianfu Wang",
+      "Luc Van Gool",
+      "Konrad Schindler",
+      "Anton Obukhov"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2312.03048"
+    }
+  },
+  {
+    "title": "SemiVL: Semi-Supervised Semantic Segmentation with Vision-Language Guidance",
+    "year": 2024,
+    "venue": "The European Conference on Computer Vision (ECCV 2024)",
+    "authors": [
+      "Lukas Hoyer",
+      "David Joseph Tan",
+      "Muhammad Ferjad Naeem",
+      "Luc Van Gool",
+      "Federico Tombari"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2311.16241"
+    }
+  },
+  {
+    "title": "MoVideo: Motion-Aware Video Generation with Diffusion Models",
+    "year": 2024,
+    "venue": "The European Conference on Computer Vision (ECCV 2024)",
+    "authors": [
+      "Jingyun Liang",
+      "Yuchen Fan",
+      "Kai Zhang",
+      "Radu Timofte",
+      "Luc Van Gool",
+      "Rakesh Ranjan"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2311.11325"
+    }
+  },
+  {
+    "title": "Cross-Domain Few-Shot Object Detection via Enhanced Open-Set Object Detector",
+    "year": 2024,
+    "venue": "The European Conference on Computer Vision (ECCV 2024)",
+    "authors": [
+      "Yuqian Fu",
+      "Yu Wang",
+      "Yixuan Pan",
+      "Lian Huai",
+      "Xingyu Qiu",
+      "Zeyu Shangguan",
+      "Tong Liu",
+      "Yanwei Fu",
+      "Luc Van Gool",
+      "Xingqun Jiang"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2402.03094"
+    }
+  },
+  {
+    "title": "MUSES: The Multi-Sensor Semantic Perception Dataset for Driving under Uncertainty",
+    "year": 2024,
+    "venue": "The European Conference on Computer Vision  (ECCV 2024)",
+    "authors": [
+      "Tim Brödermann",
+      "David Bruggemann",
+      "Christos Sakaridis",
+      "Kevin Ta",
+      "Odysseas Liagouris",
+      "Jason Corkill",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2401.12761"
+    }
+  },
+  {
+    "title": "Predicting Actions through Language Models @ Ego4D Long-Term Action Anticipation Challenge 2023",
+    "year": 2024,
+    "venue": "The European Conference on Computer Vision (ECCV 2024)",
+    "authors": [
+      "Daoji Huang",
+      "Otmar Hilliges",
+      "Luc Van Gool",
+      "Xi Wang Palm"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2306.16545"
+    }
+  },
+  {
+    "title": "Taming CLIP for Fine-grained and Structured Visual Understanding of Museum Exhibits",
+    "year": 2024,
+    "venue": "The European Conference on Computer Vision (ECCV 2024)",
+    "authors": [
+      "Ada-Astrid Balauca",
+      "Danda Pani Paudel",
+      "Kristina Toutanova",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2409.01690"
+    }
+  },
+  {
+    "title": "Four Ways to Improve Verbo-visual Fusion for Dense 3D Visual Grounding",
+    "year": 2024,
+    "venue": "The European Conference on Computer Vision (ECCV 2024)",
+    "authors": [
+      "Ozan Unal",
+      "Christos Sakaridis",
+      "Suman Saha",
+      "Luc Van Gool:"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2309.04561"
+    }
+  },
+  {
+    "title": "Bayesian Self-Training for Semi-Supervised 3D Segmentation",
+    "year": 2024,
+    "venue": "The European Conference on Computer Vision  (ECCV 2024)",
+    "authors": [
+      "Ozan Unal",
+      "Christos Sakaridis",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2409.08102"
+    }
+  },
+  {
+    "title": "MICDrop: Masking Image and Depth Features via Complementary Dropout for Domain-Adaptive Semantic Segmentation",
+    "year": 2024,
+    "venue": "The European Conference on Computer Vision (ECCV 2024)",
+    "authors": [
+      "Linyan Yang",
+      "Lukas Hoyer",
+      "Mark Weber",
+      "Tobias Fischer",
+      "Dengxin Dai",
+      "Laura Leal-Taixé",
+      "Marc Pollefeys",
+      "Daniel Cremers",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2408.16478"
+    }
+  },
+  {
+    "title": "SLAck: Semantic, Location, and Appearance Aware Open-Vocabulary Tracking",
+    "year": 2024,
+    "venue": "The European Conference on Computer Vision (ECCV 2024)",
+    "authors": [
+      "Siyuan Li",
+      "Lei Ke",
+      "Yung-Hsu Yang",
+      "Luigi Piccinelli",
+      "Mattia Segù",
+      "Martin Danelljan",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2409.11235"
+    }
+  },
+  {
+    "title": "Walker: Self-supervised Multiple Object Tracking by Walking on Temporal Object Appearance Graphs",
+    "year": 2024,
+    "venue": "The European Conference on Computer Vision (ECCV 2024)",
+    "authors": [
+      "Mattia Segu",
+      "Luigi Piccinelli",
+      "Siyuan Li",
+      "Luc Van Gool",
+      "Fisher Yu",
+      "Bernt Schiele"
+    ],
+    "links": {
+      "project": "https://eccv.ecva.net/virtual/2024/poster/385"
+    }
+  },
+  {
+    "title": "Mitigating Catastrophic Forgetting in Language Transfer via Model Merging",
+    "year": 2024,
+    "venue": null,
+    "authors": [
+      "Anton Alexandrov",
+      "Veselin Raychev",
+      "Mark Niklas Müller",
+      "Ce Zhang",
+      "Martin Vechev",
+      "Kristina Toutanova"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2407.08699"
+    }
+  },
+  {
+    "title": "Stereo Risk: A Continuous Modeling Approach to Stereo Matching",
+    "year": 2024,
+    "venue": "International Conference on Machine Learning (ICML 2024)",
+    "authors": [
+      "Ce Liu",
+      "Suryansh Kumar",
+      "Shuhang Gu",
+      "Radu Timofte",
+      "Yao Yao",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "slides": "https://openreview.net/pdf/564a60520f502e7842cb3d694a69d28d7f1c8414.pdf?fbclid=IwY2xjawEYYNZleHRuA2FlbQIxMAABHSUR-AtDZIOJsgv86YPMsv9ANV1xyRkiMsYuV58eWyjhmxJra07TvjePhw_aem_zHMExuV983r28hEf2aY_DA"
+    }
+  },
+  {
+    "title": "Simplicity Bias of Two-Layer Networks beyond Linearly Separable Data",
+    "year": 2024,
+    "venue": "International Conference on Machine Learning (ICML 2024)",
+    "authors": [
+      "Nikita Tsoy",
+      "Nikola Konstantinov"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2405.17299v1?fbclid=IwY2xjawEYYNVleHRuA2FlbQIxMAABHQ3KH4Q7OLAjy8XgJKZq_daoxrIdI3ItlPjQ-RvFkHSOFMh1y7l5J-tqqw_aem_d2GNoVLsyqzpVju94quC7Q"
+    }
+  },
+  {
+    "title": "Lightweight Image Super-Resolution via Flexible Meta Pruning",
+    "year": 2024,
+    "venue": "International Conference on Machine Learning (ICML 2024)",
+    "authors": [
+      "Yulun Zhang",
+      "Kai Zhang",
+      "Luc Van Gool",
+      "Martin Danelljan",
+      "Fisher Yu"
+    ],
+    "links": {
+      "slides": "https://openreview.net/pdf/12e4f003ea1e9dce982fda8bc21b21d8195ce951.pdf?fbclid=IwY2xjawEYYNJleHRuA2FlbQIxMAABHQIt_8qP2dRegmWWh5PyBJyXCz18K5toRPz-1CcqiHvtJsB9_dDOuA0j3Q_aem_YXevjqN7AG3GQMHHZa4yXg"
+    }
+  },
+  {
+    "title": "Image Fusion via Vision-Language Model",
+    "year": 2024,
+    "venue": "International Conference on Machine Learning  (ICML 2024)",
+    "authors": [
+      "Zixiang Zhao",
+      "Lilun Deng",
+      "Haowen Bai",
+      "Yukun Cui",
+      "Zhipeng Zhang",
+      "Yulun Zhang",
+      "Haotong Qin",
+      "Dongdong Chen",
+      "Jiangshe Zhang",
+      "Peng Wang",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "slides": "https://openreview.net/pdf/26f043e709cf17b73a2ecd60f42cb0638d19ad61.pdf?fbclid=IwY2xjawEYYM5leHRuA2FlbQIxMAABHT1laVrR5Jt165KocsOzY7p18MU9vnbJBEtm1ZmU1fZvy0jDBep1BBnWmg_aem_9N98VTknXEaKQTjFkao2aA"
+    }
+  },
+  {
+    "title": "COMPL-AI Framework: A Technical Interpretation and LLM Benchmarking Suite for the EU Artificial Intelligence Act",
+    "year": 2024,
+    "venue": null,
+    "authors": [
+      "Philipp Guldimann",
+      "Alexander Spiridonov",
+      "Robin Staab",
+      "Nikola Jovanović",
+      "Mark Vero",
+      "Velko Vechev",
+      "Anna Gueorguieva",
+      "Mislav Balunović",
+      "Nikola Konstantinov",
+      "Pavol Bielik",
+      "Petar Tsankov",
+      "Martin Vechev"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2410.07959"
+    }
+  },
+  {
+    "title": "Universal Optimality of Dijkstra via Beyond-Worst-Case Heaps",
+    "year": 2024,
+    "venue": "IEEE 65th Annual Symposium on Foundations of Computer Science (FOCS 2024)",
+    "authors": [
+      "Bernhard Haeupler",
+      "Richard Hladík",
+      "Vaclav Rozhon",
+      "Robert E. Tarjan and Jakub Tětek"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2311.11793"
+    }
+  },
+  {
+    "title": "Dynamic Deterministic Constant-Approximate Distance Oracles with 𝑛 ϵ Worst-Case Update Time",
+    "year": 2024,
+    "venue": "IEEE 65th Annual Symposium on Foundations of Computer Science (FOCS 2024)",
+    "authors": [
+      "Bernhard Haeupler",
+      "Yaowei Long",
+      "Thatchaphol Saranurak"
+    ],
+    "links": {}
+  },
+  {
+    "title": "New Structures and Algorithms for Length-Constrained Expander Decompositions",
+    "year": 2024,
+    "venue": "IEEE 65th Annual Symposium on Foundations of Computer Science (FOCS 2024)",
+    "authors": [
+      "Bernhard Haeupler",
+      "D Ellis Hershkowitz",
+      "Zihan Tan"
+    ],
+    "links": {}
+  },
+  {
+    "title": "Lempel-Ziv (LZ77) Factorization in Sublinear Time",
+    "year": 2024,
+    "venue": "IEEE Symposium on Foundations of Computer Science (FOCS 2024)",
+    "authors": [
+      "Dominik Kempa",
+      "Tomasz Kociumaka"
+    ],
+    "links": {}
+  },
+  {
+    "title": "Instance-Optimality in I/O-Efficient Sampling and Sequential Estimation",
+    "year": 2024,
+    "venue": "IEEE Symposium on Foundations of Computer Science (FOCS 2024)",
+    "authors": [
+      "S. Narayanan",
+      "Vaclav Rozhoň",
+      "Jakub Tětek",
+      "Mikkel Thorup"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/abs/2410.14643"
+    }
+  },
+  {
+    "title": "Modular Synthesis of Efficient Quantum Uncomputation",
+    "year": 2024,
+    "venue": "Proceedings of the ACM on Programming Languages, Volume 8, Issue OOPSLA2, 2024",
+    "authors": [
+      "Hristo Venev",
+      "Timon Gehr",
+      "Dimitar Dimitrov",
+      "and Martin Vechev"
+    ],
+    "links": {
+      "paper": "https://dl.acm.org/doi/pdf/10.1145/3689785"
+    }
+  },
+  {
+    "title": "Sharing Key Semantics in Transformer Makes Efficient Image Restoration",
+    "year": 2024,
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS 2024)",
+    "authors": [
+      "Bin Ren",
+      "Yawei Li",
+      "Jingyun Liang",
+      "Rakesh Ranjan",
+      "Mengyuan Liu",
+      "Rita Cucchiara",
+      "Luc Van Gool",
+      "Ming-Hsuan Yang",
+      "Nicu Sebe"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2405.20008"
+    }
+  },
+  {
+    "title": "Implicit-Zoo: A Large-Scale Dataset of Neural Implicit Functions for 2D Images and 3D Scenes",
+    "year": 2024,
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS 2024)",
+    "authors": [
+      "Qi Ma",
+      "Danda Pani Paudel",
+      "Ender Konukoglu",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2406.17438"
+    }
+  },
+  {
+    "title": "Learning Generative Interactive Environments By Trained Agent Exploration",
+    "year": 2024,
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS 2024) (Workshop)",
+    "authors": [
+      "Naser Kazemi",
+      "Nedko Savov",
+      "Danda Paudel",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2409.06445"
+    }
+  },
+  {
+    "title": "SPEAR: Exact Gradient Inversion of Batches in Federated Learning",
+    "year": 2024,
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS 2024)",
+    "authors": [
+      "Dimitar I. Dimitrov",
+      "Maximilian Baader",
+      "Mark Niklas Müller",
+      "Martin Vechev"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2403.03945"
+    }
+  },
+  {
+    "title": "DAGER: Exact Gradient Inversion for Large Language Models",
+    "year": 2024,
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS 2024)",
+    "authors": [
+      "Ivo Petrov",
+      "Dimitar I. Dimitrov",
+      "Maximilian Baader",
+      "Mark Niklas Müller",
+      "Martin Vechev"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2405.15586"
+    }
+  },
+  {
+    "title": "Constraint-Based Synthetic Data Generation for LLM Mathematical Reasoning",
+    "year": 2024,
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS 2024) (Workshop)",
+    "authors": [
+      "Timofey Fedoseev",
+      "Dimitar Iliev Dimitrov",
+      "Timon Gehr",
+      "Martin Vechev"
+    ],
+    "links": {
+      "paper": "https://openreview.net/pdf?id=hR4Hskr4GX"
+    }
+  },
+  {
+    "title": "Incentivizing Truthful Collaboration in Heterogeneous Federated Learning",
+    "year": 2024,
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS 2024) (Workshop)",
+    "authors": [
+      "Dimitar Chakarov",
+      "Nikita Tsoy",
+      "Kristian Minchev",
+      "Nikola Konstantinov"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2412.00980"
+    }
+  },
+  {
+    "title": "Model-aware 3D Eye Gaze from Weak and Few-shot Supervisions",
+    "year": 2023,
+    "venue": "the International Symposium on Mixed and Augmented Reality (ISMAR 2023)",
+    "authors": [
+      "Nikola Popovic",
+      "Dimitrios Christodoulou",
+      "Danda Pani Paudel",
+      "Xi Wang",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2311.12157"
+    }
+  },
+  {
+    "title": "Token-Consistent Dropout For Calibrated Vision Transformers",
+    "year": 2023,
+    "venue": "In International Conference on Image Processing (ICIP 2023)",
+    "authors": [
+      "Nikola Popovic",
+      "Danda Pani Paudel",
+      "Thomas Probst",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "project": "https://ieeexplore.ieee.org/abstract/document/10222084/"
+    }
+  },
+  {
+    "title": "Strategic Data Sharing between Competitors",
+    "year": 2023,
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS 2023)",
+    "authors": [
+      "Nikita Tsoy and Nikola Konstantinov"
+    ],
+    "links": {
+      "paper": "https://openreview.net/pdf?id=AkK3S2spZs"
+    }
+  },
+  {
+    "title": "Incentivizing Honesty among Competitors in Collaborative Learning and Optimization",
+    "year": 2023,
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS 2023)",
+    "authors": [
+      "Florian E. Dorner",
+      "Nikola Konstantinov",
+      "Georgi Pashaliev",
+      "Martin Vechev"
+    ],
+    "links": {
+      "paper": "https://openreview.net/pdf?id=g2ROKOASiv"
+    }
+  },
+  {
+    "title": "Autodecoding Latent 3D Diffusion Models",
+    "year": 2023,
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS 2023)",
+    "authors": [
+      "Evangelos Ntavelis",
+      "Aliaksandr Siarohin",
+      "Kyle Olszewski",
+      "Chaoyang Wang",
+      "Luc Van Gool",
+      "and Sergey Tulyakov"
+    ],
+    "links": {
+      "paper": "https://openreview.net/pdf?id=YhAZqWhOnS"
+    }
+  },
+  {
+    "title": "Real-Time Motion Prediction via Heterogeneous Polyline Transformer with Relative Pose Encoding",
+    "year": 2023,
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS 2023)",
+    "authors": [
+      "Zhejun Zhang",
+      "Alexander Liniger",
+      "Christos Sakaridis",
+      "Fisher Yu",
+      "and Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://openreview.net/pdf?id=YcmGuwdLoU"
+    }
+  },
+  {
+    "title": "LART: Neural Correspondence Learning with Latent Regularization Transformer for 3D Motion Transfer",
+    "year": 2023,
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS 2023)",
+    "authors": [
+      "Haoyu Chen",
+      "Hao Tang",
+      "Radu Timofte",
+      "Luc Van Gool",
+      "and Guoying Zhao"
+    ],
+    "links": {
+      "paper": "https://openreview.net/pdf?id=g27BggUT3L"
+    }
+  },
+  {
+    "title": "Revisiting Evaluation Metrics for Semantic Segmentation: Optimization and Evaluation of Fine-Grained Intersection-over-Union",
+    "year": 2023,
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS 2023), Datasets and Benchmarks Track, 2023",
+    "authors": [
+      "Zifu Wang",
+      "Maxim Berman",
+      "Amal Rannen-Triki",
+      "Philip Torr",
+      "Devis Tuia",
+      "Tinne Tuytelaars",
+      "Luc Van Gool",
+      "Jiaqian Yu",
+      "and Matthew Blaschko"
+    ],
+    "links": {
+      "paper": "https://openreview.net/pdf?id=jGyMUum1Lq"
+    }
+  },
+  {
+    "title": "WordScape: a Pipeline to Extract Multilingual, Visually Rich Documents with Layout Annotations from Web Crawl Data",
+    "year": 2023,
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS 2023), Datasets and Benchmarks Track, 2023",
+    "authors": [
+      "Maurice Weber",
+      "Carlo Siebenschuh",
+      "Rory Marshall Butler",
+      "Anton Alexandrov",
+      "Valdemar Ragnar Thanner",
+      "Georgios Tsolakis",
+      "Haris Jabbar",
+      "Ian Foster",
+      "Bo Li",
+      "Rick Stevens",
+      "Ce Zhang"
+    ],
+    "links": {
+      "paper": "https://openreview.net/pdf?id=xewwYquInO"
+    }
+  },
+  {
+    "title": "Source-free Depth for Object Pop-out",
+    "year": 2023,
+    "venue": "International Conference on Computer Vision (ICCV 2023)",
+    "authors": [
+      "Zongwei Wu",
+      "Danda Pani Paudel",
+      "Deng-Ping Fan",
+      "Jingjing Wang",
+      "Shuo Wang",
+      "Cedric Demonceaux",
+      "Radu Timofte",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://openaccess.thecvf.com/content/ICCV2023/papers/WU_Source-free_Depth_for_Object_Pop-out_ICCV_2023_paper.pdf"
+    }
+  },
+  {
+    "title": "Surface Normal Clustering for Implicit Representation of Manhattan Scenes",
+    "year": 2023,
+    "venue": "International Conference on Computer Vision (ICCV 2023)",
+    "authors": [
+      "Nikola Popovic",
+      "Danda Pani Paudel",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://openaccess.thecvf.com/content/ICCV2023/papers/Popovic_Surface_Normal_Clustering_for_Implicit_Representation_of_Manhattan_Scenes_ICCV_2023_paper.pdf"
+    }
+  },
+  {
+    "title": "Improving Online Lane Graph Extraction by Object-Lane Clustering",
+    "year": 2023,
+    "venue": "International Conference on Computer Vision (ICCV 2023)",
+    "authors": [
+      "Yigit Baran Can",
+      "Alexander Liniger",
+      "Danda Pani Paudel",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://openaccess.thecvf.com/content/ICCV2023/papers/Can_Improving_Online_Lane_Graph_Extraction_by_Object-Lane_Clustering_ICCV_2023_paper.pdf"
+    }
+  },
+  {
+    "title": "Deformable Neural Radiance Fields using RGB and Event Cameras",
+    "year": 2023,
+    "venue": "International Conference on Computer Vision (ICCV 2023)",
+    "authors": [
+      "Qi Ma",
+      "Danda Pani Paudel",
+      "Ajad Chhatkuli",
+      "Luc Van Gool"
+    ],
+    "links": {
+      "paper": "https://openaccess.thecvf.com/content/ICCV2023/papers/Ma_Deformable_Neural_Radiance_Fields_using_RGB_and_Event_Cameras_ICCV_2023_paper.pdf"
+    }
+  },
+  {
+    "title": "PATMAT: Person Aware Tuning of Mask-Aware Transformer for Face inpainting",
+    "year": 2023,
+    "venue": "International Conference on Computer Vision (ICCV 2023)",
+    "authors": [
+      "Saman Motamed",
+      "Jianjin Xu",
+      "Chen Henry Wu",
+      "Christian Hane",
+      "Jean-Charles Bazin",
+      "Fernando de la Torre"
+    ],
+    "links": {
+      "paper": "https://openaccess.thecvf.com/content/ICCV2023/papers/Motamed_PATMAT_Person_Aware_Tuning_of_Mask-Aware_Transformer_for_Face_Inpainting_ICCV_2023_paper.pdf"
+    }
+  }
+]

@@ -1,15 +1,18 @@
 ---
 title: "Continuous Pose for Monocular Cameras in Neural Implicit Representation"
 year: 2024
-venue: "In: Computer Vision and Pattern Recognition Conference (CVPR 2024)_"
+venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2024)"
+venue_display: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2024)"
+venue_chronicle: "IEEE/CVF Conference on Computer Vision and Pattern Recognition"
 venue_abbr: "CVPR"
+publication_date: "2024-06-15"
 author_line_full: "Qi Ma, Danda Paudel, Ajad Chhatkuli, Luc Van Gool"
 authors:
-  - luc-van-gool
+  - qi-ma
   - danda-paudel
-topics:
-  - visual-media
-  - 3d-vision
+  - ajad-chhatkuli
+  - luc-van-gool
 ---
+## Links
 
-Imported from INSAIT publications listing (faculty-related).
+- [Code](https://github.com/qimaqi/Continuous-Pose-in-NeRF)

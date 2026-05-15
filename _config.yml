@@ -2,7 +2,16 @@ title: Vision Group
 email: vision@example.edu
 description: >-
   Research group website (Jekyll + Block template assets).
-# GitHub Pages project site (until repo moves to production domain).
+# Jekyll loads configs left-to-right; later files override earlier keys.
+#
+# Production (GitHub Pages, default build): only _config.yml is used — set url/baseurl
+# to match how the site is actually served:
+#   - Custom domain at site root (e.g. https://www.example.com/) → baseurl: ""
+#   - Project page (e.g. https://user.github.io/repo/) → baseurl: "/repo"
+#
+# Local previews (root URL, styles + links resolve correctly):
+#   bundle exec jekyll serve --config _config.yml,_config_local.yml
+#   Then open http://localhost:4000/ (or the URL printed by Jekyll).
 url: "https://www.jasongt.com"
 baseurl: "/vision-insait.github.io"
 

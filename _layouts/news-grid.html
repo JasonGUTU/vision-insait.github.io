@@ -16,36 +16,59 @@ layout: default
 </section>
 <section class="mb-xl-9 mb-5">
    <div class="container">
-      <div class="row gy-lg-7 gy-5">
-         {% include news-docs-sorted.html %}
-         {% for item in news_docs_sorted %}
-         {% assign ni = forloop.index0 | modulo: 9 | plus: 1 %}
-         {% if item.cover_image %}
-         {% assign ncover = item.cover_image %}
-         {% else %}
-         {% assign ncover = '/assets/images/blog/blog-img-' | append: ni | append: '.jpg' %}
-         {% endif %}
-         <article class="col-lg-4 col-md-6 col-12">
-            <figure class="mb-4 zoom-img">
-               <a href="{{ item.url | relative_url }}">
-                  <img src="{{ ncover | relative_url }}" alt="" class="img-fluid rounded-3" loading="lazy" />
-               </a>
-            </figure>
-            {% if item.topics and item.topics.first %}
-            <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill text-uppercase">{{ item.topics | first | replace: "-", " " }}</span>
-            {% endif %}
-            <h2 class="my-3 lh-base h4">
-               <a href="{{ item.url | relative_url }}" class="text-reset text-decoration-none">{{ item.title }}</a>
-            </h2>
-            {% if item.excerpt %}
-            <p class="text-muted small mb-3">{{ item.excerpt }}</p>
-            {% endif %}
-            <div class="d-flex align-items-center justify-content-between small text-muted">
-               <span>{% if item.date %}{{ item.date | date: "%b %-d, %Y" }}{% endif %}</span>
-               <a href="{{ item.url | relative_url }}" class="text-decoration-none">Read more</a>
+      {% include news-docs-sorted.html %}
+      <div class="row gy-lg-7 gy-5 align-items-start">
+         <div class="col-lg-8">
+            <div class="row gy-lg-7 gy-5">
+               {% for item in news_docs_sorted %}
+               {% assign ni = forloop.index0 | modulo: 9 | plus: 1 %}
+               {% if item.cover_image %}
+               {% assign ncover = item.cover_image %}
+               {% else %}
+               {% assign ncover = '/assets/images/blog/blog-img-' | append: ni | append: '.jpg' %}
+               {% endif %}
+               <article class="col-md-6 col-12">
+                  <figure class="mb-4 zoom-img">
+                     <a href="{{ item.url | relative_url }}">
+                        <img src="{{ ncover | relative_url }}" alt="" class="img-fluid rounded-3" loading="lazy" />
+                     </a>
+                  </figure>
+                  {% if item.topics and item.topics.first %}
+                  <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill text-uppercase">{{ item.topics | first | replace: "-", " " }}</span>
+                  {% endif %}
+                  <h2 class="my-3 lh-base h4">
+                     <a href="{{ item.url | relative_url }}" class="text-reset text-decoration-none">{{ item.title }}</a>
+                  </h2>
+                  {% if item.excerpt %}
+                  <p class="text-muted small mb-3">{{ item.excerpt }}</p>
+                  {% endif %}
+                  <div class="d-flex align-items-center justify-content-between small text-muted">
+                     <span>{% if item.date %}{{ item.date | date: "%b %-d, %Y" }}{% endif %}</span>
+                     <a href="{{ item.url | relative_url }}" class="text-decoration-none">Read more</a>
+                  </div>
+               </article>
+               {% endfor %}
             </div>
-         </article>
-         {% endfor %}
+         </div>
+         <div class="col-lg-4 col-12">
+            <aside class="news-list-aside border-top border-lg-0 pt-4 pt-lg-0">
+               <h2 class="h6 text-uppercase ls-md fw-semibold text-muted mb-3">All news</h2>
+               {% if news_docs_sorted.size == 0 %}
+               <p class="text-muted small mb-0">No news posts yet.</p>
+               {% else %}
+               <ul class="list-unstyled mb-0">
+                  {% for item in news_docs_sorted %}
+                  <li class="py-2 border-bottom border-light">
+                     <div class="d-flex flex-column flex-sm-row flex-sm-wrap justify-content-sm-between align-items-sm-baseline column-gap-3 row-gap-1">
+                        <a href="{{ item.url | relative_url }}" class="text-body text-decoration-none">{{ item.title }}</a>
+                        <span class="text-muted small text-nowrap">{% if item.date %}{{ item.date | date: "%b %-d, %Y" }}{% endif %}</span>
+                     </div>
+                  </li>
+                  {% endfor %}
+               </ul>
+               {% endif %}
+            </aside>
+         </div>
       </div>
    </div>
 </section>

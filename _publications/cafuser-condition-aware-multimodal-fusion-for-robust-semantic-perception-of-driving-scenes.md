@@ -1,14 +1,13 @@
 ---
 title: "CAFuser: Condition-Aware Multimodal Fusion for Robust Semantic Perception of Driving Scenes"
 year: 2025
-venue: "In: The IEEE Robotics and Automation Letters (RA-L)"
+venue: "IEEE Robotics and Automation Letters (RA-L 2025)"
+venue_display: "IEEE Robotics and Automation Letters (RA-L 2025)"
+venue_chronicle: "IEEE Robotics and Automation Letters"
 venue_abbr: "RA-L"
+publication_date: "2025-06-01"
 author_line_full: "Tim Broedermann, Christos Sakaridis, Yuqian Fu, Luc Van Gool"
 authors:
   - luc-van-gool
-topics:
-  - visual-media
-  - vision-agent
+paper_url: "https://arxiv.org/pdf/2410.10791"
 ---
-
-Imported from INSAIT publications listing (faculty-related).

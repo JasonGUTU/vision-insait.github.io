@@ -1,15 +1,15 @@
 ---
 title: "Learning Generative Interactive Environments By Trained Agent Exploration"
 year: 2024
-venue: "In: Conference on Neural Information Processing Systems (NeurIPS 2024) (Workshop)_"
-venue_abbr: "NeurIPS"
+venue: "Conference on Neural Information Processing Systems Workshop (NeurIPSW 2024)"
+venue_display: "Conference on Neural Information Processing Systems Workshop (NeurIPSW 2024)"
+venue_chronicle: "Conference on Neural Information Processing Systems"
+venue_abbr: "NeurIPSW"
+publication_date: "2024-12-10"
 author_line_full: "Naser Kazemi, Nedko Savov, Danda Paudel, Luc Van Gool"
 authors:
-  - luc-van-gool
-  - danda-paudel
   - nedko-savov
-topics:
-  - visual-media
+  - danda-paudel
+  - luc-van-gool
+paper_url: "https://arxiv.org/pdf/2409.06445"
 ---
-
-Imported from INSAIT publications listing (faculty-related).

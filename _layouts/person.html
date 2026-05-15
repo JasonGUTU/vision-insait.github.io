@@ -11,21 +11,27 @@ layout: default
                   <li class="breadcrumb-item active" aria-current="page">{{ page.name_display | default: page.title }}</li>
                </ol>
             </nav>
-            <div class="row align-items-center">
-               <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+            <div class="row align-items-center g-4">
+               <div class="col-12 col-md-3 text-center text-md-start">
                   {% if page.photo %}
-                  <img src="{{ page.photo | relative_url }}" alt="{{ page.name_display }}" class="img-fluid rounded-3" style="max-height: 280px; object-fit: cover; width: 100%;" />
+                  {% if page.role == 'faculty' %}
+                  <img src="{{ page.photo | relative_url }}" alt="{{ page.name_display }}" class="img-fluid rounded-3 w-100" style="object-fit: cover;" />
                   {% else %}
-                  <div class="bg-light rounded-3 ratio ratio-1x1 d-flex align-items-center justify-content-center text-muted">
+                  <div class="ratio ratio-1x1 rounded-3 overflow-hidden w-100">
+                     <img src="{{ page.photo | relative_url }}" alt="{{ page.name_display }}" class="w-100 h-100" style="object-fit: cover;" />
+                  </div>
+                  {% endif %}
+                  {% else %}
+                  <div class="bg-light rounded-3 ratio ratio-1x1 d-flex align-items-center justify-content-center text-muted w-100">
                      <span class="fs-2">Photo</span>
                   </div>
                   {% endif %}
                </div>
-               <div class="col-md-8">
+               <div class="col-md-1 d-none d-md-block" aria-hidden="true"></div>
+               <div class="col-12 col-md-8">
                   <p class="text-uppercase text-primary fw-semibold small mb-1">{{ page.role | capitalize }}</p>
                   <h1 class="mb-2">{{ page.name_display | default: page.title }}</h1>
                   {% if page.title_en %}<p class="lead text-muted mb-2">{{ page.title_en }}</p>{% endif %}
-                  {% if page.start_date %}<p class="small text-muted mb-2">Started <time datetime="{{ page.start_date }}">{{ page.start_date | date: "%B %-d, %Y" }}</time></p>{% endif %}
                   {% if page.topics and page.topics.size > 0 %}
                   <div class="mb-3">
                      <span class="text-muted me-2">Research topics:</span>
@@ -66,7 +72,8 @@ layout: default
                      {% assign found = true %}
                      <li class="mb-3 pb-3 border-bottom">
                         <a href="{{ pub.url | relative_url }}" class="fw-semibold text-reset">{{ pub.title }}</a>
-                        <div class="small text-muted">{{ pub.year }}{% if pub.venue %} · {{ pub.venue }}{% endif %}</div>
+                        {% assign pub_venue_line = pub.venue_display | default: pub.venue %}
+                        <div class="small text-muted">{{ pub.year }}{% if pub_venue_line %} · {{ pub_venue_line }}{% endif %}</div>
                      </li>
                   {% endif %}
                {% endfor %}
