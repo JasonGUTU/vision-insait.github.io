@@ -1,0 +1,52 @@
+---
+layout: default
+---
+{% assign cover = page.cover_image | default: "/site-covers/demos/project-hero-default.jpg" %}
+
+<section class="py-5 py-lg-8">
+   <div class="container">
+      <div class="row">
+         <div class="col-12">
+            <nav aria-label="breadcrumb" class="mb-3">
+               <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="{{ '/demos/' | relative_url }}">Demos and Projects</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+               </ol>
+            </nav>
+            <h1 class="mb-3">{{ page.title }}</h1>
+            {% if page.tagline %}<p class="mb-0 lead">{{ page.tagline }}</p>{% endif %}
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="pb-xl-9 pb-5">
+   <div class="container">
+      <figure class="mb-lg-9 mb-md-7 mb-5">
+         <img src="{{ cover | relative_url }}" alt="{{ page.title }}" class="img-fluid rounded-3 w-100" width="1200" height="800" loading="lazy" decoding="async" />
+      </figure>
+
+      {% if page.contributors and page.contributors.size > 0 %}
+      <div class="project-contributors">
+         <span class="text-muted text-uppercase small fw-semibold">Contributors</span>
+         <div class="d-flex flex-column gap-3 mt-3">
+            {% for cid in page.contributors %}
+            {% assign member = site.people | where: "person_id", cid | first %}
+            {% if member %}
+            <a href="{{ member.url | relative_url }}" class="d-flex align-items-center text-reset text-decoration-none">
+               {% assign ai = forloop.index0 | modulo: 7 | plus: 1 %}
+               {% assign av = '/assets/images/avatar/avatar-' | append: ai | append: '.jpg' %}
+               {% if member.photo %}
+               <img src="{{ member.photo | relative_url }}" alt="" class="avatar avatar-sm rounded-circle flex-shrink-0" />
+               {% else %}
+               <img src="{{ av | relative_url }}" alt="" class="avatar avatar-sm rounded-circle flex-shrink-0" />
+               {% endif %}
+               <span class="ms-3 text-dark">{{ member.name_display | default: member.title }}</span>
+            </a>
+            {% endif %}
+            {% endfor %}
+         </div>
+      </div>
+      {% endif %}
+   </div>
+</section>

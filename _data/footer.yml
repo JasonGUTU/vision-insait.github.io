@@ -1,0 +1,23 @@
+columns:
+  - title: Research
+    links:
+      - label: Research directions
+        url: /research/
+      - label: Demos and projects
+        url: /demos/
+  - title: Group
+    links:
+      - label: People
+        url: /people/
+      - label: Open positions
+        url: /job/
+      - label: News
+        url: /news/
+  - title: Resources
+    links:
+      - label: Home
+        url: /
+aside:
+  title: Contact
+  body: >-
+    Reach out for collaborations, student visits, and sponsorship inquiries.

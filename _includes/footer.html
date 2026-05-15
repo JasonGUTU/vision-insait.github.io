@@ -1,0 +1,103 @@
+{% assign footer_cfg = site.data.footer %}
+{% if footer_cfg == nil or footer_cfg == empty %}
+{% assign footer_cfg = site.footer %}
+{% endif %}
+<footer class="site-page-footer pt-7 border-top">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-9 col-12">
+            <div class="row" id="ft-links">
+               {% if footer_cfg.columns and footer_cfg.columns.size > 0 %}
+               {% for col in footer_cfg.columns %}
+               <div class="col-lg-3 col-12">
+                  <div class="position-relative">
+                     <div class="mb-3 pb-2 d-flex justify-content-between border-bottom border-bottom-lg-0">
+                        <h4 class="h5 mb-0">{{ col.title }}</h4>
+                        <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse" href="#collapseFt{{ forloop.index }}" role="button" aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="collapseFt{{ forloop.index }}">
+                           <i class="bi bi-chevron-down"></i>
+                        </a>
+                     </div>
+                     <div class="collapse {% if forloop.first %}show{% endif %} d-lg-block" id="collapseFt{{ forloop.index }}" data-bs-parent="#ft-links">
+                        <ul class="list-unstyled mb-0 py-3 py-lg-0">
+                           {% for link in col.links %}
+                           <li class="mb-2">
+                              <a href="{{ link.url | relative_url }}" class="text-decoration-none text-reset">{{ link.label }}</a>
+                           </li>
+                           {% endfor %}
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               {% endfor %}
+               {% else %}
+               <div class="col-12">
+                  <p class="text-muted small mb-0">Add footer links in <code>_data/footer.yml</code>.</p>
+               </div>
+               {% endif %}
+            </div>
+         </div>
+         <div class="col-lg-3 col-12">
+            <div class="me-lg-7 mt-5 mt-lg-0">
+               {% if footer_cfg.aside %}
+               <h4 class="h5 mb-3">{{ footer_cfg.aside.title }}</h4>
+               {% if footer_cfg.aside.body %}
+               <p class="text-body-secondary">{{ footer_cfg.aside.body }}</p>
+               {% endif %}
+               {% if site.email %}
+               <p class="mb-0">
+                  <a href="mailto:{{ site.email }}" class="text-decoration-none">{{ site.email }}</a>
+               </p>
+               {% endif %}
+               {% endif %}
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="container mt-7 pt-lg-7 pb-4">
+      <div class="row align-items-center">
+         <div class="col-md-3">
+            <a class="mb-4 mb-lg-0 d-block" href="{{ '/' | relative_url }}">{% include site-logo.html class='site-logo--footer' %}</a>
+         </div>
+         <div class="col-md-9 col-lg-6">
+            <div class="small mb-3 mb-lg-0 text-md-center text-muted">
+               {{ site.title }}{% if site.description %} · {{ site.description }}{% endif %}
+            </div>
+         </div>
+         <div class="col-lg-3">
+            <div class="text-lg-end">
+               <div class="dropdown">
+                  <button class="btn btn-light btn-icon rounded-circle d-flex align-items-center" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                     <i class="bi theme-icon-active lh-1"><i class="bi theme-icon bi-sun-fill"></i></i>
+                     <span class="visually-hidden bs-theme-text">Toggle theme</span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bs-theme-text">
+                     <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
+                           <i class="bi theme-icon bi-sun-fill"></i>
+                           <span class="ms-2">Light</span>
+                        </button>
+                     </li>
+                     <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                           <i class="bi theme-icon bi-moon-stars-fill"></i>
+                           <span class="ms-2">Dark</span>
+                        </button>
+                     </li>
+                     <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                           <i class="bi theme-icon bi-circle-half"></i>
+                           <span class="ms-2">Auto</span>
+                        </button>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+<div class="btn-scroll-top">
+   <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+      <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" />
+   </svg>
+</div>

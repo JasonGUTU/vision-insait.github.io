@@ -1,0 +1,80 @@
+---
+layout: default
+---
+<section class="py-5 py-lg-8">
+   <div class="container">
+      <div class="row">
+         <div class="col-12">
+            <nav aria-label="breadcrumb" class="mb-3">
+               <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="{{ '/people/' | relative_url }}">People</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">{{ page.name_display | default: page.title }}</li>
+               </ol>
+            </nav>
+            <div class="row align-items-center">
+               <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+                  {% if page.photo %}
+                  <img src="{{ page.photo | relative_url }}" alt="{{ page.name_display }}" class="img-fluid rounded-3" style="max-height: 280px; object-fit: cover; width: 100%;" />
+                  {% else %}
+                  <div class="bg-light rounded-3 ratio ratio-1x1 d-flex align-items-center justify-content-center text-muted">
+                     <span class="fs-2">Photo</span>
+                  </div>
+                  {% endif %}
+               </div>
+               <div class="col-md-8">
+                  <p class="text-uppercase text-primary fw-semibold small mb-1">{{ page.role | capitalize }}</p>
+                  <h1 class="mb-2">{{ page.name_display | default: page.title }}</h1>
+                  {% if page.title_en %}<p class="lead text-muted mb-2">{{ page.title_en }}</p>{% endif %}
+                  {% if page.start_date %}<p class="small text-muted mb-2">Started <time datetime="{{ page.start_date }}">{{ page.start_date | date: "%B %-d, %Y" }}</time></p>{% endif %}
+                  {% if page.topics and page.topics.size > 0 %}
+                  <div class="mb-3">
+                     <span class="text-muted me-2">Research topics:</span>
+                     {% for tid in page.topics %}
+                        {% assign topic_doc = site.research_topics | where: "topic_id", tid | first %}
+                        {% if topic_doc %}
+                        <a href="{{ topic_doc.url | relative_url }}" class="badge bg-primary-subtle text-primary-emphasis rounded-pill me-1">{{ topic_doc.title }}</a>
+                        {% else %}
+                        <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill me-1">{{ tid }}</span>
+                        {% endif %}
+                     {% endfor %}
+                  </div>
+                  {% endif %}
+                  {% if page.homepage %}
+                  <p class="mb-0"><a href="{{ page.homepage }}" class="icon-link icon-link-hover" target="_blank" rel="noopener">Homepage</a></p>
+                  {% endif %}
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="pb-7">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-8">
+            <h2 class="h4 mb-3">Bio</h2>
+            <div class="prose">
+               {{ content }}
+            </div>
+            <hr class="my-5" />
+            <h2 class="h4 mb-3">Publications</h2>
+            <ul class="list-unstyled">
+               {% assign pid = page.person_id %}
+               {% assign found = false %}
+               {% for pub in site.publications %}
+                  {% if pub.authors contains pid %}
+                     {% assign found = true %}
+                     <li class="mb-3 pb-3 border-bottom">
+                        <a href="{{ pub.url | relative_url }}" class="fw-semibold text-reset">{{ pub.title }}</a>
+                        <div class="small text-muted">{{ pub.year }}{% if pub.venue %} · {{ pub.venue }}{% endif %}</div>
+                     </li>
+                  {% endif %}
+               {% endfor %}
+               {% unless found %}
+               <li class="text-muted">No linked publications yet.</li>
+               {% endunless %}
+            </ul>
+         </div>
+      </div>
+   </div>
+</section>

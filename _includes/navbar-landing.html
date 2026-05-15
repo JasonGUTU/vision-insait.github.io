@@ -1,0 +1,36 @@
+<header>
+   <nav class="navbar navbar-expand-lg transparent navbar-transparent navbar-dark">
+      <div class="container px-3">
+         <a class="navbar-brand site-logo-brand--landing" href="{{ '/' | relative_url }}">{% include site-logo.html class='site-logo--color' %}{% include site-logo.html variant='white' class='site-logo--white' %}</a>
+         <button class="navbar-toggler offcanvas-nav-btn" type="button">
+            <i class="bi bi-list"></i>
+         </button>
+         <div class="offcanvas offcanvas-start offcanvas-nav" style="width: 20rem">
+            <div class="offcanvas-header">
+               <a href="{{ '/' | relative_url }}" class="text-reset text-decoration-none">{% include site-logo.html %}</a>
+               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body pt-0 align-items-center justify-content-lg-end">
+               <ul class="navbar-nav ms-lg-auto me-lg-0 align-items-lg-center">
+                  <li class="nav-item">
+                     <a class="nav-link" href="{{ '/people/' | relative_url }}">People</a>
+                  </li>
+                  {% include nav-research-dropdown.html dark=true %}
+                  <li class="nav-item">
+                     <a class="nav-link" href="{{ '/publications/' | relative_url }}">Publications</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{{ '/demos/' | relative_url }}">Demos and Projects</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{{ '/job/' | relative_url }}">Job</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{{ '/news/' | relative_url }}">News</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </nav>
+</header>

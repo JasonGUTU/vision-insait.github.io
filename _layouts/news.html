@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<section class="py-5 py-lg-8">
+   <div class="container">
+      <div class="row">
+         <article class="col-12">
+            <nav aria-label="breadcrumb" class="mb-3">
+               <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="{{ '/news/' | relative_url }}">News</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+               </ol>
+            </nav>
+            <small class="text-uppercase ls-md fw-semibold text-primary">News</small>
+            <h1 class="mt-2 mb-3">{{ page.title }}</h1>
+            <div class="d-flex flex-wrap gap-2 align-items-center text-muted small mb-4">
+               {% if page.date %}<span>{{ page.date | date: "%B %-d, %Y" }}</span>{% endif %}
+               {% if page.topics %}
+               {% for t in page.topics %}
+               <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill">{{ t }}</span>
+               {% endfor %}
+               {% endif %}
+            </div>
+            {% assign ni = page.title.size | modulo: 9 | plus: 1 %}
+            {% if page.cover_image %}
+            <figure class="mb-4">
+               <img src="{{ page.cover_image | relative_url }}" alt="" class="img-fluid rounded-3 w-100" />
+            </figure>
+            {% else %}
+            <figure class="mb-4">
+               <img src="{{ '/assets/images/blog/blog-img-' | append: ni | append: '.jpg' | relative_url }}" alt="" class="img-fluid rounded-3 w-100" />
+            </figure>
+            {% endif %}
+            {% if page.excerpt %}
+            <p class="lead text-muted">{{ page.excerpt }}</p>
+            {% endif %}
+            <div class="prose">{{ content }}</div>
+         </article>
+      </div>
+   </div>
+</section>

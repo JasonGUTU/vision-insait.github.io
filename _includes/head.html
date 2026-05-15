@@ -1,0 +1,22 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link rel="icon" type="image/png" href="{{ '/assets/images/logo/VLAB-icon.png' | relative_url }}" />
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon/favicon-32x32.png' | relative_url }}" />
+<link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/favicon/favicon-16x16.png' | relative_url }}" />
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/favicon/apple-touch-icon.png' | relative_url }}" />
+<link rel="manifest" href="{{ '/assets/images/favicon/site.webmanifest' | relative_url }}" />
+<link rel="shortcut icon" href="{{ '/assets/images/favicon/favicon.ico' | relative_url }}" />
+<meta name="msapplication-TileColor" content="#ec5f58" />
+<meta name="msapplication-config" content="{{ '/assets/images/favicon/tile.xml' | relative_url }}" />
+<script src="{{ '/assets/js/vendors/color-modes.js' | relative_url }}"></script>
+<link href="{{ '/assets/libs/simplebar/dist/simplebar.min.css' | relative_url }}" rel="stylesheet" />
+<link href="{{ '/assets/libs/bootstrap-icons/font/bootstrap-icons.min.css' | relative_url }}" rel="stylesheet" />
+<link rel="stylesheet" href="{{ '/assets/libs/scrollcue/scrollCue.css' | relative_url }}" />
+<link rel="stylesheet" href="{{ '/assets/fonts/css/boxicons.min.css' | relative_url }}" />
+<link rel="stylesheet" href="{{ '/assets/css/theme.min.css' | relative_url }}" />
+<link rel="stylesheet" href="{{ '/assets/css/site-additions.css' | relative_url }}" />
+{% if page.landing %}
+<link rel="stylesheet" href="{{ '/assets/libs/swiper/swiper-bundle.min.css' | relative_url }}" />
+<link rel="stylesheet" href="{{ '/assets/libs/glightbox/dist/css/glightbox.min.css' | relative_url }}" />
+{% endif %}
+<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>

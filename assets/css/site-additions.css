@@ -1,0 +1,405 @@
+/* Site-specific tweaks (Block theme overrides) */
+
+/* Sticky footer: keep site footer visible below long pages (e.g. topic publications) */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.site-page-footer {
+  flex-shrink: 0;
+  position: relative;
+  z-index: 5;
+  background-color: var(--bs-body-bg);
+}
+
+/* VLab logo sizing */
+.site-logo-brand--landing {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.navbar-brand .site-logo,
+.offcanvas-header .site-logo {
+  height: 2rem;
+  width: auto;
+  max-width: min(12rem, 55vw);
+}
+
+.site-logo--footer {
+  height: 2.25rem;
+  width: auto;
+  max-width: 100%;
+}
+
+/* Home hero: white logo on video; color logo on sticky clone only */
+.navbar-transparent.navbar-dark .navbar-brand img {
+  filter: none !important;
+}
+
+.navbar-transparent.navbar-dark:not(.navbar-clone) .site-logo-brand--landing .site-logo--color {
+  display: none !important;
+}
+
+.navbar-transparent.navbar-dark:not(.navbar-clone) .site-logo-brand--landing .site-logo--white {
+  display: inline-block !important;
+}
+
+.navbar-clone .site-logo-brand--landing .site-logo--white {
+  display: none !important;
+}
+
+.navbar-clone .site-logo-brand--landing .site-logo--color {
+  display: inline-block !important;
+}
+
+/* Research: main link → overview; caret → topic submenu */
+.nav-item.dropdown > .nav-research-split .nav-link {
+  padding-top: var(--bs-nav-link-padding-y);
+  padding-bottom: var(--bs-nav-link-padding-y);
+}
+
+.nav-research-split .nav-link.dropdown-toggle::after {
+  margin-left: 0;
+}
+
+/* Desktop: align main nav to the right edge of .container */
+@media (min-width: 992px) {
+  .navbar > .container {
+    justify-content: flex-start;
+  }
+
+  .navbar-expand-lg .offcanvas-nav {
+    flex-grow: 1;
+  }
+
+  .navbar-expand-lg .offcanvas-nav .offcanvas-body {
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .navbar-expand-lg .offcanvas-nav .navbar-nav {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+/* Brand primary: RGB(236, 95, 88) — overrides Block purple in theme.min.css */
+:root,
+[data-bs-theme="light"] {
+  --bs-primary: #ec5f58;
+  --bs-primary-rgb: 236, 95, 88;
+  --bs-blue: #ec5f58;
+  --bs-link-color: #ec5f58;
+  --bs-link-color-rgb: 236, 95, 88;
+  --bs-link-hover-color: #c94a44;
+  --bs-link-hover-color-rgb: 201, 74, 68;
+  --bs-primary-text-emphasis: #5c2622;
+  --bs-primary-bg-subtle: #fdeceb;
+  --bs-primary-border-subtle: #f5b4af;
+  --bs-focus-ring-color: rgba(236, 95, 88, 0.28);
+}
+
+[data-bs-theme="dark"] {
+  --bs-primary: #f07872;
+  --bs-primary-rgb: 240, 120, 114;
+  --bs-blue: #f07872;
+  --bs-link-color: #f07872;
+  --bs-link-color-rgb: 240, 120, 114;
+  --bs-link-hover-color: #f5a29e;
+  --bs-link-hover-color-rgb: 245, 162, 158;
+  --bs-primary-text-emphasis: #f9c4c1;
+  --bs-primary-bg-subtle: rgba(236, 95, 88, 0.12);
+  --bs-primary-border-subtle: rgba(236, 95, 88, 0.35);
+  --bs-focus-ring-color: rgba(240, 120, 114, 0.35);
+}
+
+.prose a,
+.prose a:visited,
+.topic-article a,
+.topic-article a:visited,
+article a:not(.btn):not(.badge):not(.nav-link):not(.dropdown-item):not(.list-group-item-action):not(.icon-link) {
+  color: #ec5f58;
+}
+
+.prose a:hover,
+.topic-article a:hover,
+article a:not(.btn):not(.badge):not(.nav-link):not(.dropdown-item):not(.list-group-item-action):not(.icon-link):hover {
+  color: #c94a44;
+}
+
+[data-bs-theme="dark"] .prose a,
+[data-bs-theme="dark"] .topic-article a,
+[data-bs-theme="dark"] article a:not(.btn):not(.badge):not(.nav-link):not(.dropdown-item):not(.list-group-item-action):not(.icon-link) {
+  color: #f07872;
+}
+
+[data-bs-theme="dark"] .prose a:hover,
+[data-bs-theme="dark"] .topic-article a:hover,
+[data-bs-theme="dark"] article a:not(.btn):not(.badge):not(.nav-link):not(.dropdown-item):not(.list-group-item-action):not(.icon-link):hover {
+  color: #f5a29e;
+}
+
+.breadcrumb a {
+  color: var(--bs-link-color);
+}
+
+.breadcrumb a:hover {
+  color: var(--bs-link-hover-color);
+}
+
+/* Primary buttons / outlines (theme.min.css hardcodes #8b3dff) */
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #ec5f58;
+  --bs-btn-border-color: #ec5f58;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #d94a43;
+  --bs-btn-hover-border-color: #d94a43;
+  --bs-btn-active-bg: #c94a44;
+  --bs-btn-active-border-color: #c94a44;
+  --bs-btn-disabled-bg: #ec5f58;
+  --bs-btn-disabled-border-color: #ec5f58;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #ec5f58;
+  --bs-btn-border-color: #ec5f58;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #ec5f58;
+  --bs-btn-hover-border-color: #ec5f58;
+  --bs-btn-active-bg: #d94a43;
+  --bs-btn-active-border-color: #d94a43;
+}
+
+.bg-primary-gradient {
+  background: linear-gradient(180deg, #f07872, #ec5f58 48%, #d94a43) !important;
+}
+
+.btn-scroll-top .progress-square path {
+  stroke: #ec5f58 !important;
+}
+
+.form-check-input:checked {
+  background-color: #ec5f58;
+  border-color: #ec5f58;
+}
+
+.pagination {
+  --bs-pagination-active-bg: #ec5f58;
+  --bs-pagination-active-border-color: #ec5f58;
+}
+
+/* Topic pages: keep square pattern in breadcrumb band only (default pattern is 312px tall) */
+.pattern-square--header-only::after {
+  height: 7.5rem;
+  mask-image: linear-gradient(to top, transparent 10%, black 80%);
+}
+
+@media (min-width: 992px) {
+  .pattern-square--header-only::after {
+    height: 9rem;
+  }
+}
+
+.topic-main {
+  position: relative;
+  z-index: 0;
+  background-color: var(--bs-body-bg);
+}
+
+/* Publication compact list */
+.pub-row-compact__thumb {
+  width: 132px;
+  height: 99px;
+}
+
+.pub-row-compact h3.h6 {
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+
+.pub-row-compact p.small {
+  font-size: 0.9375rem;
+}
+
+.pub-row-compact__meta {
+  font-size: 0.75rem;
+}
+
+/* Research topic article + auto-generated section headings (same scale as Markdown H3) */
+.topic-article.prose h1,
+.topic-article.prose h2,
+.topic-article.prose h3,
+h3.topic-section-title {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.topic-article.prose h3,
+h3.topic-section-title {
+  font-size: calc(1.3rem + 0.6vw);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.topic-page-section {
+  scroll-margin-top: 5.5rem;
+}
+
+.topic-pub-item--extra.d-none {
+  display: none !important;
+}
+
+.topic-article.prose blockquote {
+  border-left: 4px solid rgba(var(--bs-primary-rgb), 0.55);
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+  color: var(--bs-secondary-color);
+}
+
+.topic-cooperation-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem 2.5rem;
+  margin: 1.5rem 0 0;
+}
+
+.topic-cooperation-logos a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.topic-cooperation-logos img {
+  max-height: 44px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+}
+
+/* Topic markdown: full-width images and 16:9 video embeds */
+.topic-article > p > img:only-child,
+.topic-article figure img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+.topic-article > p:has(> img:only-child) {
+  margin: 1.25rem 0;
+}
+
+.topic-article .ratio {
+  width: 100%;
+}
+
+.topic-article .ratio > video {
+  object-fit: cover;
+}
+
+/* Research directions grid: larger titles */
+.research-thumb-grid .research-thumb-title {
+  font-size: clamp(1.35rem, 2.2vw, 1.85rem);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.research-thumb-grid .research-thumb-lead {
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+/* Home landing (landing-it-company hero + research cards) */
+.home-landing-hero {
+  position: relative;
+  min-height: min(85vh, 720px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.home-landing-hero > .container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.home-landing-hero video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+header:has(.navbar-transparent) {
+  position: relative;
+  z-index: 1030;
+}
+
+.home-landing-hero a.link-white,
+.home-landing-hero a.link-white:hover {
+  color: rgba(var(--bs-white-rgb), var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: rgba(var(--bs-white-rgb), var(--bs-link-underline-opacity, 1)) !important;
+}
+
+/* Research cards: always show summary + image (Block hover-only grid is too empty for 6 topics) */
+.home-research-topics .card-grid {
+  height: auto;
+  min-height: 12rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-research-topics .card-grid .card-grid-inner {
+  position: relative;
+}
+
+.home-research-topics .card-grid .card-grid-text,
+.home-research-topics .card-grid .card-grid-image {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+
+@media (min-width: 990px) {
+  .home-research-topics .card-grid .card-grid-inner {
+    background-color: var(--bs-body-bg);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(2, 6, 23, 0.06);
+  }
+
+  .home-research-topics .card-grid:hover {
+    border-top-color: var(--bs-primary);
+  }
+
+  .home-research-topics .card-grid:hover .card-grid-image {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 989.98px) {
+  .home-research-topics .card-grid .card-grid-image {
+    position: relative;
+    width: auto;
+    max-width: 210px;
+    margin: 0 0 1rem;
+  }
+
+  .home-research-topics .card-grid .d-block.d-lg-none {
+    display: none !important;
+  }
+}

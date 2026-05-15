@@ -1,0 +1,107 @@
+---
+layout: default
+---
+<section class="py-4">
+   <div class="container">
+      <nav aria-label="breadcrumb" class="mb-0">
+         <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="{{ '/people/' | relative_url }}">People</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+         </ol>
+      </nav>
+   </div>
+</section>
+
+{% assign role = page.people_role %}
+{% assign members = site.people | where: "role", role | sort: "name_display" %}
+
+{% if role == "faculty" %}
+<section class="mb-lg-9 mb-5 pb-7">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12 col-md-12 col-12">
+            <div class="text-center mb-7">
+               <small class="text-uppercase ls-md fw-semibold text-primary">{{ page.section_kicker | default: "People" }}</small>
+               <h2 class="mt-3">{{ page.title }}</h2>
+               {% if content != blank %}<div class="prose mx-auto mt-3 mb-0 col-lg-8">{{ content }}</div>{% endif %}
+            </div>
+         </div>
+      </div>
+      <div class="row gy-5">
+         {% for person in members %}
+         {% assign fi = forloop.index0 | modulo: 4 | plus: 1 %}
+         {% assign fallback_img = '/assets/images/team/team-img-' | append: fi | append: '.jpg' %}
+         <div class="col-lg-3 col-md-6 col-12">
+            <figure class="mb-4 zoom-img">
+               <a href="{{ person.url | relative_url }}">
+                  {% if person.photo %}
+                  <img src="{{ person.photo | relative_url }}" alt="{{ person.name_display | default: person.title }}" class="rounded-3 img-fluid" />
+                  {% else %}
+                  <img src="{{ fallback_img | relative_url }}" alt="{{ person.name_display | default: person.title }}" class="rounded-3 img-fluid" />
+                  {% endif %}
+               </a>
+            </figure>
+            <div class="mb-4">
+               <h4 class="mb-1"><a href="{{ person.url | relative_url }}" class="text-reset">{{ person.name_display | default: person.title }}</a></h4>
+               <span class="fs-6">{% if person.title_en %}{{ person.title_en }}{% else %}{{ person.role | capitalize }}{% endif %}</span>
+            </div>
+            {% if person.homepage %}
+            <span>
+               <a href="{{ person.homepage }}" class="btn btn-light btn-icon" target="_blank" rel="noopener" aria-label="Homepage">
+                  <i class="bi bi-link-45deg"></i>
+               </a>
+            </span>
+            {% endif %}
+         </div>
+         {% endfor %}
+      </div>
+   </div>
+</section>
+
+{% else %}
+<section class="pb-7">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-8 offset-lg-2 col-md-12">
+            <div class="text-center mb-xl-7 mb-5 mx-xl-8">
+               <h2 class="mb-0">{{ page.list_heading | default: page.title }}</h2>
+               {% if content != blank %}<div class="prose mx-auto mt-4">{{ content }}</div>{% endif %}
+            </div>
+         </div>
+      </div>
+      <div class="row g-5">
+         {% for person in members %}
+         {% assign ai = forloop.index0 | modulo: 7 | plus: 1 %}
+         {% assign av = '/assets/images/avatar/avatar-' | append: ai | append: '.jpg' %}
+         <div class="col-lg-3 col-md-6">
+            <div class="card text-center card-lift h-100">
+               <div class="card-body py-5">
+                  <figure class="mb-4">
+                     <a href="{{ person.url | relative_url }}">
+                        {% if person.photo %}
+                        <img src="{{ person.photo | relative_url }}" alt="" class="avatar avatar-xxl rounded-circle" />
+                        {% else %}
+                        <img src="{{ av | relative_url }}" alt="" class="avatar avatar-xxl rounded-circle" />
+                        {% endif %}
+                     </a>
+                  </figure>
+                  <h5 class="mb-1"><a href="{{ person.url | relative_url }}" class="text-reset text-decoration-none">{{ person.name_display | default: person.title }}</a></h5>
+                  <small>{% if person.title_en %}{{ person.title_en }}{% else %}{{ person.role | capitalize }}{% endif %}</small>
+                  {% if person.topics %}
+                  <div class="small mt-3">
+                     {% for tid in person.topics %}
+                     {% assign topic_doc = site.research_topics | where: "topic_id", tid | first %}
+                     {% if topic_doc %}
+                     <a href="{{ topic_doc.url | relative_url }}" class="badge bg-primary-subtle text-primary-emphasis rounded-pill me-1">{{ topic_doc.title }}</a>
+                     {% endif %}
+                     {% endfor %}
+                  </div>
+                  {% endif %}
+               </div>
+            </div>
+         </div>
+         {% endfor %}
+      </div>
+   </div>
+</section>
+{% endif %}

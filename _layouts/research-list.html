@@ -1,0 +1,61 @@
+---
+layout: default
+---
+<section class="py-5 py-lg-8">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-10 col-xl-9">
+            <h1 class="mb-3 display-6">{{ page.title }}</h1>
+            {% if content != blank %}
+            <p class="lead text-muted mb-0">{{ content }}</p>
+            {% endif %}
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="mb-xl-9 my-4 research-thumb-grid">
+   <div class="container">
+      <div class="row gy-lg-7 gy-5">
+         {% assign topics_sorted = site.research_topics | sort: "order" %}
+         {% for t in topics_sorted %}
+         {% assign wi = forloop.index0 | modulo: 9 | plus: 1 %}
+         {% assign hero = t.hero_image | default: t.cover_image %}
+         {% assign default_thumb = '/assets/images/blog/blog-img-' | append: wi | append: '.jpg' %}
+         {% assign thumb_src = hero | default: default_thumb %}
+         <article class="col-xl-6 col-lg-6 col-12">
+            <figure class="zoom-img mb-0">
+               <a href="{{ t.url | relative_url }}"><img src="{{ thumb_src | relative_url }}" alt="{{ t.title | escape }}" class="rounded-3 img-fluid w-100" loading="lazy" decoding="async" /></a>
+            </figure>
+            <div class="py-4 px-md-4">
+               <div class="mb-5">
+                  <h2 class="research-thumb-title lh-sm mb-3">
+                     <a href="{{ t.url | relative_url }}" class="text-reset text-decoration-none">{{ t.title }}</a>
+                  </h2>
+                  <p class="research-thumb-lead text-muted mb-0">{% if t.summary %}{{ t.summary }}{% else %}{{ t.topic_id }}{% endif %}</p>
+               </div>
+               <div class="d-flex align-items-center flex-wrap gap-4">
+                  <div>
+                     <span class="fs-6 text-muted">Direction</span>
+                     <div class="mt-2">
+                        <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill px-3 py-2">{{ t.topic_id }}</span>
+                     </div>
+                  </div>
+                  <div>
+                     <span class="fs-6 text-muted">Explore</span>
+                     <div class="mt-2">
+                        <a href="{{ t.url | relative_url }}" class="icon-link icon-link-hover text-reset text-decoration-none">
+                           Open page
+                           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </article>
+         {% endfor %}
+      </div>
+   </div>
+</section>

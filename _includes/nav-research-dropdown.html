@@ -1,0 +1,22 @@
+{% assign topics_sorted = site.research_topics | sort: "order" %}
+<li class="nav-item dropdown">
+   <span class="nav-research-split d-inline-flex align-items-center">
+      <a class="nav-link" href="{{ '/research/' | relative_url }}">Research</a>
+      <a
+         class="nav-link dropdown-toggle px-2"
+         href="#"
+         id="navResearchDropdown"
+         role="button"
+         data-bs-toggle="dropdown"
+         aria-expanded="false"
+         aria-label="Show research topics"
+      ></a>
+   </span>
+   <ul class="dropdown-menu{% if include.dark %} dropdown-menu-dark{% endif %}" aria-labelledby="navResearchDropdown">
+      {% for topic in topics_sorted %}
+      <li>
+         <a class="dropdown-item" href="{{ topic.url | relative_url }}">{{ topic.title }}</a>
+      </li>
+      {% endfor %}
+   </ul>
+</li>

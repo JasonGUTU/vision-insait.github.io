@@ -1,0 +1,23 @@
+{% assign post = include.post %}
+{% assign idx = include.index | default: 0 %}
+{% assign pi = idx | modulo: 9 | plus: 1 %}
+{% if post.image %}
+{% assign thumb = post.image %}
+{% else %}
+{% assign thumb = '/site-covers/blog/blog-img-' | append: pi | append: '.jpg' %}
+{% endif %}
+<div class="d-flex gap-3 gap-md-4 py-2 py-md-3 border-bottom align-items-start">
+   <a href="{{ post.url | relative_url }}" class="flex-shrink-0 rounded-2 overflow-hidden bg-light border" style="width: 88px; height: 66px;">
+      <img src="{{ thumb | relative_url }}" alt="" width="88" height="66" class="d-block w-100 h-100" style="object-fit: cover;" />
+   </a>
+   <div class="min-w-0 flex-grow-1">
+      <div class="small text-muted mb-1">{{ post.date | date: "%Y-%m-%d" }}</div>
+      <h3 class="h6 mb-1 lh-sm">
+         <a href="{{ post.url | relative_url }}" class="text-reset text-decoration-none">{{ post.title }}</a>
+      </h3>
+      {% if post.excerpt %}
+      <p class="small text-body-secondary mb-0 lh-sm">{{ post.excerpt | strip_html | truncatewords: 26 }}</p>
+      {% endif %}
+   </div>
+   <a href="{{ post.url | relative_url }}" class="flex-shrink-0 small pt-1 d-none d-md-inline text-decoration-none" aria-label="Read post"><i class="bi bi-chevron-right"></i></a>
+</div>

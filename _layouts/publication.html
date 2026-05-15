@@ -1,0 +1,86 @@
+---
+layout: default
+---
+{% capture pub_author_full %}{% include pub-author-line-full.html publication=page %}{% endcapture %}
+
+<section class="py-5 py-lg-8">
+   <div class="container">
+      <div class="row">
+         <div class="col-12">
+            <nav aria-label="breadcrumb" class="mb-3">
+               <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">{{ page.title | truncate: 64 }}</li>
+               </ol>
+            </nav>
+            <h1 class="mb-2">{{ page.title }}</h1>
+            {% if pub_author_full != blank %}
+            <p class="text-muted mb-3 mb-lg-4 lh-base">{{ pub_author_full | strip }}</p>
+            {% endif %}
+            <div class="d-flex flex-wrap align-items-center gap-3 gap-lg-4 border-top border-bottom py-3">
+               <div>
+                  <span class="small text-muted d-block text-uppercase">Year & venue</span>
+                  <div class="fw-semibold">{{ page.year }}{% if page.venue %} · {{ page.venue }}{% endif %}</div>
+               </div>
+               {% if page.paper_url %}
+               <div class="ms-md-auto">
+                  <a href="{{ page.paper_url }}" class="btn btn-primary btn-sm rounded-pill" target="_blank" rel="noopener">Paper / project link</a>
+               </div>
+               {% endif %}
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="pb-xl-9 pb-5">
+   <div class="container">
+      <div class="row">
+         <article class="col-12">
+            <div class="prose">{{ content }}</div>
+            {% if page.topics and page.topics.size > 0 %}
+            <div class="mt-5 pt-4 border-top">
+               <span class="text-muted small text-uppercase fw-semibold">Topics</span>
+               <div class="mt-2">
+                  {% for topic_id in page.topics %}
+                  {% assign topic_doc = site.research_topics | where: "topic_id", topic_id | first %}
+                  {% if topic_doc %}
+                  <a href="{{ topic_doc.url | relative_url }}" class="badge bg-primary-subtle text-primary-emphasis rounded-pill me-1">{{ topic_doc.title }}</a>
+                  {% endif %}
+                  {% endfor %}
+               </div>
+            </div>
+            {% endif %}
+            <div class="mt-5 pt-4 border-top">
+               <h2 class="h5 mb-2">Our group authors</h2>
+               <ul class="list-unstyled mb-0">
+                  {% assign found = false %}
+                  {% if page.authors and page.authors.size > 0 %}
+                  {% for aid in page.authors %}
+                  {% assign member = site.people | where: "person_id", aid | first %}
+                  {% if member %}
+                  {% assign found = true %}
+                  <li class="mb-2 d-flex align-items-center">
+                     {% if member.photo %}
+                     <img src="{{ member.photo | relative_url }}" alt="" class="avatar avatar-xs rounded-circle me-2" />
+                     {% else %}
+                     {% assign ai = forloop.index0 | modulo: 7 | plus: 1 %}
+                     <img src="{{ '/assets/images/avatar/avatar-' | append: ai | append: '.jpg' | relative_url }}" alt="" class="avatar avatar-xs rounded-circle me-2" />
+                     {% endif %}
+                     <a href="{{ member.url | relative_url }}">{{ member.name_display | default: member.title }}</a>
+                     <span class="text-muted small ms-2 text-capitalize">({{ member.role | replace: "-", " " }})</span>
+                  </li>
+                  {% endif %}
+                  {% endfor %}
+                  {% unless found %}
+                  <li class="text-muted small">No group authors listed.</li>
+                  {% endunless %}
+                  {% else %}
+                  <li class="text-muted small">No group authors listed.</li>
+                  {% endif %}
+               </ul>
+            </div>
+         </article>
+      </div>
+   </div>
+</section>

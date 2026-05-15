@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<section class="py-5 py-lg-8">
+   <div class="container">
+      <div class="row">
+         <div class="col-12">
+            <small class="text-uppercase ls-md fw-semibold text-primary">Blog</small>
+            <h1 class="mt-2 mb-2">{{ page.title }}</h1>
+            {% if content != blank %}
+            <div class="prose text-muted mb-0">{{ content }}</div>
+            {% endif %}
+         </div>
+      </div>
+   </div>
+</section>
+<section class="mb-xl-8 mb-5">
+   <div class="container">
+      <div class="row">
+         <div class="col-12">
+            {% for post in site.posts %}
+            {% include post-row-compact.html post=post index=forloop.index0 %}
+            {% endfor %}
+         </div>
+      </div>
+   </div>
+</section>

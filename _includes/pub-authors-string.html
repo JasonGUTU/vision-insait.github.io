@@ -1,0 +1,17 @@
+{% assign p = include.publication %}
+{% if p.author_line and p.author_line != "" %}
+{{ p.author_line }}
+{% elsif p.authors and p.authors.size > 0 %}
+{% assign out = "" %}
+{% for aid in p.authors %}
+{% unless forloop.first %}{% assign out = out | append: ", " %}{% endunless %}
+{% assign m = site.people | where: "person_id", aid | first %}
+{% if m %}
+{% assign nm = m.name_display | default: m.title %}
+{% assign out = out | append: nm %}
+{% else %}
+{% assign out = out | append: aid %}
+{% endif %}
+{% endfor %}
+{{ out }}
+{% endif %}

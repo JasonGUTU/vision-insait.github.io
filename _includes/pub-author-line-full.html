@@ -1,0 +1,8 @@
+{% assign p = include.publication %}
+{% if p.author_line_full and p.author_line_full != "" %}
+{{ p.author_line_full }}
+{% elsif p.author_line and p.author_line != "" %}
+{{ p.author_line }}
+{% else %}
+{% include pub-authors-string.html publication=p %}
+{% endif %}

@@ -1,0 +1,92 @@
+// Borders
+
+.border-top-dashed {
+   border-top: dashed !important;
+}
+.border-bottom-dashed {
+   border-bottom: dashed !important;
+}
+.border-end-dashed {
+   border-right: dashed !important;
+}
+.border-start-dashed {
+   border-left: dashed !important;
+}
+
+//ai-studio
+.border-gradient {
+   position: relative;
+
+   border-radius: 0.75rem;
+   background: white;
+   transition: 0.3s ease-in-out;
+}
+
+.border-gradient::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+   padding: 3px; /* Border thickness */
+   border-radius: 0.75rem;
+   background: radial-gradient(circle, #dd7bbb 10%, #dd7bbb00 20%), radial-gradient(circle at 40% 40%, #d79f1e 5%, #d79f1e00 15%), radial-gradient(circle at 60% 60%, #5a922c 10%, #5a922c00 20%),
+      radial-gradient(circle at 40% 60%, #4c7894 10%, #4c789400 20%);
+   background-size: 300% 300%;
+   opacity: 0; /* Hide border initially */
+   transition: opacity 0.3s ease-in-out;
+   animation: moveGradient 3s linear infinite;
+   -webkit-mask:
+      linear-gradient(white 0 0) content-box,
+      linear-gradient(white 0 0);
+   -webkit-mask-composite: destination-out;
+   mask-composite: exclude;
+   pointer-events: none;
+   margin: -2px;
+}
+
+.border-gradient:hover::before {
+   opacity: 1; /* Show border on hover */
+}
+.border-gradient-mix-color {
+   position: relative;
+
+   border-radius: 0.75rem;
+}
+
+.border-gradient-mix-color::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+   padding: 2px; /* Border width */
+   border-radius: 0.75rem;
+   background: linear-gradient(180deg, #c311f3, #14e55e);
+   -webkit-mask:
+      linear-gradient(white 0 0) content-box,
+      linear-gradient(white 0 0);
+   -webkit-mask-composite: xor;
+   mask-composite: exclude;
+   margin: -1px;
+}
+
+.process-step {
+   .line {
+      position: relative;
+      &:after {
+         content: "";
+         position: absolute;
+         top: 50%;
+         left: 68%;
+         right: 0;
+         height: 1px;
+         background: linear-gradient(90deg, #0cee57, #ce04fc);
+         transform: translateY(-50%);
+         width: 100%;
+         @media (max-width: 1200px) {
+            display: none;
+         }
+      }
+   }
+   // Hide the line for the last column
+   > div:last-child .line::after {
+      display: none;
+   }
+}

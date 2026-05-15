@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<section class="py-5 py-lg-8">
+   <div class="container">
+      <div class="row">
+         <div class="col-12">
+            <nav aria-label="breadcrumb" class="mb-3">
+               <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="{{ '/job/' | relative_url }}">Job</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+               </ol>
+            </nav>
+            <h1 class="mb-2">{{ page.title }}</h1>
+            {% if page.location %}<p class="text-primary fw-medium mb-0">{{ page.location }}</p>{% endif %}
+            {% if page.apply_url %}
+            <p class="mt-3"><a href="{{ page.apply_url }}" class="btn btn-dark">Apply</a></p>
+            {% endif %}
+         </div>
+      </div>
+   </div>
+</section>
+<section class="pb-7">
+   <div class="container">
+      <div class="row">
+         <div class="col-12">
+            <div class="prose">{{ content }}</div>
+         </div>
+      </div>
+   </div>
+</section>

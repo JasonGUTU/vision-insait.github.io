@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<section class="py-5 py-lg-8">
+   <div class="container">
+      <div class="row">
+         <div class="col-12">
+            <nav aria-label="breadcrumb" class="mb-3">
+               <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">{{ page.title | truncate: 42 }}</li>
+               </ol>
+            </nav>
+            <h1 class="mb-2">{{ page.title }}</h1>
+            <div class="d-flex flex-wrap align-items-center gap-4 border-top border-bottom py-4">
+               <div>
+                  <span class="fs-6 text-muted d-block">Published</span>
+                  <div class="mt-1 fw-semibold">{{ page.date | date: "%B %-d, %Y" }}</div>
+               </div>
+               {% if page.author %}
+               <div>
+                  <span class="fs-6 text-muted d-block">Author</span>
+                  <div class="mt-1 fw-semibold">{{ page.author }}</div>
+               </div>
+               {% endif %}
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="pb-xl-9 pb-5">
+   <div class="container">
+      <div class="row">
+         <article class="col-12 prose">
+            {{ content }}
+         </article>
+      </div>
+   </div>
+</section>

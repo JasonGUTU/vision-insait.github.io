@@ -1,0 +1,13 @@
+{% comment %}
+  Safe access to the news collection (avoids "Cannot sort a null object" when site.news is unset).
+  Sets: news_docs_sorted
+{% endcomment %}
+{% assign news_docs_sorted = "" | split: "" %}
+{% if site.news and site.news.size > 0 %}
+{% assign news_docs_sorted = site.news | sort: "date" | reverse %}
+{% elsif site.collections %}
+{% assign news_col = site.collections | where: "label", "news" | first %}
+{% if news_col and news_col.docs and news_col.docs.size > 0 %}
+{% assign news_docs_sorted = news_col.docs | sort: "date" | reverse %}
+{% endif %}
+{% endif %}

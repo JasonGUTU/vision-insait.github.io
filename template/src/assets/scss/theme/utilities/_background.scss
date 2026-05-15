@@ -1,0 +1,144 @@
+// Background colors
+
+.bg-primary-gradient {
+    background: linear-gradient(180deg, #9b58ff 0%, #8837ff 47.92%, #7a20ff 100%);
+}
+
+.color-facebook {
+    color: $facebook;
+}
+
+.color-twitter {
+    color: $twitter;
+}
+
+.color-github {
+    color: $github;
+}
+
+.color-google {
+    color: $google;
+}
+
+.color-linkedin {
+    color: $linkedin;
+}
+
+.color-youtube {
+    color: $youtube;
+}
+.color-slack {
+    color: $slack;
+}
+
+.bg-facebook {
+    background-color: $facebook;
+}
+
+.bg-twitter {
+    background-color: $twitter;
+}
+
+.bg-github {
+    background-color: $github;
+}
+
+.bg-google {
+    background-color: $google;
+}
+
+.bg-linkedin {
+    background-color: $linkedin;
+}
+
+.bg-youtube {
+    background-color: $youtube;
+}
+
+.bg-slack {
+    background-color: $slack;
+}
+
+.bg-instagram {
+    background-color: $instagram;
+}
+
+.bg-primary-blend-gradient {
+    background: var(
+        --bg-gradient-blend,
+        linear-gradient(0deg, #fff 0%, rgba(255, 255, 255, 0) 100%),
+        linear-gradient(245deg, rgba(108, 73, 250, 0.41) 0%, rgba(211, 38, 142, 0.1) 100%)
+    );
+}
+
+.bg-pink-gradient{
+    background: linear-gradient(265.01deg, #F43F5E 0.29%, #EC4899 96.13%);
+}
+.bg-info-gradient{
+    background: linear-gradient(90deg, #06B6D4 0%, #3B82F6 100%);
+}
+.bg-success-gradient{
+    background: linear-gradient(180deg, #10B981 0%, #22C55E 100%);
+}
+.bg-orange-gradient{
+    background: linear-gradient(137.27deg, #F59E0B 6.68%, #F97316 97%);
+}
+.bg-blue-gradient{
+    background: linear-gradient(180deg, #3B82F6 0%, #0EA5E9 100%);
+}
+.bg-pinks-gradient{
+    background: linear-gradient(180deg, #EC4899 0%, #EF4444 100%);
+}
+.bg-purle-gradient{
+    background: linear-gradient(180deg, #A855F7 0%, #8B5CF6 100%);
+}
+
+
+//ai-studio
+/* Infinite gradient animation */
+@keyframes moveGradient {
+    0% {
+       background-position: 0% 50%;
+    }
+    50% {
+       background-position: 100% 50%;
+    }
+    100% {
+       background-position: 0% 50%;
+    }
+ }
+
+
+.bg-multiple-gradient {
+    background: linear-gradient(89.99deg, rgba(79, 229, 255, 0) 38.52%, rgba(85, 232, 230, 0.145) 47.85%, rgba(102, 240, 167, 0.453) 67.66%, rgba(129, 252, 67, 0.8959) 96.16%, #87ff2a 102.86%);
+    height: 8px;
+    border-radius: 8px;
+ }
+ 
+ .bg-purple-gradient {
+    background: linear-gradient(89.99deg, rgba(79, 229, 255, 0) 38.52%, #ff29d8 102.85%);
+    height: 10px;
+    width: 350px;
+    border-radius: 8px;
+ }
+
+ // particals
+
+ 
+.particals {
+    position: relative;
+    /* background: linear-gradient(to bottom, #001, #112); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+ }
+ 
+ canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+ }

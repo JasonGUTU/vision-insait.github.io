@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<section class="py-5 py-lg-8">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-10 mx-auto text-center">
+            <small class="text-uppercase ls-md fw-semibold text-primary">News</small>
+            <h1 class="mt-2 mb-3">{{ page.title }}</h1>
+            {% if content != blank %}
+            <p class="lead text-muted mb-0">{{ content }}</p>
+            {% endif %}
+         </div>
+      </div>
+   </div>
+</section>
+<section class="mb-xl-9 mb-5">
+   <div class="container">
+      <div class="row gy-lg-7 gy-5">
+         {% include news-docs-sorted.html %}
+         {% for item in news_docs_sorted %}
+         {% assign ni = forloop.index0 | modulo: 9 | plus: 1 %}
+         {% if item.cover_image %}
+         {% assign ncover = item.cover_image %}
+         {% else %}
+         {% assign ncover = '/assets/images/blog/blog-img-' | append: ni | append: '.jpg' %}
+         {% endif %}
+         <article class="col-lg-4 col-md-6 col-12">
+            <figure class="mb-4 zoom-img">
+               <a href="{{ item.url | relative_url }}">
+                  <img src="{{ ncover | relative_url }}" alt="" class="img-fluid rounded-3" loading="lazy" />
+               </a>
+            </figure>
+            {% if item.topics and item.topics.first %}
+            <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill text-uppercase">{{ item.topics | first | replace: "-", " " }}</span>
+            {% endif %}
+            <h2 class="my-3 lh-base h4">
+               <a href="{{ item.url | relative_url }}" class="text-reset text-decoration-none">{{ item.title }}</a>
+            </h2>
+            {% if item.excerpt %}
+            <p class="text-muted small mb-3">{{ item.excerpt }}</p>
+            {% endif %}
+            <div class="d-flex align-items-center justify-content-between small text-muted">
+               <span>{% if item.date %}{{ item.date | date: "%b %-d, %Y" }}{% endif %}</span>
+               <a href="{{ item.url | relative_url }}" class="text-decoration-none">Read more</a>
+            </div>
+         </article>
+         {% endfor %}
+      </div>
+   </div>
+</section>

@@ -1,0 +1,176 @@
+---
+layout: default
+---
+<section class="py-5 py-lg-8">
+   <div class="container">
+      <div class="row">
+         <div class="col-12">
+            <small class="text-uppercase ls-md fw-semibold text-primary">People</small>
+            <h1 class="mt-2 mb-3">{{ page.title }}</h1>
+            <div class="prose text-muted">{{ content }}</div>
+         </div>
+      </div>
+   </div>
+</section>
+
+{% assign faculty = site.people | where: "role", "faculty" | sort: "start_date" %}
+{% if faculty.size > 0 %}
+<section class="mb-lg-9 mb-5">
+   <div class="container">
+      <div class="text-center mb-7">
+         <h2 class="mb-0">Faculty</h2>
+      </div>
+      <div class="row gy-5">
+         {% for person in faculty %}
+         {% assign fi = forloop.index0 | modulo: 4 | plus: 1 %}
+         {% assign fallback_img = '/assets/images/team/team-img-' | append: fi | append: '.jpg' %}
+         <div class="col-lg-3 col-md-6 col-12">
+            <figure class="mb-4 zoom-img">
+               <a href="{{ person.url | relative_url }}">
+                  {% if person.photo %}
+                  <img src="{{ person.photo | relative_url }}" alt="" class="rounded-3 img-fluid" />
+                  {% else %}
+                  <img src="{{ fallback_img | relative_url }}" alt="" class="rounded-3 img-fluid" />
+                  {% endif %}
+               </a>
+            </figure>
+            <div class="mb-4">
+               <h4 class="mb-1"><a href="{{ person.url | relative_url }}" class="text-reset">{{ person.name_display | default: person.title }}</a></h4>
+               <span class="fs-6 text-muted">{% if person.title_en %}{{ person.title_en }}{% endif %}</span>
+            </div>
+            {% if person.homepage %}
+            <a href="{{ person.homepage }}" class="btn btn-light btn-icon" target="_blank" rel="noopener" aria-label="Homepage"><i class="bi bi-link-45deg"></i></a>
+            {% endif %}
+         </div>
+         {% endfor %}
+      </div>
+   </div>
+</section>
+{% endif %}
+
+{% assign postdocs = site.people | where: "role", "postdoc" | sort: "start_date" %}
+{% if postdocs.size > 0 %}
+<section class="mb-lg-9 mb-5">
+   <div class="container">
+      <div class="text-center mb-xl-7 mb-5 mx-xl-8">
+         <h2 class="mb-0">Postdocs</h2>
+      </div>
+      <div class="row g-5">
+         {% for person in postdocs %}
+         {% assign ai = forloop.index0 | modulo: 7 | plus: 1 %}
+         {% assign av = '/assets/images/avatar/avatar-' | append: ai | append: '.jpg' %}
+         <div class="col-lg-3 col-md-6">
+            <div class="card text-center card-lift h-100">
+               <div class="card-body py-5">
+                  <figure class="mb-4">
+                     <a href="{{ person.url | relative_url }}">
+                        {% if person.photo %}
+                        <img src="{{ person.photo | relative_url }}" alt="" class="avatar avatar-xxl rounded-circle" />
+                        {% else %}
+                        <img src="{{ av | relative_url }}" alt="" class="avatar avatar-xxl rounded-circle" />
+                        {% endif %}
+                     </a>
+                  </figure>
+                  <h5 class="mb-1"><a href="{{ person.url | relative_url }}" class="text-reset text-decoration-none">{{ person.name_display | default: person.title }}</a></h5>
+                  <small class="text-muted">{% if person.title_en %}{{ person.title_en }}{% endif %}</small>
+                  {% if person.homepage %}
+                  <div class="mt-3">
+                     <a href="{{ person.homepage }}" class="btn btn-light btn-sm btn-icon" target="_blank" rel="noopener" aria-label="Homepage"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                  {% endif %}
+                  {% if person.topics %}
+                  <div class="small mt-3">
+                     {% for tid in person.topics %}
+                     {% assign topic_doc = site.research_topics | where: "topic_id", tid | first %}
+                     {% if topic_doc %}
+                     <a href="{{ topic_doc.url | relative_url }}" class="badge bg-primary-subtle text-primary-emphasis rounded-pill me-1">{{ topic_doc.title }}</a>
+                     {% endif %}
+                     {% endfor %}
+                  </div>
+                  {% endif %}
+               </div>
+            </div>
+         </div>
+         {% endfor %}
+      </div>
+   </div>
+</section>
+{% endif %}
+
+{% assign phd_like = site.people | where_exp: "item", "item.role == 'phd' or item.role == 'student'" | sort: "start_date" %}
+{% if phd_like.size > 0 %}
+<section class="mb-lg-9 mb-5">
+   <div class="container">
+      <div class="text-center mb-xl-7 mb-5 mx-xl-8">
+         <h2 class="mb-0">PhD students</h2>
+      </div>
+      <div class="row g-5">
+         {% for person in phd_like %}
+         {% assign ai = forloop.index0 | modulo: 7 | plus: 1 %}
+         {% assign av = '/assets/images/avatar/avatar-' | append: ai | append: '.jpg' %}
+         <div class="col-lg-3 col-md-6">
+            <div class="card text-center card-lift h-100">
+               <div class="card-body py-5">
+                  <figure class="mb-4">
+                     <a href="{{ person.url | relative_url }}">
+                        {% if person.photo %}
+                        <img src="{{ person.photo | relative_url }}" alt="" class="avatar avatar-xxl rounded-circle" />
+                        {% else %}
+                        <img src="{{ av | relative_url }}" alt="" class="avatar avatar-xxl rounded-circle" />
+                        {% endif %}
+                     </a>
+                  </figure>
+                  <h5 class="mb-1"><a href="{{ person.url | relative_url }}" class="text-reset text-decoration-none">{{ person.name_display | default: person.title }}</a></h5>
+                  <small class="text-muted">{% if person.title_en %}{{ person.title_en }}{% endif %}</small>
+                  {% if person.topics %}
+                  <div class="small mt-3">
+                     {% for tid in person.topics %}
+                     {% assign topic_doc = site.research_topics | where: "topic_id", tid | first %}
+                     {% if topic_doc %}
+                     <a href="{{ topic_doc.url | relative_url }}" class="badge bg-primary-subtle text-primary-emphasis rounded-pill me-1">{{ topic_doc.title }}</a>
+                     {% endif %}
+                     {% endfor %}
+                  </div>
+                  {% endif %}
+               </div>
+            </div>
+         </div>
+         {% endfor %}
+      </div>
+   </div>
+</section>
+{% endif %}
+
+{% assign visitors = site.people | where: "role", "visitor" | sort: "start_date" %}
+{% if visitors.size > 0 %}
+<section class="pb-7">
+   <div class="container">
+      <div class="text-center mb-xl-7 mb-5 mx-xl-8">
+         <h2 class="mb-0">Visitors</h2>
+      </div>
+      <div class="row g-5">
+         {% for person in visitors %}
+         {% assign ai = forloop.index0 | modulo: 7 | plus: 1 %}
+         {% assign av = '/assets/images/avatar/avatar-' | append: ai | append: '.jpg' %}
+         <div class="col-lg-3 col-md-6">
+            <div class="card text-center card-lift h-100">
+               <div class="card-body py-5">
+                  <figure class="mb-4">
+                     <a href="{{ person.url | relative_url }}">
+                        {% if person.photo %}
+                        <img src="{{ person.photo | relative_url }}" alt="" class="avatar avatar-xxl rounded-circle" />
+                        {% else %}
+                        <img src="{{ av | relative_url }}" alt="" class="avatar avatar-xxl rounded-circle" />
+                        {% endif %}
+                     </a>
+                  </figure>
+                  <h5 class="mb-1"><a href="{{ person.url | relative_url }}" class="text-reset text-decoration-none">{{ person.name_display | default: person.title }}</a></h5>
+                  <small class="text-muted">{% if person.title_en %}{{ person.title_en }}{% endif %}</small>
+               </div>
+            </div>
+         </div>
+         {% endfor %}
+      </div>
+   </div>
+</section>
+{% endif %}

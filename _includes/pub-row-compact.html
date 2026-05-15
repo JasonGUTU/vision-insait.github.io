@@ -1,0 +1,23 @@
+{% assign pub = include.pub %}
+{% capture pub_author_display %}{% include pub-author-line-full.html publication=pub %}{% endcapture %}
+<div class="d-flex gap-3 gap-md-4 py-3 py-md-4 border-bottom align-items-start pub-row-compact">
+   <div class="min-w-0 flex-grow-1">
+      <div class="d-flex flex-wrap align-items-center gap-2 mb-1">
+         <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill pub-row-compact__meta">{{ pub.year }}{% if pub.venue_abbr %} · {{ pub.venue_abbr }}{% endif %}</span>
+      </div>
+      <h3 class="h6 mb-1 lh-sm">
+         <a href="{{ pub.url | relative_url }}" class="text-reset text-decoration-none">{{ pub.title }}</a>
+      </h3>
+      {% if pub_author_display != blank %}
+      <p class="small text-muted mb-0 lh-sm">{{ pub_author_display | strip }}</p>
+      {% endif %}
+   </div>
+   {% if pub.cover_image %}
+   <a href="{{ pub.url | relative_url }}" class="pub-row-compact__thumb flex-shrink-0 rounded-2 overflow-hidden bg-light border d-block">
+      <img src="{{ pub.cover_image | relative_url }}" alt="" width="132" height="99" class="d-block w-100 h-100" style="object-fit: cover;" loading="lazy" decoding="async" />
+   </a>
+   {% endif %}
+   <a href="{{ pub.url | relative_url }}" class="flex-shrink-0 small text-nowrap align-self-center d-none d-md-inline text-decoration-none" aria-label="Open publication">
+      <i class="bi bi-chevron-right"></i>
+   </a>
+</div>
