@@ -1,6 +1,14 @@
 ---
 layout: default
 ---
+{% if page.external_url %}
+<section class="py-5 py-lg-8">
+   <div class="container">
+      <p class="mb-0">Redirecting to <a href="{{ page.external_url }}" target="_blank" rel="noopener">{{ page.title }}</a>…</p>
+   </div>
+</section>
+<script>location.replace({{ page.external_url | jsonify }});</script>
+{% else %}
 {% assign cover = page.cover_image | default: "/site-covers/demos/project-hero-default.jpg" %}
 
 <section class="py-5 py-lg-8">
@@ -50,3 +58,4 @@ layout: default
       {% endif %}
    </div>
 </section>
+{% endif %}

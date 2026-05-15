@@ -72,6 +72,8 @@
 ### 项目 `_projects/*.md`
 
 - **`contributors`**（可选）：`person_id` 数组，在项目页展示成员链接。
+- **`external_url`**（可选）：站外项目主页。设置后，Topic / Demos 列表上的封面、标题与按钮会直接打开该链接（新标签页）；访问本站 `/demos/.../` 路径也会自动跳转。与 **`demo_url`** 不同：`demo_url` 仅在站内项目页保留第二个 “Live demo” 按钮。
+- **`demo_url`**（可选）：站内项目页上的外部演示链接（未设置 `external_url` 时生效）。
 
 ### 关联效果（Liquid 已实现）
 

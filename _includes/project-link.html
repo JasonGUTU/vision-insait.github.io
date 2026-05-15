@@ -1,0 +1,11 @@
+{% comment %}
+  Sets project_link and project_link_external from include.project.
+  Usage: {% include project-link.html project=proj %}
+{% endcomment %}
+{% if include.project.external_url != blank %}
+{% assign project_link = include.project.external_url %}
+{% assign project_link_external = true %}
+{% else %}
+{% assign project_link = include.project.url | relative_url %}
+{% assign project_link_external = false %}
+{% endif %}

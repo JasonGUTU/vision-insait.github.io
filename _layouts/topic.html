@@ -70,6 +70,7 @@ layout: default
       <div class="row gy-5">
          {% for proj in site.projects %}
          {% if proj.topics and proj.topics contains tid %}
+         {% include project-link.html project=proj %}
          {% assign pi = forloop.index0 | modulo: 6 | plus: 1 %}
          {% if proj.cover_image %}
          {% assign cover = proj.cover_image %}
@@ -78,7 +79,7 @@ layout: default
          {% endif %}
          <div class="col-lg-4 col-md-6 col-12">
             <figure class="lift position-relative btn-arrow mb-4">
-               <a href="{{ proj.url | relative_url }}" class="d-block">
+               <a href="{{ project_link }}" class="d-block"{% if project_link_external %} target="_blank" rel="noopener"{% endif %}>
                   <img src="{{ cover | relative_url }}" alt="{{ proj.title | escape }}" class="img-fluid rounded-3 w-100" loading="lazy" decoding="async" />
                   <div class="icon-shape icon-lg bg-white rounded-circle icon-arrow shadow-lg position-absolute bottom-0 end-0 m-3">
                      <i class="bi bi-arrow-up-right"></i>
@@ -86,12 +87,12 @@ layout: default
                </a>
             </figure>
             <h3 class="h5 mb-2">
-               <a href="{{ proj.url | relative_url }}" class="text-reset text-decoration-none">{{ proj.title }}</a>
+               <a href="{{ project_link }}" class="text-reset text-decoration-none"{% if project_link_external %} target="_blank" rel="noopener"{% endif %}>{{ proj.title }}</a>
             </h3>
             {% if proj.tagline %}<p class="text-muted small mb-3">{{ proj.tagline }}</p>{% endif %}
             <div class="d-flex flex-wrap gap-2">
-               <a href="{{ proj.url | relative_url }}" class="btn btn-sm btn-outline-dark">View project</a>
-               {% if proj.demo_url %}<a href="{{ proj.demo_url }}" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">Live demo</a>{% endif %}
+               <a href="{{ project_link }}" class="btn btn-sm btn-outline-dark"{% if project_link_external %} target="_blank" rel="noopener"{% endif %}>{% if project_link_external %}Visit site{% else %}View project{% endif %}</a>
+               {% if proj.demo_url %}{% unless project_link_external %}<a href="{{ proj.demo_url }}" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">Live demo</a>{% endunless %}{% endif %}
             </div>
          </div>
          {% endif %}
