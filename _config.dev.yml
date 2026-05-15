@@ -1,0 +1,3 @@
+# Local overrides — merged by `rake serve` / `rake build:local`
+# Keeps baseurl "" so asset paths match production; only changes absolute URL host.
+url: "http://127.0.0.1:4000"
