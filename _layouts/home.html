@@ -43,36 +43,28 @@
                      </header>
                   </div>
                </div>
-               <div class="row">
+               <div class="row g-4 g-lg-5">
                   {% assign topics_sorted = site.research_topics | sort: "order" %}
                   {% for t in topics_sorted %}
+                  {% assign si = forloop.index0 | modulo: 6 | plus: 1 %}
                   <div class="col-md-6">
-                     <div class="card-grid">
-                        <div class="card-grid-inner">
-                           <h3 class="card-grid-heading">{{ t.title }}</h3>
-                           <div class="card-grid-text">
-                              <p class="mb-0">{% if t.summary %}{{ t.summary }}{% else %}{{ t.topic_id }}{% endif %}</p>
-                              <a href="{{ t.url | relative_url }}" class="icon-link icon-link-hover card-grid-link mt-4">
-                                 Learn more
-                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                                 </svg>
-                              </a>
-                           </div>
-                           <div class="d-block d-lg-none">
-                              <a href="{{ t.url | relative_url }}" class="icon-link icon-link-hover card-grid-link mt-4">
-                                 Learn more
-                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                                 </svg>
-                              </a>
-                           </div>
+                     <article class="card h-100 border-0 shadow-sm home-news-feature-card home-research-topic-card overflow-hidden">
+                        <a href="{{ t.url | relative_url }}" class="home-news-feature-card__media d-block">
+                           <img src="{{ '/site-covers/home/service-' | append: si | append: '.jpg' | relative_url }}" alt="{{ t.title }}" class="w-100 home-news-feature-card__img" loading="lazy" decoding="async" />
+                        </a>
+                        <div class="card-body p-4 p-xl-5 d-flex flex-column">
+                           <h3 class="home-research-topic-card__title mb-3">
+                              <a href="{{ t.url | relative_url }}" class="text-reset text-decoration-none">{{ t.title }}</a>
+                           </h3>
+                           <p class="text-muted home-research-topic-card__summary mb-4 mb-xl-5">{% if t.summary %}{{ t.summary }}{% else %}{{ t.topic_id }}{% endif %}</p>
+                           <a href="{{ t.url | relative_url }}" class="icon-link icon-link-hover card-grid-link mt-auto">
+                              Learn more
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                              </svg>
+                           </a>
                         </div>
-                        <div class="card-grid-image">
-                           {% assign si = forloop.index0 | modulo: 6 | plus: 1 %}
-                           <img src="{{ '/site-covers/home/service-' | append: si | append: '.jpg' | relative_url }}" alt="{{ t.title }}" class="rounded-3 img-fluid" />
-                        </div>
-                     </div>
+                     </article>
                   </div>
                   {% endfor %}
                </div>

@@ -1,5 +1,10 @@
 /* Site-specific tweaks (Block theme overrides) */
 
+/* Global type scale: 1.2× root rem (Bootstrap + custom rem sizes follow) */
+html {
+  font-size: 120%;
+}
+
 /* Sticky footer: keep site footer visible below long pages (e.g. topic publications) */
 body {
   display: flex;
@@ -356,51 +361,38 @@ header:has(.navbar-transparent) {
   text-decoration-color: rgba(var(--bs-white-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 
-/* Research cards: always show summary + image (Block hover-only grid is too empty for 6 topics) */
-.home-research-topics .card-grid {
-  height: auto;
-  min-height: 12rem;
-  margin-bottom: 0.5rem;
+/* Home research directions: same card language as Latest News, larger imagery + type */
+.home-research-topic-card .home-news-feature-card__img {
+  max-height: min(52vw, 300px);
 }
 
-.home-research-topics .card-grid .card-grid-inner {
-  position: relative;
-}
-
-.home-research-topics .card-grid .card-grid-text,
-.home-research-topics .card-grid .card-grid-image {
-  opacity: 1;
-  visibility: visible;
-  display: block;
-}
-
-@media (min-width: 990px) {
-  .home-research-topics .card-grid .card-grid-inner {
-    background-color: var(--bs-body-bg);
-    border-radius: 0.5rem;
-    box-shadow: 0 0.125rem 0.25rem rgba(2, 6, 23, 0.06);
-  }
-
-  .home-research-topics .card-grid:hover {
-    border-top-color: var(--bs-primary);
-  }
-
-  .home-research-topics .card-grid:hover .card-grid-image {
-    opacity: 1;
-    visibility: visible;
+@media (min-width: 768px) {
+  .home-research-topic-card .home-news-feature-card__img {
+    max-height: 280px;
   }
 }
 
-@media (max-width: 989.98px) {
-  .home-research-topics .card-grid .card-grid-image {
-    position: relative;
-    width: auto;
-    max-width: 210px;
-    margin: 0 0 1rem;
+@media (min-width: 1200px) {
+  .home-research-topic-card .home-news-feature-card__img {
+    max-height: 320px;
   }
+}
 
-  .home-research-topics .card-grid .d-block.d-lg-none {
-    display: none !important;
+.home-research-topic-card__title {
+  font-size: clamp(1.35rem, 2.1vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.home-research-topic-card__summary {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 992px) {
+  .home-research-topic-card__summary {
+    font-size: 1.125rem;
   }
 }
 
