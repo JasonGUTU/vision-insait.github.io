@@ -1,8 +1,8 @@
 /* Site-specific tweaks (Block theme overrides) */
 
-/* Global type scale: 1.2× root rem (Bootstrap + custom rem sizes follow) */
+/* Global type scale: 1.1× root rem (Bootstrap + custom rem sizes follow) */
 html {
-  font-size: 120%;
+  font-size: 110%;
 }
 
 /* Sticky footer: keep site footer visible below long pages (e.g. topic publications) */
