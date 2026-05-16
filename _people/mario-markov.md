@@ -8,6 +8,9 @@ start_date: "2022-09-11"
 order: 0
 topics:
   - space-ai
+working_with:
+  - danda-paudel
+  - luc-van-gool
 homepage: https://insait.ai/mario-markov/
 photo: /assets/images/people/mario-markov.jpg
 ---

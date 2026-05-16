@@ -8,6 +8,9 @@ start_date: "2022-09-10"
 order: 0
 topics:
   - space-ai
+working_with:
+  - luc-van-gool
+  - danda-paudel
 homepage: https://insait.ai/stefan-maria-ailuro/
 photo: /assets/images/people/stefan-ailuro.jpg
 ---

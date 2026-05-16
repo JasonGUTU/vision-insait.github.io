@@ -8,6 +8,8 @@ start_date: "2024-06-05"
 order: 0
 topics:
   - 3d-vision
+working_with:
+  - ajad-chhatkuli
 homepage: https://insait.ai/berke-gokmen/
 photo: /assets/images/people/berke-gokmen.jpg
 ---

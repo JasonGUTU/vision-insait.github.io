@@ -7,6 +7,9 @@ role: phd
 start_date: "2022-09-08"
 order: 0
 topics:
+working_with:
+  - luc-van-gool
+  - danda-paudel
 homepage: https://insait.ai/letian-shi/
 photo: /assets/images/people/letian-shi.jpg
 ---

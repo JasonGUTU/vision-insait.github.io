@@ -183,20 +183,14 @@ layout: default
          </div>
          <div id="topic-publications" class="col-12 col-lg-7 topic-page-section">
             <h3 class="topic-section-title mb-3">Publications</h3>
-            {% assign pub_count = 0 %}
-            {% for pub in site.publications %}
-            {% if pub.topics contains tid %}{% assign pub_count = pub_count | plus: 1 %}{% endif %}
-            {% endfor %}
+            {% assign topic_pubs = site.publications | where: "topics", tid | sort: "publication_date" | reverse %}
+            {% assign pub_count = topic_pubs.size %}
             {% if pub_count > 0 %}
             <div class="topic-pubs-panel border-top" data-topic-pubs-collapsed>
-               {% assign pidx = 0 %}
-               {% for pub in site.publications %}
-               {% if pub.topics contains tid %}
-               <div class="topic-pub-item{% if pidx >= 6 %} topic-pub-item--extra d-none{% endif %}">
-                  {% include pub-row-compact.html pub=pub index=pidx %}
+               {% for pub in topic_pubs %}
+               <div class="topic-pub-item{% if forloop.index > 6 %} topic-pub-item--extra d-none{% endif %}">
+                  {% include pub-row-compact.html pub=pub index=forloop.index0 %}
                </div>
-               {% assign pidx = pidx | plus: 1 %}
-               {% endif %}
                {% endfor %}
             </div>
             {% if pub_count > 6 %}

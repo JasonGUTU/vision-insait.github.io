@@ -8,6 +8,10 @@ start_date: "2022-09-05"
 order: 0
 topics:
   - egocentric-vision
+working_with:
+  - luc-van-gool
+  - danda-paudel
+  - nikola-popovic
 homepage: https://insait.ai/dannong-xu/
 photo: /assets/images/people/dannong-xu.jpg
 ---

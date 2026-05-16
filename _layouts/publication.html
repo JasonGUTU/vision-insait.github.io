@@ -10,7 +10,6 @@ layout: default
             <nav aria-label="breadcrumb" class="mb-3">
                <ol class="breadcrumb mb-0">
                   <li class="breadcrumb-item"><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">{{ page.title | truncate: 64 }}</li>
                </ol>
             </nav>
             <h1 class="mb-2">{{ page.title }}</h1>
@@ -20,7 +19,7 @@ layout: default
             <div class="d-flex flex-wrap align-items-center gap-3 gap-lg-4 border-top border-bottom py-3">
                <div>
                   <span class="small text-muted d-block text-uppercase">Year & venue</span>
-                  {% assign pub_venue_line = page.venue_display | default: page.venue %}
+                  {% assign pub_venue_line = page.venue_chronicle | default: page.venue %}
                   <div class="fw-semibold">{{ page.year }}{% if pub_venue_line %} · {{ pub_venue_line }}{% endif %}</div>
                </div>
                {% if page.paper_url %}
@@ -59,18 +58,16 @@ layout: default
                   {% if page.authors and page.authors.size > 0 %}
                   {% for aid in page.authors %}
                   {% assign member = site.people | where: "person_id", aid | first %}
-                  {% if member %}
+                  {% if member and member.role != 'faculty' %}
                   {% assign found = true %}
-                  <li class="mb-2 d-flex align-items-center">
-                     {% if member.photo %}
-                     <img src="{{ member.photo | relative_url }}" alt="" class="avatar avatar-xs rounded-circle me-2" />
-                     {% else %}
-                     {% assign ai = forloop.index0 | modulo: 7 | plus: 1 %}
-                     <img src="{{ '/assets/images/avatar/avatar-' | append: ai | append: '.jpg' | relative_url }}" alt="" class="avatar avatar-xs rounded-circle me-2" />
-                     {% endif %}
-                     <a href="{{ member.url | relative_url }}">{{ member.name_display | default: member.title }}</a>
-                     <span class="text-muted small ms-2 text-capitalize">({{ member.role | replace: "-", " " }})</span>
-                  </li>
+                  {% include pub-group-author-row.html member=member avatar_index=forloop.index0 %}
+                  {% endif %}
+                  {% endfor %}
+                  {% for aid in page.authors %}
+                  {% assign member = site.people | where: "person_id", aid | first %}
+                  {% if member and member.role == 'faculty' %}
+                  {% assign found = true %}
+                  {% include pub-group-author-row.html member=member avatar_index=forloop.index0 %}
                   {% endif %}
                   {% endfor %}
                   {% unless found %}

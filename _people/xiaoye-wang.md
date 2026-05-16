@@ -8,6 +8,9 @@ start_date: "2024-06-04"
 order: 0
 topics:
   - 3d-vision
+working_with:
+  - danda-paudel
+  - luc-van-gool
 homepage: https://insait.ai/xiaoye-wang/
 photo: /assets/images/people/xiaoye-wang.jpg
 ---

@@ -19,7 +19,7 @@ layout: default
    <div class="container">
       <div class="row">
          <div class="col-12">
-            {% assign pubs_sorted = site.publications | sort: "year" | reverse %}
+            {% assign pubs_sorted = site.publications | sort: "publication_date" | reverse %}
             {% for pub in pubs_sorted %}
             {% include pub-row-compact.html pub=pub index=forloop.index0 %}
             {% endfor %}

@@ -8,6 +8,8 @@ start_date: "2023-01-02"
 order: 0
 topics:
   - visual-media
+working_with:
+  - jinjin-gu
 homepage: https://insait.ai/dr-taewoo-kim/
 photo: /assets/images/people/taewoo-kim.jpg
 ---

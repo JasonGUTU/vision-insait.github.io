@@ -8,6 +8,9 @@ start_date: "2022-09-09"
 order: 0
 topics:
   - robotics
+working_with:
+  - luc-van-gool
+  - danda-paudel
 homepage: https://insait.ai/yuanqi-yao/
 photo: /assets/images/people/yuanqi-yao.jpg
 ---

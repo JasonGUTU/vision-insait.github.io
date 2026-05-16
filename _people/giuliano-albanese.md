@@ -8,6 +8,9 @@ start_date: "2022-09-24"
 order: 0
 topics:
   - robotics
+working_with:
+  - danda-paudel
+  - luc-van-gool
 homepage: https://insait.ai/giuliano-albanese/
 photo: /assets/images/people/giuliano-albanese.jpg
 ---

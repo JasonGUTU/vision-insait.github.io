@@ -7,6 +7,9 @@ role: phd
 start_date: "2022-09-13"
 order: 0
 topics:
+working_with:
+  - danda-paudel
+  - luc-van-gool
 homepage: https://insait.ai/deheng-zhang/
 photo: /assets/images/people/deheng-zhang.jpg
 ---

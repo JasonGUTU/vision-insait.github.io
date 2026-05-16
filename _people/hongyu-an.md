@@ -8,6 +8,9 @@ start_date: "2022-09-03"
 order: 0
 topics:
   - visual-media
+working_with:
+  - luc-van-gool
+  - jinjin-gu
 homepage: https://insait.ai/hongyu-an/
 photo: /assets/images/people/hongyu-an.jpg
 ---

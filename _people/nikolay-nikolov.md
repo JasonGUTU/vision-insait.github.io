@@ -8,6 +8,9 @@ start_date: "2022-09-16"
 order: 0
 topics:
   - robotics
+working_with:
+  - danda-paudel
+  - luc-van-gool
 homepage: https://insait.ai/nikolay-nikolov-2/
 photo: /assets/images/people/nikolay-nikolov.jpg
 ---

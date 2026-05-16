@@ -7,6 +7,8 @@ role: phd
 start_date: "2022-09-25"
 order: 0
 topics:
+working_with:
+  - luc-van-gool
 homepage: https://insait.ai/nedko-savov/
 photo: /assets/images/people/nedko-savov.jpg
 ---

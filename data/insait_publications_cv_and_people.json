@@ -170,7 +170,7 @@
   {
     "title": "Revisiting the Generalization Problem of Low-level Vision Models Through the Lens of Image Deraining",
     "year": 2026,
-    "venue": "International Conference on Pattern Recognition (ICPR 2026)",
+    "venue": "Pattern Recognition (2026)",
     "authors": [
       "Jinfan Hu",
       "Zhiyuan You",
@@ -188,11 +188,11 @@
     "matched_people_authors": [
       "Jinjin Gu"
     ],
-    "venue_canonical": "International Conference on Pattern Recognition",
-    "venue_abbr": "ICPR",
+    "venue_canonical": "Pattern Recognition",
+    "venue_abbr": "PR",
     "publication_date": "2026-08-15",
-    "venue_raw": "International Conference on Pattern Recognition (ICPR 2026)",
-    "venue_display": "International Conference on Pattern Recognition (ICPR 2026)"
+    "venue_raw": "Pattern Recognition",
+    "venue_display": "Pattern Recognition (2026)"
   },
   {
     "title": "EngiBench: A Benchmark for Evaluating Large Language Models on Engineering Problem Solving",
@@ -339,7 +339,7 @@
   {
     "title": "Intelligent Photo Retouching with Language Model-Based Artist Agents",
     "year": 2026,
-    "venue": "CVPR (UNK 2026)",
+    "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026) Findings",
     "authors": [
       "Haoyu Chen",
       "Keda Tao",
@@ -358,11 +358,11 @@
     "matched_people_authors": [
       "Jinjin Gu"
     ],
-    "venue_canonical": "CVPR",
-    "venue_abbr": "UNK",
+    "venue_canonical": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+    "venue_abbr": "CVPR",
     "publication_date": "2026-06-15",
     "venue_raw": "CVPR",
-    "venue_display": "CVPR (UNK 2026)"
+    "venue_display": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026) Findings"
   },
   {
     "title": "PhotoFramer: Multi-modal Image Composition Instruction",
@@ -397,7 +397,7 @@
   {
     "title": "How Far Have We Gone in Generative Image Restoration? A Study on Its Capability, Limitations and Evaluation Practices",
     "year": 2026,
-    "venue": "CVPR (UNK 2026)",
+    "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026) Findings",
     "authors": [
       "Xiang Yin",
       "Jinfan Hu",
@@ -417,16 +417,16 @@
     "matched_people_authors": [
       "Jinjin Gu"
     ],
-    "venue_canonical": "CVPR",
-    "venue_abbr": "UNK",
+    "venue_canonical": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+    "venue_abbr": "CVPR",
     "publication_date": "2026-06-15",
     "venue_raw": "CVPR",
-    "venue_display": "CVPR (UNK 2026)"
+    "venue_display": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026) Findings"
   },
   {
     "title": "Are Multimodal Large Language Models Ready for Omnidirectional Spatial Reasoning?",
     "year": 2026,
-    "venue": "CVPR (UNK 2026)",
+    "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026) Findings",
     "authors": [
       "Zihao Dongfang",
       "Xu Zheng",
@@ -448,11 +448,11 @@
       "Danda Pani Paudel",
       "Luc Van Gool"
     ],
-    "venue_canonical": "CVPR",
-    "venue_abbr": "UNK",
+    "venue_canonical": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+    "venue_abbr": "CVPR",
     "publication_date": "2026-06-15",
-    "venue_raw": "CVPR",
-    "venue_display": "CVPR (UNK 2026)"
+    "venue_raw": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)",
+    "venue_display": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026) Findings"
   },
   {
     "title": "Clivis: Unleashing cognitive map through linguistic-visual synergy for embodied visual reasoning",

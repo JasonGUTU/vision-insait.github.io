@@ -8,6 +8,9 @@ start_date: "2022-09-27"
 order: 0
 topics:
   - robotics
+working_with:
+  - danda-paudel
+  - luc-van-gool
 homepage: https://insait.ai/sombit-dey/
 photo: /assets/images/people/sombit-dey.jpg
 ---

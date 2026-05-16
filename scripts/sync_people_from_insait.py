@@ -37,6 +37,7 @@ ALLOWED_FM_KEYS = {
     "start_date",
     "order",
     "topics",
+    "working_with",
     "homepage",
     "photo",
 }
@@ -57,12 +58,12 @@ def parse_front_matter(text: str) -> tuple[dict[str, str | list], str]:
     fm: dict[str, str | list] = {}
     key = None
     for line in block.splitlines():
-        if line.strip().startswith("- ") and key == "topics":
-            topics = fm.get("topics")
-            if not isinstance(topics, list):
-                topics = []
-                fm["topics"] = topics
-            topics.append(line.strip()[2:].strip())
+        if line.strip().startswith("- ") and key in ("topics", "working_with"):
+            items = fm.get(key)
+            if not isinstance(items, list):
+                items = []
+                fm[key] = items
+            items.append(line.strip()[2:].strip())
             continue
         m = re.match(r"^(\w+):\s*(.*)$", line)
         if m:
@@ -70,7 +71,7 @@ def parse_front_matter(text: str) -> tuple[dict[str, str | list], str]:
             val = m.group(2).strip()
             if val.startswith('"') and val.endswith('"'):
                 val = val[1:-1]
-            if key == "topics" and not val:
+            if key in ("topics", "working_with") and not val:
                 fm[key] = []
             else:
                 fm[key] = val
@@ -87,6 +88,7 @@ def dump_front_matter(fm: dict[str, str | list]) -> str:
         "start_date",
         "order",
         "topics",
+        "working_with",
         "homepage",
         "photo",
     ]
@@ -95,8 +97,8 @@ def dump_front_matter(fm: dict[str, str | list]) -> str:
         if key not in fm:
             continue
         val = fm[key]
-        if key == "topics" and isinstance(val, list):
-            lines.append("topics:")
+        if key in ("topics", "working_with") and isinstance(val, list):
+            lines.append(f"{key}:")
             for t in val:
                 lines.append(f"  - {t}")
         elif key in ("start_date", "title_en") or (

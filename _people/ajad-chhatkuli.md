@@ -8,6 +8,8 @@ start_date: "2023-01-13"
 order: 0
 topics:
   - 3d-vision
+working_with:
+  - luc-van-gool
 homepage: https://insait.ai/dr-ajad-chhatkuli/
 photo: /assets/images/people/ajad-chhatkuli.jpg
 ---

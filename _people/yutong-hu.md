@@ -8,6 +8,9 @@ start_date: "2024-06-01"
 order: 0
 topics:
   - robotics
+working_with:
+  - danda-paudel
+  - luc-van-gool
 homepage: https://insait.ai/yutong-hu/
 photo: /assets/images/people/yutong-hu.jpg
 ---

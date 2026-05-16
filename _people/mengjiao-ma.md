@@ -8,6 +8,9 @@ start_date: "2022-09-23"
 order: 0
 topics:
   - 3d-vision
+working_with:
+  - danda-paudel
+  - luc-van-gool
 homepage: https://insait.ai/mengjiao-ma/
 photo: /assets/images/people/mengjiao-ma.jpg
 ---

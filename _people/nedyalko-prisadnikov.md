@@ -7,6 +7,9 @@ role: phd
 start_date: "2022-09-29"
 order: 0
 topics:
+working_with:
+  - danda-paudel
+  - luc-van-gool
 homepage: https://insait.ai/nedyalko-prisadnikov/
 photo: /assets/images/people/nedyalko-prisadnikov.jpg
 ---

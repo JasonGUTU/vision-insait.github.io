@@ -8,6 +8,9 @@ start_date: "2023-01-05"
 order: 0
 topics:
   - vision-agent
+working_with:
+  - luc-van-gool
+  - jinjin-gu
 homepage: https://insait.ai/dr-mengshun-hu/
 photo: /assets/images/people/mengshun-hu.jpg
 ---

@@ -7,6 +7,9 @@ role: phd
 start_date: "2022-09-17"
 order: 0
 topics:
+working_with:
+  - danda-paudel
+  - luc-van-gool
 homepage: https://insait.ai/mohammadmahdi-ghahramani-2/
 photo: /assets/images/people/mohammadmahdi-ghahramani.jpg
 ---

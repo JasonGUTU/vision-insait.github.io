@@ -7,6 +7,8 @@ role: phd
 start_date: "2022-10-04"
 order: 0
 topics:
+working_with:
+  - luc-van-gool
 homepage: https://insait.ai/asen-nachkov/
 photo: /assets/images/people/asen-nachkov.jpg
 ---

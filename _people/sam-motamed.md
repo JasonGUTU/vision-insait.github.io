@@ -8,6 +8,8 @@ start_date: "2022-10-03"
 order: 0
 topics:
   - visual-media
+working_with:
+  - luc-van-gool
 homepage: https://insait.ai/saman-motamed/
 photo: /assets/images/people/sam-motamed.jpg
 ---

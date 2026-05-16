@@ -45,6 +45,17 @@ layout: default
                      {% endfor %}
                   </div>
                   {% endif %}
+                  {% if page.role != 'faculty' and page.working_with and page.working_with.size > 0 %}
+                  <div class="mb-3">
+                     <span class="text-muted me-2">Working with:</span>
+                     {% for wid in page.working_with %}
+                        {% assign supervisor = site.people | where: "person_id", wid | first %}
+                        {% if supervisor %}
+                        <a href="{{ supervisor.url | relative_url }}" class="text-reset fw-semibold">{{ supervisor.name_display | default: supervisor.title }}</a>{% if page.working_with.size == 2 and forloop.index == 1 %} and {% elsif forloop.last %}{% else %}, {% endif %}
+                        {% endif %}
+                     {% endfor %}
+                  </div>
+                  {% endif %}
                   {% if page.homepage %}
                   <p class="mb-0"><a href="{{ page.homepage }}" class="icon-link icon-link-hover" target="_blank" rel="noopener">Homepage</a></p>
                   {% endif %}
@@ -66,20 +77,17 @@ layout: default
             <h2 class="h4 mb-3">Publications</h2>
             <ul class="list-unstyled">
                {% assign pid = page.person_id %}
-               {% assign found = false %}
-               {% for pub in site.publications %}
-                  {% if pub.authors contains pid %}
-                     {% assign found = true %}
+               {% assign person_pubs = site.publications | where: "authors", pid | sort: "publication_date" | reverse %}
+               {% for pub in person_pubs %}
                      <li class="mb-3 pb-3 border-bottom">
                         <a href="{{ pub.url | relative_url }}" class="fw-semibold text-reset">{{ pub.title }}</a>
                         {% assign pub_venue_line = pub.venue_display | default: pub.venue %}
                         <div class="small text-muted">{{ pub.year }}{% if pub_venue_line %} · {{ pub_venue_line }}{% endif %}</div>
                      </li>
-                  {% endif %}
                {% endfor %}
-               {% unless found %}
+               {% if person_pubs.size == 0 %}
                <li class="text-muted">No linked publications yet.</li>
-               {% endunless %}
+               {% endif %}
             </ul>
          </div>
       </div>

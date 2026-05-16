@@ -8,6 +8,9 @@ start_date: "2022-09-06"
 order: 0
 topics:
   - vision-agent
+working_with:
+  - luc-van-gool
+  - jinjin-gu
 homepage: https://insait.ai/ruibo-ming/
 photo: /assets/images/people/ruibo-ming.jpg
 ---

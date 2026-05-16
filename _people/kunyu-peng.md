@@ -6,6 +6,9 @@ title_en: "Postdoctoral Researcher"
 role: postdoc
 start_date: "2023-01-09"
 order: 0
+working_with:
+  - luc-van-gool
+  - danda-paudel
 homepage: https://insait.ai/dr-ing-kunyu-peng/
 photo: /assets/images/people/kunyu-peng.jpg
 ---

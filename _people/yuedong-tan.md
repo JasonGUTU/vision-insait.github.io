@@ -7,6 +7,9 @@ role: visitor
 start_date: "2024-06-02"
 order: 0
 topics:
+working_with:
+  - danda-paudel
+  - luc-van-gool
 homepage: https://insait.ai/yuedong-tan/
 photo: /assets/images/people/yuedong-tan.jpg
 ---

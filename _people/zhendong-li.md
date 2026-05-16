@@ -8,6 +8,9 @@ start_date: "2022-09-15"
 order: 0
 topics:
   - vision-agent
+working_with:
+  - luc-van-gool
+  - danda-paudel
 homepage: https://insait.ai/zhendong-li/
 photo: /assets/images/people/zhendong-li.jpg
 ---

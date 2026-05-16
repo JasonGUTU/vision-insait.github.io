@@ -7,6 +7,9 @@ role: visitor
 start_date: "2024-06-03"
 order: 0
 topics:
+working_with:
+  - danda-paudel
+  - luc-van-gool
 homepage: https://insait.ai/qi-ma/
 photo: /assets/images/people/qi-ma.png
 ---

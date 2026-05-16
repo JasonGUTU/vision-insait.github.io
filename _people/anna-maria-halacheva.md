@@ -8,6 +8,9 @@ start_date: "2022-09-12"
 order: 0
 topics:
   - 3d-vision
+working_with:
+  - danda-paudel
+  - luc-van-gool
 homepage: https://insait.ai/anna-maria-halacheva/
 photo: /assets/images/people/anna-maria-halacheva.jpg
 ---
