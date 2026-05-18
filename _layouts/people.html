@@ -53,7 +53,7 @@ layout: default
 <section class="mb-lg-9 mb-5">
    <div class="container">
       <div class="text-center mb-xl-7 mb-5 mx-xl-8">
-         <h2 class="mb-0">Postdocs</h2>
+         <h2 class="mb-0">Research Fellows</h2>
       </div>
       <div class="row g-5">
          {% for person in postdocs %}
@@ -101,7 +101,7 @@ layout: default
 <section class="mb-lg-9 mb-5">
    <div class="container">
       <div class="text-center mb-xl-7 mb-5 mx-xl-8">
-         <h2 class="mb-0">PhD students</h2>
+         <h2 class="mb-0">Research Students</h2>
       </div>
       <div class="row g-5">
          {% for person in people_by_start %}
@@ -144,7 +144,7 @@ layout: default
 
 {% assign visitors = site.people | where: "role", "visitor" | sort: "start_date" %}
 {% if visitors.size > 0 %}
-<section class="pb-7">
+<section class="mb-lg-9 mb-5">
    <div class="container">
       <div class="text-center mb-xl-7 mb-5 mx-xl-8">
          <h2 class="mb-0">Visitors</h2>
@@ -169,6 +169,27 @@ layout: default
                   <small class="text-muted">{% if person.title_en %}{{ person.title_en }}{% endif %}</small>
                </div>
             </div>
+         </div>
+         {% endfor %}
+      </div>
+   </div>
+</section>
+{% endif %}
+
+{% assign alumni = site.data.alumni %}
+{% if alumni.size > 0 %}
+<section class="pb-7">
+   <div class="container">
+      <div class="text-center mb-xl-7 mb-5 mx-xl-8">
+         <h2 class="mb-0">Alumni</h2>
+      </div>
+      <div class="row g-3 g-md-4">
+         {% for member in alumni %}
+         <div class="col-lg-4 col-md-6">
+            <p class="mb-0">
+               {{ member.name }}{% if member.link and member.link != "" %}
+               [<a href="{{ member.link }}" target="_blank" rel="noopener noreferrer" class="text-decoration-none">website</a>]{% endif %}
+            </p>
          </div>
          {% endfor %}
       </div>

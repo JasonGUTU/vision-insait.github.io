@@ -11,3 +11,7 @@ authors:
   - jinjin-gu
 paper_url: "https://arxiv.org/pdf/2505.23130"
 ---
+## Abstract
+
+Photo retouching is integral to photographic art, extending far beyond simple technical fixes to heighten emotional expression and narrative depth. While artists leverage expertise to create unique visual effects through deliberate adjustments, non-professional users often rely on automated tools that produce visually pleasing results but lack interpretative depth and interactive transparency. In this paper, we introduce PhotoArtAgent, an intelligent system that combines Vision-Language Models (VLMs) with advanced natural language reasoning to emulate the creative process of a professional artist. The agent performs explicit artistic analysis, plans retouching strategies, and outputs precise parameters to Lightroom through an API. It then evaluates the resulting images and iteratively refines them until the desired artistic vision is achieved. Throughout this process, PhotoArtAgent provides transparent, text-based explanations of its creative rationale, fostering meaningful interaction and user control. Experimental results show that PhotoArtAgent not only surpasses existing automated tools in user studies but also achieves results comparable to those of professional human artists.
+
