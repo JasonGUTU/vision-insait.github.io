@@ -19,7 +19,13 @@ layout: default
       <div class="row">
          {% assign projects_sorted = site.projects | sort: "order" %}
          {% for proj in projects_sorted %}
-         {% include project-link.html project=proj %}
+         {% if proj.external_url %}
+         {% assign demo_href = proj.external_url %}
+         {% elsif proj.url %}
+         {% assign demo_href = proj.url %}
+         {% else %}
+         {% assign demo_href = proj.id | append: '/' %}
+         {% endif %}
          {% assign pi = forloop.index0 | modulo: 6 | plus: 1 %}
          {% if proj.cover_image %}
          {% assign cover = proj.cover_image %}
@@ -29,7 +35,7 @@ layout: default
          {% assign stagger = forloop.index0 | modulo: 2 %}
          <div class="gallery-item gallery-item-3{% if stagger == 1 %} mt-md-5{% endif %}">
             <figure class="lift position-relative btn-arrow mb-5">
-               <a href="{{ project_link }}" class="gallery-item-inner"{% if project_link_external %} target="_blank" rel="noopener"{% endif %}>
+               <a href="{{ demo_href }}" class="gallery-item-inner"{% if proj.external_url %} target="_blank" rel="noopener"{% endif %}>
                   <img src="{{ cover | relative_url }}" alt="{{ proj.title | escape }}" class="img-fluid rounded-3 w-100" width="960" height="640" loading="lazy" decoding="async" />
                   <div class="icon-shape icon-lg bg-white rounded-circle icon-arrow shadow-lg">
                      <i class="bi bi-arrow-up-right"></i>
@@ -38,18 +44,18 @@ layout: default
             </figure>
             <div class="mb-5">
                <h2 class="lh-base h4">
-                  <a href="{{ project_link }}" class="text-reset text-decoration-none"{% if project_link_external %} target="_blank" rel="noopener"{% endif %}>{{ proj.title }}</a>
+                  <a href="{{ demo_href }}" class="text-reset text-decoration-none"{% if proj.external_url %} target="_blank" rel="noopener"{% endif %}>{{ proj.title }}</a>
                </h2>
                {% if proj.tagline %}
                <p class="mb-0 text-muted">{{ proj.tagline }}</p>
                {% endif %}
             </div>
             <div class="d-flex flex-wrap gap-2">
-               <a href="{{ project_link }}" class="btn btn-outline-dark"{% if project_link_external %} target="_blank" rel="noopener"{% endif %}>
-                  {% if project_link_external %}Visit site{% else %}View project{% endif %}
+               <a href="{{ demo_href }}" class="btn btn-outline-dark"{% if proj.external_url %} target="_blank" rel="noopener"{% endif %}>
+                  {% if proj.external_url %}Visit site{% else %}View project{% endif %}
                   <span class="ms-1"><i class="bi bi-arrow-up-right-circle-fill"></i></span>
                </a>
-               {% if proj.demo_url %}{% unless project_link_external %}
+               {% if proj.demo_url %}{% unless proj.external_url %}
                <a href="{{ proj.demo_url }}" class="btn btn-outline-primary" target="_blank" rel="noopener">Live demo</a>
                {% endunless %}{% endif %}
             </div>

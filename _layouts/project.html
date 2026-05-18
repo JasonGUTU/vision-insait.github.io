@@ -34,6 +34,18 @@ layout: default
          <img src="{{ cover | relative_url }}" alt="{{ page.title }}" class="img-fluid rounded-3 w-100" width="1200" height="800" loading="lazy" decoding="async" />
       </figure>
 
+      {% if content != blank %}
+      <div class="prose mb-lg-7 mb-5">{{ content }}</div>
+      {% endif %}
+
+      {% if page.demo_url %}
+      <div class="mb-lg-7 mb-5">
+         <a href="{{ page.demo_url }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            Live demo <i class="bi bi-box-arrow-up-right ms-1"></i>
+         </a>
+      </div>
+      {% endif %}
+
       {% if page.contributors and page.contributors.size > 0 %}
       <div class="project-contributors">
          <span class="text-muted text-uppercase small fw-semibold">Contributors</span>

@@ -1,11 +1,16 @@
 {% comment %}
   Sets project_link and project_link_external from include.project.
+  Use truthy check on external_url (null is not blank in Liquid, but is falsy in {% if %}).
   Usage: {% include project-link.html project=proj %}
 {% endcomment %}
-{% if include.project.external_url != blank %}
-{% assign project_link = include.project.external_url %}
+{% assign p = include.project %}
+{% if p.external_url %}
+{% assign project_link = p.external_url %}
 {% assign project_link_external = true %}
+{% elsif p.url %}
+{% assign project_link = p.url %}
+{% assign project_link_external = false %}
 {% else %}
-{% assign project_link = include.project.url | relative_url %}
+{% assign project_link = p.id | append: '/' %}
 {% assign project_link_external = false %}
 {% endif %}
