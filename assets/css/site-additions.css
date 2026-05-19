@@ -43,7 +43,28 @@ main {
   max-width: 100%;
 }
 
-/* Home hero: white logo on video; color logo on sticky clone only */
+/* VLab PNG logos: never apply Block theme invert */
+[data-bs-theme="dark"] .navbar-brand,
+.navbar-brand .site-logo,
+.offcanvas-header .site-logo,
+.site-page-footer .site-logo {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+
+/* Nav / footer / drawer: color in light theme, white in dark theme */
+[data-bs-theme="light"] .site-logo--theme-dark,
+[data-bs-theme="dark"] .site-logo--theme-light {
+  display: none !important;
+}
+
+[data-bs-theme="light"] .site-logo--theme-light,
+[data-bs-theme="dark"] .site-logo--theme-dark {
+  display: inline-block !important;
+}
+
+/* Home hero: white logo on video */
+.navbar-transparent.navbar-dark .navbar-brand,
 .navbar-transparent.navbar-dark .navbar-brand img {
   filter: none !important;
 }
@@ -56,11 +77,20 @@ main {
   display: inline-block !important;
 }
 
-.navbar-clone .site-logo-brand--landing .site-logo--white {
+/* Scrolled sticky nav: color in light theme, white in dark theme */
+[data-bs-theme="light"] .navbar-clone .site-logo-brand--landing .site-logo--white {
   display: none !important;
 }
 
-.navbar-clone .site-logo-brand--landing .site-logo--color {
+[data-bs-theme="light"] .navbar-clone .site-logo-brand--landing .site-logo--color {
+  display: inline-block !important;
+}
+
+[data-bs-theme="dark"] .navbar-clone .site-logo-brand--landing .site-logo--color {
+  display: none !important;
+}
+
+[data-bs-theme="dark"] .navbar-clone .site-logo-brand--landing .site-logo--white {
   display: inline-block !important;
 }
 
@@ -290,6 +320,24 @@ h3.topic-section-title {
   width: auto;
   max-width: 180px;
   object-fit: contain;
+}
+
+/* Project detail: markdown images span the prose / content column */
+.project-prose {
+  max-width: 100%;
+}
+
+.project-prose > p > img:only-child,
+.project-prose figure img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+.project-prose > p:has(> img:only-child) {
+  margin: 0 0 1.25rem;
 }
 
 /* Topic markdown: full-width images and 16:9 video embeds */

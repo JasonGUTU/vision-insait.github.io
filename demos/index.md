@@ -1,5 +1,5 @@
 ---
 layout: demos-grid
-title: Demos and Projects
+title: Projects & Demo
 permalink: /demos/
 ---

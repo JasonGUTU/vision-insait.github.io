@@ -1,9 +1,9 @@
 ---
 title: SPEAR-1
 tagline: Robotic foundation model via 3D understanding — open weights from INSAIT Robotics.
-cover_image: /site-covers/demos/portfolio-1.jpg
-order: 1
-project_year: "2025"
+cover_image: /assets/images/portfolio/spear-1.png
+release_date: 2026-03-01
+project_year: "2026"
 sidebar_tags: Demo, Robotics
 external_url: https://spear.insait.ai/
 contributors:

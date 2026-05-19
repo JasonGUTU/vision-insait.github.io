@@ -2,10 +2,6 @@
 layout: default
 ---
 {% assign tid = page.topic_id %}
-{% assign hero = page.hero_image | default: page.cover_image %}
-{% assign bi = page.order | default: 1 | minus: 1 | modulo: 9 | plus: 1 %}
-{% assign default_hero = '/assets/images/blog/blog-img-' | append: bi | append: '.jpg' %}
-{% assign hero_src = hero | default: default_hero %}
 <section class="py-4 py-lg-5">
    <div class="container">
       <div class="row">
@@ -38,7 +34,7 @@ layout: default
                <div>
                   <span class="fs-6 text-muted">Also see</span>
                   <div class="mt-2 small">
-                     <a href="#topic-demos" class="text-reset text-decoration-none">Demos</a>
+                     <a href="#topic-demos" class="text-reset text-decoration-none">Projects &amp; Demo</a>
                      <span class="text-muted mx-1">·</span>
                      <a href="#topic-news" class="text-reset text-decoration-none">News</a>
                      <span class="text-muted mx-1">·</span>
@@ -49,10 +45,6 @@ layout: default
                </div>
             </div>
 
-            <figure class="my-6">
-               <img src="{{ hero_src | relative_url }}" alt="{{ page.title | escape }}" class="rounded-3 img-fluid w-100" loading="lazy" decoding="async" />
-            </figure>
-
             <div class="prose topic-article">{{ content }}</div>
          </article>
       </div>
@@ -61,21 +53,22 @@ layout: default
 
 <section id="topic-demos" class="topic-page-section pb-7 mb-xl-8 mb-5">
    <div class="container">
-      <h3 class="topic-section-title mb-4">Projects and demos</h3>
+      <h3 class="topic-section-title mb-4">Projects &amp; Demo</h3>
       {% assign proj_found = false %}
       {% for proj in site.projects %}
       {% if proj.topics and proj.topics contains tid %}{% assign proj_found = true %}{% endif %}
       {% endfor %}
       {% if proj_found %}
       <div class="row gy-5">
-         {% for proj in site.projects %}
+         {% assign projects_by_release = site.projects | sort: "release_date" | reverse %}
+         {% for proj in projects_by_release %}
          {% if proj.topics and proj.topics contains tid %}
          {% if proj.external_url %}
          {% assign project_link = proj.external_url %}
          {% elsif proj.url %}
-         {% assign project_link = proj.url %}
+         {% assign project_link = proj.url | relative_url %}
          {% else %}
-         {% assign project_link = proj.id | append: '/' %}
+         {% assign project_link = proj.id | append: '/' | relative_url %}
          {% endif %}
          {% assign pi = forloop.index0 | modulo: 6 | plus: 1 %}
          {% if proj.cover_image %}
@@ -85,7 +78,7 @@ layout: default
          {% endif %}
          <div class="col-lg-4 col-md-6 col-12">
             <figure class="lift position-relative btn-arrow mb-4">
-               <a href="{{ project_link }}" class="d-block"{% if proj.external_url %} target="_blank" rel="noopener"{% endif %}>
+               <a href="{{ project_link }}" class="d-block"{% if proj.external_url %} target="_blank" rel="noopener noreferrer"{% endif %}>
                   <img src="{{ cover | relative_url }}" alt="{{ proj.title | escape }}" class="img-fluid rounded-3 w-100" loading="lazy" decoding="async" />
                   <div class="icon-shape icon-lg bg-white rounded-circle icon-arrow shadow-lg position-absolute bottom-0 end-0 m-3">
                      <i class="bi bi-arrow-up-right"></i>
@@ -93,11 +86,12 @@ layout: default
                </a>
             </figure>
             <h3 class="h5 mb-2">
-               <a href="{{ project_link }}" class="text-reset text-decoration-none"{% if proj.external_url %} target="_blank" rel="noopener"{% endif %}>{{ proj.title }}</a>
+               <a href="{{ project_link }}" class="text-reset text-decoration-none"{% if proj.external_url %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ proj.title }}</a>
             </h3>
-            {% if proj.tagline %}<p class="text-muted small mb-3">{{ proj.tagline }}</p>{% endif %}
+            {% if proj.tagline %}<p class="text-muted small mb-2">{{ proj.tagline }}</p>{% endif %}
+            {% if proj.release_date %}<p class="small text-muted mb-3">{{ proj.release_date | date: "%b %-d, %Y" }}</p>{% elsif proj.tagline %}<div class="mb-3"></div>{% endif %}
             <div class="d-flex flex-wrap gap-2">
-               <a href="{{ project_link }}" class="btn btn-sm btn-outline-dark"{% if proj.external_url %} target="_blank" rel="noopener"{% endif %}>{% if proj.external_url %}Visit site{% else %}View project{% endif %}</a>
+               <a href="{{ project_link }}" class="btn btn-sm btn-outline-dark"{% if proj.external_url %} target="_blank" rel="noopener noreferrer"{% endif %}>{% if proj.external_url %}Visit site{% else %}View project{% endif %}</a>
                {% if proj.demo_url %}{% unless proj.external_url %}<a href="{{ proj.demo_url }}" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">Live demo</a>{% endunless %}{% endif %}
             </div>
          </div>

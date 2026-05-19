@@ -3,7 +3,7 @@ topic_id: robotics
 title: Robotics
 order: 1
 summary: Reference page for editing Research Topics — use this file as the template for your own topic.
-hero_image: /assets/images/blog/blog-img-2.jpg
+hero_image: /assets/images/blog/robotics.png
 intro_video: /site-covers/home/hero-video.mp4
 ---
 

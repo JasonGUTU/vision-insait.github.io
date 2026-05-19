@@ -3,7 +3,7 @@ topic_id: egocentric-vision
 title: Egocentric Vision
 order: 4
 summary: First-person video, audio, IMU, and language for situated understanding and forecasting.
-hero_image: /assets/images/blog/blog-img-8.jpg
+hero_image: /assets/images/blog/egocentric.png
 intro_video: /site-covers/home/hero-video.mp4
 ---
 

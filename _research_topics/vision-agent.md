@@ -3,7 +3,7 @@ topic_id: vision-agent
 title: Vision Agent
 order: 6
 summary: Multimodal models, tool-using agents, and structured reasoning over images and video.
-hero_image: /assets/images/blog/blog-img-5.jpg
+hero_image: /assets/images/blog/agent.png
 intro_video: /site-covers/home/hero-video.mp4
 ---
 
