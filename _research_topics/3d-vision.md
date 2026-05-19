@@ -3,7 +3,7 @@ topic_id: 3d-vision
 title: 3D Vision
 order: 3
 summary: Reconstruction, neural fields, radiance fields, and geometric reasoning at scale.
-hero_image: /assets/images/blog/blog-img-6.jpg
+hero_image: /assets/images/blog/3d.png
 intro_video: /site-covers/home/hero-video.mp4
 ---
 
