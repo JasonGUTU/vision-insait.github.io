@@ -3,7 +3,7 @@ topic_id: visual-media
 title: Visual Media
 order: 5
 summary: Imaging, restoration, generation, and cinematic quality control for real-world capture.
-hero_image: /assets/images/blog/blog-img-3.jpg
+hero_image: /assets/images/blog/visual-media.png
 intro_video: /site-covers/home/hero-video.mp4
 ---
 

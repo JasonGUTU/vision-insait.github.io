@@ -416,13 +416,13 @@ header:has(.navbar-transparent) {
 
 @media (min-width: 768px) {
   .home-research-topic-card .home-news-feature-card__img {
-    max-height: 280px;
+    max-height: 220px;
   }
 }
 
 @media (min-width: 1200px) {
   .home-research-topic-card .home-news-feature-card__img {
-    max-height: 320px;
+    max-height: 240px;
   }
 }
 

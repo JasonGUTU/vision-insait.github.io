@@ -3,7 +3,7 @@ topic_id: space-ai
 title: Space AI
 order: 2
 summary: Earth observation, onboard autonomy, and reliable perception for extreme environments.
-hero_image: /assets/images/blog/blog-img-4.jpg
+hero_image: /assets/images/blog/space-ai.png
 intro_video: /site-covers/home/hero-video.mp4
 ---
 
