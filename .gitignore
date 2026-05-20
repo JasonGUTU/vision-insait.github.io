@@ -1,6 +1,7 @@
 _site/
 .jekyll-cache/
 vendor/bundle/
+.venv/
 
 # Broken Block symlink (macOS duplicate); use committed assets/ instead
 assets 2

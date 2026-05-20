@@ -2,7 +2,7 @@
 person_id: nikola-popovic
 title: Dr. Nikola Popovic
 name_display: Nikola Popovic
-title_en: "Postdoctoral Researcher"
+title_en: "Research Scientist"
 role: postdoc
 start_date: "2023-01-06"
 order: 0

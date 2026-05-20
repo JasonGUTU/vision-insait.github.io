@@ -26,7 +26,7 @@ SLUG_ALIASES = {
 }
 
 ROLE_BY_DIR = {"phd": "phd", "postdoc": "postdoc", "visitor": "visitor"}
-VISITING_PHD_IDS = {"yutong-hu", "yuedong-tan", "qi-ma"}
+VISITING_PHD_IDS = {"yutong-hu", "yuedong-tan"}
 LONG_TERM_VISITOR_IDS = {"berke-gokmen", "xiaoye-wang"}
 ALLOWED_FM_KEYS = {
     "person_id",

@@ -7,6 +7,7 @@ role: phd
 start_date: "2022-09-13"
 order: 0
 topics:
+  - 3d-vision
 working_with:
   - danda-paudel
   - luc-van-gool
