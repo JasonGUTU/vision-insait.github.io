@@ -409,7 +409,7 @@ header:has(.navbar-transparent) {
   text-decoration-color: rgba(var(--bs-white-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 
-/* Home research directions: same card language as Latest News, larger imagery + type */
+/* Home research directions: card grid; type smaller than section .home-section-title */
 .home-research-topic-card .home-news-feature-card__img {
   max-height: min(52vw, 300px);
 }
@@ -427,20 +427,20 @@ header:has(.navbar-transparent) {
 }
 
 .home-research-topic-card__title {
-  font-size: clamp(1.35rem, 2.1vw, 1.75rem);
+  font-size: clamp(1.05rem, 1.15vw, 1.1875rem);
   font-weight: 600;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
 }
 
 .home-research-topic-card__summary {
-  font-size: 1.0625rem;
-  line-height: 1.6;
+  font-size: 0.875rem;
+  line-height: 1.55;
 }
 
 @media (min-width: 992px) {
   .home-research-topic-card__summary {
-    font-size: 1.125rem;
+    font-size: 0.9375rem;
   }
 }
 
