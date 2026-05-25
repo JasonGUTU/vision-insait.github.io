@@ -10,7 +10,8 @@ topics:
   - 3d-vision
   - space-ai
   - egocentric-vision
-homepage: https://insait.ai/dr-danda-paudel/
+insait_url: https://insait.ai/dr-danda-paudel/
+google_scholar: https://scholar.google.ch/citations?user=W43pvPkAAAAJ&hl=en
 photo: /assets/images/people/danda-paudel.jpg
 ---
 

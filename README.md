@@ -20,7 +20,7 @@ When you tag content consistently, **Research Topic pages**, **People profiles**
 4. [People (`_people/`)](#people-_people)
 5. [Publications (`_publications/`)](#publications-_publications)
 6. [Projects & demos (`_projects/`)](#projects--demos-_projects)
-7. [News (`_news/`)](#news-_news)
+7. [News (`news/index.md`)](#news-newsindexmd)
 8. [Job openings (`_jobs/`)](#job-openings-_jobs)
 9. [Site-wide configuration](#site-wide-configuration)
 10. [Local build & preview](#local-build--preview)
@@ -39,12 +39,9 @@ flowchart LR
   P["People\n(person_id + topics)"]
   Pub["Publications\n(authors + topics)"]
   Proj["Projects\n(contributors + topics)"]
-  N["News\n(topics)"]
-
   P -->|topics contains topic_id| RT
   Pub -->|topics contains topic_id| RT
   Proj -->|topics contains topic_id| RT
-  N -->|topics contains topic_id| RT
   Pub -->|authors contains person_id| P
   Proj -->|contributors contains person_id| P
 ```
@@ -56,8 +53,6 @@ flowchart LR
 | `_publications/*.md` | `authors: [ person_id, … ]` | Paper listed on each member’s profile; “Our group authors” block links to member pages |
 | `_projects/*.md` | `topics: [ … ]` | Project card on topic page and in topic “Projects and demos” section |
 | `_projects/*.md` | `contributors: [ person_id, … ]` | Contributor list on project page (when not using `external_url` redirect only) |
-| `_news/*.md` | `topics: [ … ]` | News card in topic “Related news” section and on `/news/` |
-
 **Rules of thumb**
 
 1. Every string in a `topics` array must match an existing **`topic_id`** in `_research_topics/`.
@@ -80,7 +75,6 @@ flowchart LR
 ├── _research_topics/        # One file per research direction
 ├── _publications/           # One file per paper
 ├── _projects/               # Demos / software / external project pages
-├── _news/                   # News posts (primary news channel)
 ├── _jobs/                   # Open positions
 │
 ├── index.md                 # Home page
@@ -88,12 +82,12 @@ flowchart LR
 ├── research/index.md        # Research directions list
 ├── publications/index.md    # Publication archive
 ├── demos/index.md           # Projects grid
-├── news/index.md            # News grid
+├── news/index.md            # Text news list (single file to edit)
 ├── job/index.md             # Job list
 └── blog/index.md            # Redirects to /news/ (legacy path)
 ```
 
-**Jekyll collections** (see `_config.yml`) turn each folder into typed content with fixed URL patterns. **`_posts/`** is optional legacy blog material; the live **News** section uses **`_news/`** only.
+**Jekyll collections** (see `_config.yml`) turn each folder into typed content with fixed URL patterns. **`_posts/`** is optional legacy blog material. **News** is a single page at **`news/index.md`** (not a collection).
 
 ---
 
@@ -121,7 +115,7 @@ Do **not** put partner lists in YAML. Use an **“In Cooperation With”** secti
 
 - The layout renders **`title`**, **`summary`**, and **`hero_image`** from YAML; you write the long-form description in the body.
 - Use **`###`** for sections and **`####`** for subsections only. Do **not** use `##`, `#####`, or raw HTML headings (the page already has an H1).
-- Sections **Projects and demos**, **Related news**, **People**, and **Publications** on the topic page are **generated automatically** from tagged items — do not duplicate them in the file.
+- Sections **Projects and demos**, **People**, and **Publications** on the topic page are **generated automatically** from tagged items — do not duplicate them in the file.
 
 ### Images & video in topic pages
 
@@ -250,23 +244,17 @@ Project description (shown when the page is not a pure redirect). If only `exter
 
 ---
 
-## News (`_news/`)
+## News (`news/index.md`)
 
-One file per announcement. Use a **date-prefixed filename** for clarity, e.g. `2026-05-12-robotics-retreat.md` → `/news/2026-05-12-robotics-retreat/`.
+Group news is a **single Markdown page** at `/news/`. Edit **`news/index.md`** only — no per-item files or topic tagging.
 
-### Front matter fields
+Add one bullet per line (newest first):
 
-| Field | Required | Description |
-|-------|----------|-------------|
-| `title` | **Yes** | Headline. |
-| `date` | **Yes** | `YYYY-MM-DD`; drives sort on `/news/` (newest first). |
-| `excerpt` | Recommended | Short summary on cards and under the title on the article page. |
-| `topics` | Optional | `topic_id` array for “Related news” on topic pages. |
-| `cover_image` | Optional | Card and article hero; random blog placeholder if omitted. |
+```markdown
+* **May 12, 2026** — Short announcement text.
+```
 
-### Body
-
-Full article text (Markdown).
+The home page does not show news; the nav/footer link goes to this list.
 
 ---
 
@@ -340,7 +328,7 @@ With `permalink: pretty`:
 | Research topic | `/research/topics/<topic_id>/` |
 | Publications list / paper | `/publications/` , `/publications/<slug>/` |
 | Demos list / project | `/demos/` , `/demos/<slug>/` |
-| News list / article | `/news/` , `/news/<slug>/` |
+| News | `/news/` |
 | Jobs list / posting | `/job/` , `/job/<slug>/` |
 | Legacy blog | `/blog/` → redirects to `/news/` |
 
@@ -371,7 +359,7 @@ Routine editors should **not** change `_layouts/` or `_includes/`. Reference map
 | Member | `person.html` | `_people/*.md` + pubs via `authors` |
 | Publications | `publications-list.html`, `publication.html` | `_publications/` |
 | Demos | `demos-grid.html`, `project.html` | `_projects/` |
-| News | `news-grid.html`, `news.html` | `_news/` |
+| News | `page.html` | `news/index.md` |
 | Jobs | `job-list.html`, `job.html` | `_jobs/` |
 
 ---
@@ -390,17 +378,21 @@ Routine editors should **not** change `_layouts/` or `_includes/`. Reference map
 2. Set `authors` to group `person_id` list; set `topics` for each relevant direction.
 3. Run `rake serve` and check the publication page and each tagged topic page.
 
-### Adding a project or news item
+### Adding a project
 
 1. Create the Markdown file with `title` and `topics`.
-2. For projects, set `cover_image` and either host on-site content or `external_url`.
-3. For news, set `date` and `excerpt`; confirm it appears on `/news/` and on topic pages.
+2. Set `cover_image` and either host on-site content or `external_url`.
+
+### Updating news
+
+1. Edit `news/index.md` and add a bullet with **date** and short text (newest at the top).
+2. Run `rake serve` and check `/news/`.
 
 ### Adding a research direction
 
 1. Add `_research_topics/<topic_id>.md` with matching `topic_id` in YAML.
 2. Set `order` among siblings; write body using `###` / `####` only.
-3. Tag people, papers, projects, and news with the new `topic_id`.
+3. Tag people, papers, and projects with the new `topic_id`.
 4. Use `robotics.md` as the authoring reference.
 
 ### Common issues

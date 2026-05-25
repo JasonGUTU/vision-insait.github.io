@@ -18,13 +18,13 @@
                            <h1 class="text-white-stable display-4 mb-0">{{ page.hero_title | default: site.landing.hero_title }}</h1>
                            <p class="mb-0 text-white-50 lead px-lg-10">{{ page.hero_subtitle | default: site.landing.hero_subtitle }}</p>
                         </div>
-                        <div class="d-md-flex d-grid align-items-center justify-content-md-center gap-4">
-                           <a href="{{ site.landing.primary_cta_url | default: '/people/' | relative_url }}" class="btn btn-primary rounded-pill">{{ site.landing.primary_cta_label | default: "People" }}</a>
-                           <a href="{{ site.landing.secondary_cta_url | default: '/research/' | relative_url }}" class="link-white icon-link icon-link-hover card-grid-link d-flex justify-content-center">
-                              {{ site.landing.secondary_cta_label | default: "Research topics" }}
-                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                              </svg>
+                        <div class="d-md-flex d-grid flex-wrap align-items-center justify-content-md-center gap-3">
+                           <a href="{{ site.landing.primary_cta_url | default: '/people/' | relative_url }}" class="btn btn-primary rounded-pill px-4">{{ site.landing.primary_cta_label | default: "People" }}</a>
+                           <a href="{{ site.landing.secondary_cta_url | default: '/research/' | relative_url }}" class="btn btn-outline-light rounded-pill px-4">{{ site.landing.secondary_cta_label | default: "Research topics" }}</a>
+                           {% assign tertiary_url = site.landing.tertiary_cta_url | default: 'https://insait.ai/' %}
+                           <a href="{{ tertiary_url }}" class="btn btn-outline-light rounded-pill px-4"{% if tertiary_url contains '://' %} target="_blank" rel="noopener"{% endif %}>
+                              {{ site.landing.tertiary_cta_label | default: "INSAIT" }}
+                              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-up-right ms-1" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/></svg>
                            </a>
                         </div>
                      </div>
@@ -74,59 +74,52 @@
             </div>
          </section>
 
-         {% include news-docs-sorted.html %}
-         {% assign home_news_md = site.home_content | where: "slug", "latest-news" | first %}
-         {% assign latest_news_n = site.landing.latest_news_limit | default: 4 %}
-         {% assign has_featured_news = false %}
-         {% if news_docs_sorted.size > 0 %}
-         {% assign has_featured_news = true %}
-         {% endif %}
-         {% assign has_text_column = false %}
-         {% if home_news_md %}
-         {% assign home_news_body = home_news_md.content | strip %}
-         {% if home_news_body != "" %}
-         {% assign has_text_column = true %}
-         {% endif %}
-         {% endif %}
-         {% if has_featured_news or has_text_column %}
-         <section class="py-xl-9 py-5 home-latest-news home-landing-band border-top bg-body-tertiary">
+         {% assign projects_sorted = site.projects | sort: "release_date" | reverse %}
+         {% if projects_sorted.size > 0 %}
+         <section class="py-xl-9 py-5 home-recent-projects home-landing-band border-top bg-body-tertiary">
             <div class="container">
                <div class="row justify-content-center">
                   <div class="col-12 col-lg-10 col-xl-8">
-                     <header class="home-section-head text-center mb-xl-9 mb-5">
-                        <p class="home-section-kicker text-uppercase ls-md fw-semibold text-primary mb-0">{{ site.landing.latest_news_kicker | default: "News" }}</p>
-                        <h2 class="home-section-title mt-3 mb-0">{{ site.landing.latest_news_heading | default: "Latest news" }}</h2>
+                     <header class="home-section-head text-center mb-xl-8 mb-5">
+                        <p class="home-section-kicker text-uppercase ls-md fw-semibold text-primary mb-0">{{ site.landing.recent_projects_kicker | default: "Projects & demo" }}</p>
+                        <h2 class="home-section-title mt-3 mb-0">{{ site.landing.recent_projects_heading | default: "Recent projects" }}</h2>
                      </header>
                   </div>
                </div>
-               <div class="row g-4 g-lg-5 align-items-start">
-                  {% if has_featured_news %}
-                  <div class="{% if has_text_column %}col-lg-8{% else %}col-12{% endif %}">
-                     <div class="row g-4 home-latest-news-feature-grid">
-                        {% for item in news_docs_sorted limit: latest_news_n %}
-                        {% assign ni = forloop.index0 | modulo: 9 | plus: 1 %}
-                        {% if item.cover_image %}
-                        {% assign ncover = item.cover_image %}
+               <div class="home-projects-swiper-wrap position-relative">
+                  <div class="swiper home-projects-swiper">
+                     <div class="swiper-wrapper">
+                        {% assign recent_n = site.landing.recent_projects_limit | default: 10 %}
+                        {% for proj in projects_sorted limit: recent_n %}
+                        {% if proj.external_url %}
+                        {% assign proj_href = proj.external_url %}
+                        {% elsif proj.url %}
+                        {% assign proj_href = proj.url | relative_url %}
                         {% else %}
-                        {% assign ncover = '/assets/images/blog/blog-img-' | append: ni | append: '.jpg' %}
+                        {% assign proj_href = proj.id | append: '/' | relative_url %}
                         {% endif %}
-                        <div class="col-12 col-md-6">
-                           <article class="card h-100 border-0 shadow-sm home-news-feature-card overflow-hidden">
-                              <a href="{{ item.url | relative_url }}" class="home-news-feature-card__media d-block">
-                                 <img src="{{ ncover | relative_url }}" alt="" class="w-100 home-news-feature-card__img" loading="lazy" />
-                              </a>
-                              <div class="card-body p-4 d-flex flex-column">
-                                 <p class="small text-muted mb-2">{% if item.date %}{{ item.date | date: "%B %-d, %Y" }}{% endif %}</p>
-                                 <h3 class="h5 mb-2">
-                                    <a href="{{ item.url | relative_url }}" class="text-reset text-decoration-none">{{ item.title }}</a>
-                                 </h3>
-                                 {% if item.excerpt %}
-                                 <p class="text-muted small mb-3">{{ item.excerpt }}</p>
-                                 {% endif %}
-                                 <a href="{{ item.url | relative_url }}" class="icon-link icon-link-hover card-grid-link small mt-auto">
-                                    Read more
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                       <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                        {% assign pi = forloop.index0 | modulo: 6 | plus: 1 %}
+                        {% if proj.cover_image %}
+                        {% assign pcover = proj.cover_image %}
+                        {% else %}
+                        {% assign pcover = '/site-covers/demos/portfolio-' | append: pi | append: '.jpg' %}
+                        {% endif %}
+                        <div class="swiper-slide h-auto">
+                           <article class="home-project-card h-100 d-flex flex-column">
+                              <figure class="lift position-relative btn-arrow mb-3">
+                                 <a href="{{ proj_href }}"{% if proj.external_url %} target="_blank" rel="noopener noreferrer"{% endif %} aria-label="{{ proj.title | escape }}">
+                                    <img src="{{ pcover | relative_url }}" alt="{{ proj.title | escape }}" class="img-fluid rounded-3 w-100" loading="lazy" decoding="async" />
+                                    <div class="icon-shape icon-lg bg-white rounded-circle icon-arrow shadow-lg">
+                                       <i class="bi bi-arrow-up-right"></i>
+                                    </div>
+                                 </a>
+                              </figure>
+                              <div class="home-project-card__footer d-flex align-items-center justify-content-between small px-1">
+                                 <span class="text-muted">{% if proj.release_date %}{{ proj.release_date | date: "%b %-d, %Y" }}{% endif %}</span>
+                                 <a href="{{ proj_href }}" class="home-project-card__cta text-decoration-none"{% if proj.external_url %} target="_blank" rel="noopener noreferrer"{% endif %}>
+                                    {% if proj.external_url %}Visit{% else %}View{% endif %}
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-up-right ms-1" viewBox="0 0 16 16">
+                                       <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"></path>
                                     </svg>
                                  </a>
                               </div>
@@ -134,30 +127,67 @@
                         </div>
                         {% endfor %}
                      </div>
-                     <div class="mt-4">
-                        <a href="{{ '/news/' | relative_url }}" class="icon-link icon-link-hover card-grid-link">
-                           All news
-                           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                           </svg>
-                        </a>
-                     </div>
                   </div>
-                  {% endif %}
-                  {% if has_text_column %}
-                  <div class="{% if has_featured_news %}col-lg-4{% else %}col-12 col-lg-10 col-xl-8 mx-auto{% endif %}">
-                     <div class="home-latest-news-text h-100 border rounded-3 bg-body p-4 p-lg-4">
-                        <div class="home-latest-news-text__body text-body-secondary small lh-lg">{{ home_news_md.content | markdownify }}</div>
-                     </div>
-                  </div>
-                  {% endif %}
+                  <div class="home-projects-swiper__pagination swiper-pagination"></div>
+                  <button type="button" class="home-projects-swiper__nav home-projects-swiper__nav--prev" aria-label="Previous projects">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>
+                  </button>
+                  <button type="button" class="home-projects-swiper__nav home-projects-swiper__nav--next" aria-label="Next projects">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+                  </button>
+               </div>
+               <div class="text-center mt-5">
+                  <a href="{{ '/demos/' | relative_url }}" class="btn btn-danger rounded-pill px-4 py-2">
+                     All projects &amp; demos
+                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right ms-2" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                     </svg>
+                  </a>
                </div>
             </div>
          </section>
+         <script>
+            (function () {
+              function initHomeProjectsSwiper() {
+                if (typeof Swiper === "undefined") return;
+                var el = document.querySelector(".home-projects-swiper");
+                if (!el || el.dataset.initialized === "true") return;
+                el.dataset.initialized = "true";
+                var wrap = el.closest(".home-projects-swiper-wrap");
+                new Swiper(el, {
+                  speed: 500,
+                  spaceBetween: 24,
+                  slidesPerView: 1.15,
+                  slidesPerGroup: 1,
+                  loop: false,
+                  watchOverflow: true,
+                  autoplay: { delay: 5000, disableOnInteraction: false },
+                  pagination: {
+                    el: wrap.querySelector(".home-projects-swiper__pagination"),
+                    clickable: true,
+                  },
+                  navigation: {
+                    prevEl: wrap.querySelector(".home-projects-swiper__nav--prev"),
+                    nextEl: wrap.querySelector(".home-projects-swiper__nav--next"),
+                  },
+                  breakpoints: {
+                    576: { slidesPerView: 2, slidesPerGroup: 2 },
+                    992: { slidesPerView: 3, slidesPerGroup: 2 },
+                    1200: { slidesPerView: 4, slidesPerGroup: 2 },
+                  },
+                });
+              }
+              if (document.readyState === "loading") {
+                document.addEventListener("DOMContentLoaded", initHomeProjectsSwiper);
+              } else {
+                initHomeProjectsSwiper();
+              }
+            })();
+         </script>
          {% endif %}
 
          {% if site.sponsors and site.sponsors.size > 0 %}
-         <section class="py-7 py-lg-8 bg-light border-top">
+         <section class="py-7 py-lg-8 bg-body border-top">
             <div class="container">
                <div class="text-center mb-6">
                   <small class="text-uppercase ls-md fw-semibold text-primary">Sponsored by</small>
@@ -179,6 +209,37 @@
                      {% endif %}
                   </div>
                   {% endfor %}
+               </div>
+            </div>
+         </section>
+         {% endif %}
+
+         {% assign join = site.landing.join_us %}
+         {% if join and join.enabled != false %}
+         {% assign join_images = join.images | default: site.landing.join_us_default_images %}
+         <section class="py-xl-9 py-5 home-join-us home-landing-band border-top bg-body-tertiary">
+            <div class="container">
+               <div class="row align-items-center g-5">
+                  <div class="col-xl-4 col-md-6 col-12">
+                     <small class="text-uppercase ls-md fw-semibold text-primary">{{ join.kicker | default: "Careers · open positions" }}</small>
+                     <h2 class="h1 my-3">{{ join.heading | default: "Join us" }}</h2>
+                     <p class="mb-5 pe-lg-4 text-body-secondary">{{ join.body | default: "We are recruiting PhD students, postdocs, and visiting researchers across all our directions. If our work resonates with yours, come build the next generation of vision systems with us." }}</p>
+                     <a href="{{ join.cta_url | default: '/job/' | relative_url }}" class="btn btn-danger rounded-pill px-4 py-2">
+                        {{ join.cta_label | default: "View open positions" }}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right ms-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+                     </a>
+                  </div>
+                  <div class="col-xl-6 offset-xl-2 col-md-6 col-12">
+                     <div class="row g-4 home-join-us__grid">
+                        <div class="col-6">
+                           <a href="{{ join.cta_url | default: '/job/' | relative_url }}" class="d-block mb-4 rounded-3 card-lift home-join-us__tile home-join-us__tile--short" style="background-image: url('{{ join_images[0] | relative_url }}');" aria-label="{{ join.heading | default: 'Join us' }}"></a>
+                           <a href="{{ join.cta_url | default: '/job/' | relative_url }}" class="d-block rounded-3 card-lift home-join-us__tile home-join-us__tile--short" style="background-image: url('{{ join_images[1] | relative_url }}');" aria-label="{{ join.heading | default: 'Join us' }}"></a>
+                        </div>
+                        <div class="col-6">
+                           <a href="{{ join.cta_url | default: '/job/' | relative_url }}" class="d-block rounded-3 card-lift home-join-us__tile home-join-us__tile--tall" style="background-image: url('{{ join_images[2] | relative_url }}');" aria-label="{{ join.heading | default: 'Join us' }}"></a>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
          </section>

@@ -24,7 +24,7 @@ Each direction has one Markdown file; the filename must match `topic_id`:
 | Visual Media | `visual-media.md` | `/research/topics/visual-media/` |
 | Vision Agent | `vision-agent.md` | `/research/topics/vision-agent/` |
 
-The YAML block at the top of each file sets the page title, summary, and hero image. The sections **Projects and demos**, **Related news**, **Publications**, and **People** are filled automatically from other folders when items are tagged with your `topic_id` — you do not write those in this file.
+The YAML block at the top of each file sets the page title, summary, and hero image. The sections **Projects and demos**, **Publications**, and **People** are filled automatically from other folders when items are tagged with your `topic_id` — you do not write those in this file.
 
 #### YAML fields (top of the file)
 

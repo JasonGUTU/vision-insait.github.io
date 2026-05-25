@@ -4,12 +4,23 @@
 {% endif %}
 <footer class="site-page-footer pt-7 border-top">
    <div class="container">
-      <div class="row">
-         <div class="col-lg-9 col-12">
+      <div class="row gy-5">
+         {% assign col_count = 0 %}
+         {% if footer_cfg.columns %}{% assign col_count = footer_cfg.columns.size %}{% endif %}
+         {% if col_count <= 1 %}
+         {% assign links_wrap_class = "col-lg-4 col-md-6 col-12" %}
+         {% assign aside_wrap_class = "col-lg-6 offset-lg-2 col-md-6 col-12" %}
+         {% assign col_inner_class = "col-12" %}
+         {% else %}
+         {% assign links_wrap_class = "col-lg-9 col-12" %}
+         {% assign aside_wrap_class = "col-lg-3 col-12" %}
+         {% assign col_inner_class = "col-lg-3 col-12" %}
+         {% endif %}
+         <div class="{{ links_wrap_class }}">
             <div class="row" id="ft-links">
-               {% if footer_cfg.columns and footer_cfg.columns.size > 0 %}
+               {% if footer_cfg.columns and col_count > 0 %}
                {% for col in footer_cfg.columns %}
-               <div class="col-lg-3 col-12">
+               <div class="{{ col_inner_class }}">
                   <div class="position-relative">
                      <div class="mb-3 pb-2 d-flex justify-content-between border-bottom border-bottom-lg-0">
                         <h4 class="h5 mb-0">{{ col.title }}</h4>
@@ -21,7 +32,11 @@
                         <ul class="list-unstyled mb-0 py-3 py-lg-0">
                            {% for link in col.links %}
                            <li class="mb-2">
+                              {% if link.external %}
+                              <a href="{{ link.url }}" class="text-decoration-none text-reset" target="_blank" rel="noopener">{{ link.label }}</a>
+                              {% else %}
                               <a href="{{ link.url | relative_url }}" class="text-decoration-none text-reset">{{ link.label }}</a>
+                              {% endif %}
                            </li>
                            {% endfor %}
                         </ul>
@@ -36,14 +51,22 @@
                {% endif %}
             </div>
          </div>
-         <div class="col-lg-3 col-12">
-            <div class="me-lg-7 mt-5 mt-lg-0">
+         <div class="{{ aside_wrap_class }}">
+            <div class="mt-0 mt-lg-0">
                {% if footer_cfg.aside %}
-               <h4 class="h5 mb-3">{{ footer_cfg.aside.title }}</h4>
+               <h4 class="h5 mb-3 pb-2 border-bottom border-bottom-lg-0">{{ footer_cfg.aside.title }}</h4>
                {% if footer_cfg.aside.body %}
-               <p class="text-body-secondary">{{ footer_cfg.aside.body }}</p>
+               <p class="text-body-secondary mb-3">{{ footer_cfg.aside.body }}</p>
                {% endif %}
-               {% if site.email %}
+               {% if footer_cfg.aside.cta and footer_cfg.aside.cta.url %}
+               <p class="mb-3">
+                  <a href="{{ footer_cfg.aside.cta.url | relative_url }}" class="icon-link icon-link-hover card-grid-link text-decoration-none">
+                     {{ footer_cfg.aside.cta.label | default: "Learn more" }}
+                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+                  </a>
+               </p>
+               {% endif %}
+               {% if footer_cfg.aside.show_email != false and site.email %}
                <p class="mb-0">
                   <a href="mailto:{{ site.email }}" class="text-decoration-none">{{ site.email }}</a>
                </p>

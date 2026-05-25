@@ -36,8 +36,6 @@ layout: default
                   <div class="mt-2 small">
                      <a href="#topic-demos" class="text-reset text-decoration-none">Projects &amp; Demo</a>
                      <span class="text-muted mx-1">·</span>
-                     <a href="#topic-news" class="text-reset text-decoration-none">News</a>
-                     <span class="text-muted mx-1">·</span>
                      <a href="#topic-people" class="text-reset text-decoration-none">People</a>
                      <span class="text-muted mx-1">·</span>
                      <a href="#topic-publications" class="text-reset text-decoration-none">Publications</a>
@@ -104,50 +102,6 @@ layout: default
    </div>
 </section>
 
-
-<section id="topic-news" class="topic-page-section mb-xl-8 mb-5">
-   <div class="container">
-      <h3 class="topic-section-title mb-4">Related news</h3>
-      {% include news-docs-sorted.html %}
-      {% assign news_found = false %}
-      {% for item in news_docs_sorted %}
-      {% if item.topics and item.topics contains tid %}{% assign news_found = true %}{% endif %}
-      {% endfor %}
-      {% if news_found %}
-      <div class="row gy-5">
-         {% for item in news_docs_sorted %}
-         {% if item.topics and item.topics contains tid %}
-         {% assign ni = forloop.index0 | modulo: 9 | plus: 1 %}
-         {% if item.cover_image %}
-         {% assign ncover = item.cover_image %}
-         {% else %}
-         {% assign ncover = '/assets/images/blog/blog-img-' | append: ni | append: '.jpg' %}
-         {% endif %}
-         <article class="col-lg-4 col-md-6 col-12">
-            <figure class="mb-3 zoom-img">
-               <a href="{{ item.url | relative_url }}">
-                  <img src="{{ ncover | relative_url }}" alt="" class="img-fluid rounded-3" loading="lazy" />
-               </a>
-            </figure>
-            {% if item.topics and item.topics.first %}
-            <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill text-uppercase">{{ item.topics | first }}</span>
-            {% endif %}
-            <h3 class="my-2 lh-base h5">
-               <a href="{{ item.url | relative_url }}" class="text-reset text-decoration-none">{{ item.title }}</a>
-            </h3>
-            {% if item.excerpt %}
-            <p class="small text-muted mb-2">{{ item.excerpt }}</p>
-            {% endif %}
-            <div class="small text-muted">{% if item.date %}{{ item.date | date: "%b %-d, %Y" }}{% endif %}</div>
-         </article>
-         {% endif %}
-         {% endfor %}
-      </div>
-      {% else %}
-      <p class="text-muted small mb-0">No news items tagged with <code>{{ tid }}</code>. Add <code>topics: [ {{ tid }} ]</code> to entries in <code>_news/</code>.</p>
-      {% endif %}
-   </div>
-</section>
 
 <section class="topic-page-section pb-xl-9 pb-5">
    <div class="container">

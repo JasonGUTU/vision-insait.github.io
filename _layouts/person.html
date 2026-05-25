@@ -56,8 +56,28 @@ layout: default
                      {% endfor %}
                   </div>
                   {% endif %}
-                  {% if page.homepage %}
-                  <p class="mb-0"><a href="{{ page.homepage }}" class="icon-link icon-link-hover" target="_blank" rel="noopener">Homepage</a></p>
+                  {% if page.insait_url or page.homepage or page.google_scholar %}
+                  <div class="d-flex flex-wrap gap-2 person-links">
+                     {% if page.insait_url %}
+                     <a href="{{ page.insait_url }}" class="btn btn-light btn-icon person-link person-link--insait" target="_blank" rel="noopener" aria-label="INSAIT profile" title="INSAIT profile">
+                        {% if site.links.insait_logo %}
+                        <img src="{{ site.links.insait_logo | relative_url }}" alt="INSAIT" class="person-link__img" />
+                        {% else %}
+                        <span class="fw-bold small lh-1">IN</span>
+                        {% endif %}
+                     </a>
+                     {% endif %}
+                     {% if page.homepage %}
+                     <a href="{{ page.homepage }}" class="btn btn-light btn-icon person-link" target="_blank" rel="noopener" aria-label="Personal homepage" title="Personal homepage">
+                        <i class="bi bi-globe2"></i>
+                     </a>
+                     {% endif %}
+                     {% if page.google_scholar %}
+                     <a href="{{ page.google_scholar }}" class="btn btn-light btn-icon person-link" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">
+                        <i class="bi bi-mortarboard-fill"></i>
+                     </a>
+                     {% endif %}
+                  </div>
                   {% endif %}
                </div>
             </div>

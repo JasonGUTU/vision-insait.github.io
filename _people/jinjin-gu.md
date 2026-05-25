@@ -10,7 +10,9 @@ topics:
   - visual-media
   - vision-agent
   - egocentric-vision
-homepage: https://insait.ai/dr-jinjin-gu/
+insait_url: https://insait.ai/dr-jinjin-gu/
+homepage: https://www.jasongt.com/
+google_scholar: https://scholar.google.com/citations?user=uMQ-G-QAAAAJ&hl=en
 photo: /assets/images/people/jinjin-gu.jpg
 ---
 

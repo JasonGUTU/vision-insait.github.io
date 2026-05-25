@@ -5,19 +5,26 @@ columns:
         url: /research/
       - label: Projects & Demo
         url: /demos/
+      - label: Publications
+        url: /publications/
   - title: Group
     links:
       - label: People
         url: /people/
       - label: Open positions
         url: /job/
-      - label: News
-        url: /news/
   - title: Resources
     links:
       - label: Home
         url: /
+      - label: INSAIT
+        url: https://insait.ai/
+        external: true
 aside:
   title: Contact
   body: >-
-    Reach out for collaborations, student visits, and sponsorship inquiries.
+    For collaboration, student visits, and sponsorship enquiries, please reach out to our faculty group directly.
+  cta:
+    label: Meet the faculty
+    url: /people/#faculty
+  show_email: false

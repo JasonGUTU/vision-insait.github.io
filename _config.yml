@@ -31,11 +31,27 @@ landing:
   primary_cta_url: "/people/"
   secondary_cta_label: "Research topics"
   secondary_cta_url: "/research/"
+  tertiary_cta_label: "INSAIT"
+  tertiary_cta_url: "https://insait.ai/"
   services_kicker: "Research directions"
   services_heading: "A comprehensive view of the topics we work on."
-  latest_news_kicker: "News"
-  latest_news_heading: "Latest news"
-  latest_news_limit: 4
+  recent_projects_kicker: "Projects & demo"
+  recent_projects_heading: "Recent projects"
+  recent_projects_limit: 10
+  join_us:
+    enabled: true
+    kicker: "Careers · open positions"
+    heading: "Join us"
+    body: >-
+      We are recruiting PhD students, postdocs, and visiting researchers
+      across all our directions. If our work resonates with yours, come
+      build the next generation of vision systems with us.
+    cta_label: "View open positions"
+    cta_url: "/job/"
+    images:
+      - /assets/images/INSAIT/1765184093836.jpeg
+      - /assets/images/INSAIT/1776151789707.jpeg
+      - /assets/images/INSAIT/synergy.jpg
 
 # Optional: shown on the home page below research cards
 sponsors:
@@ -57,22 +73,35 @@ footer:
           url: /research/
         - label: Projects & Demo
           url: /demos/
+        - label: Publications
+          url: /publications/
     - title: Group
       links:
         - label: People
           url: /people/
         - label: Open positions
           url: /job/
-        - label: News
-          url: /news/
     - title: Resources
       links:
         - label: Home
           url: /
+        - label: INSAIT
+          url: https://insait.ai/
+          external: true
   aside:
     title: Contact
     body: >-
-      Reach out for collaborations, student visits, and sponsorship inquiries.
+      For collaboration, student visits, and sponsorship enquiries, please reach out to our faculty group directly.
+    cta:
+      label: Meet the faculty
+      url: /people/#faculty
+    show_email: false
+
+# External brand logos (used by person link buttons, etc.)
+# Drop the INSAIT logo into /assets/images/brand/ (or any path) and set the path below
+# to render the real logo on Faculty cards in place of the "IN" text fallback.
+links:
+  insait_logo:  # e.g. /assets/images/brand/insait.svg
 
 markdown: kramdown
 permalink: pretty
@@ -93,12 +122,6 @@ collections:
   jobs:
     output: true
     permalink: /job/:path/
-  news:
-    output: true
-    permalink: /news/:path/
-  # Non-output snippets for the home layout (Markdown bodies edited here)
-  home_content:
-    output: false
 
 defaults:
   - scope:
@@ -131,11 +154,6 @@ defaults:
       type: "posts"
     values:
       layout: post
-  - scope:
-      path: ""
-      type: "news"
-    values:
-      layout: news
 
 exclude:
   - template

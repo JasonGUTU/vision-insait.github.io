@@ -15,7 +15,7 @@ layout: default
 
 {% assign faculty = site.people | where: "role", "faculty" | sort: "start_date" %}
 {% if faculty.size > 0 %}
-<section class="mb-lg-9 mb-5">
+<section id="faculty" class="mb-lg-9 mb-5">
    <div class="container">
       <div class="text-center mb-7">
          <h2 class="mb-0">Faculty</h2>
@@ -34,13 +34,31 @@ layout: default
                   {% endif %}
                </a>
             </figure>
-            <div class="mb-4">
+            <div class="mb-3">
                <h4 class="mb-1"><a href="{{ person.url | relative_url }}" class="text-reset">{{ person.name_display | default: person.title }}</a></h4>
                <span class="fs-6 text-muted">{% if person.title_en %}{{ person.title_en }}{% endif %}</span>
             </div>
-            {% if person.homepage %}
-            <a href="{{ person.homepage }}" class="btn btn-light btn-icon" target="_blank" rel="noopener" aria-label="Homepage"><i class="bi bi-link-45deg"></i></a>
-            {% endif %}
+            <div class="d-flex flex-wrap gap-2 person-links">
+               {% if person.insait_url %}
+               <a href="{{ person.insait_url }}" class="btn btn-light btn-icon person-link person-link--insait" target="_blank" rel="noopener" aria-label="INSAIT profile" title="INSAIT profile">
+                  {% if site.links.insait_logo %}
+                  <img src="{{ site.links.insait_logo | relative_url }}" alt="INSAIT" class="person-link__img" />
+                  {% else %}
+                  <span class="fw-bold small lh-1">IN</span>
+                  {% endif %}
+               </a>
+               {% endif %}
+               {% if person.homepage %}
+               <a href="{{ person.homepage }}" class="btn btn-light btn-icon person-link" target="_blank" rel="noopener" aria-label="Personal homepage" title="Personal homepage">
+                  <i class="bi bi-globe2"></i>
+               </a>
+               {% endif %}
+               {% if person.google_scholar %}
+               <a href="{{ person.google_scholar }}" class="btn btn-light btn-icon person-link" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">
+                  <i class="bi bi-mortarboard-fill"></i>
+               </a>
+               {% endif %}
+            </div>
          </div>
          {% endfor %}
       </div>
