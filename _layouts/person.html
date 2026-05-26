@@ -59,12 +59,9 @@ layout: default
                   {% if page.insait_url or page.homepage or page.google_scholar %}
                   <div class="d-flex flex-wrap gap-2 person-links">
                      {% if page.insait_url %}
+                     {% assign insait_logo_src = site.links.insait_logo | default: '/assets/images/logo/insait-trans-small.png' %}
                      <a href="{{ page.insait_url }}" class="btn btn-light btn-icon person-link person-link--insait" target="_blank" rel="noopener" aria-label="INSAIT profile" title="INSAIT profile">
-                        {% if site.links.insait_logo %}
-                        <img src="{{ site.links.insait_logo | relative_url }}" alt="INSAIT" class="person-link__img" />
-                        {% else %}
-                        <span class="fw-bold small lh-1">IN</span>
-                        {% endif %}
+                        <img src="{{ insait_logo_src | relative_url }}" alt="INSAIT" class="person-link__img" />
                      </a>
                      {% endif %}
                      {% if page.homepage %}

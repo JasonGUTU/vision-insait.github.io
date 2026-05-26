@@ -238,6 +238,11 @@ main {
   --bs-primary-bg-subtle: #fdeceb;
   --bs-primary-border-subtle: #f5b4af;
   --bs-focus-ring-color: rgba(236, 95, 88, 0.28);
+  /* Body text: theme's default $gray-500 (#64748b) reads too pale on white for
+     long-form research content. Bump to $gray-800 (Tailwind slate-800) so main
+     text is clearly readable while secondary/tertiary text stays softer. */
+  --bs-body-color: #1e293b;
+  --bs-body-color-rgb: 30, 41, 59;
 }
 
 [data-bs-theme="dark"] {
@@ -403,7 +408,7 @@ h3.topic-section-title {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 1.25rem 2.5rem;
+  gap: 1.5rem 3rem;
   margin: 1.5rem 0 0;
 }
 
@@ -415,10 +420,17 @@ h3.topic-section-title {
 }
 
 .topic-cooperation-logos img {
-  max-height: 44px;
+  max-height: 72px;
   width: auto;
-  max-width: 180px;
+  max-width: 280px;
   object-fit: contain;
+}
+
+@media (max-width: 575.98px) {
+  .topic-cooperation-logos img {
+    max-height: 56px;
+    max-width: 60vw;
+  }
 }
 
 /* Project detail: markdown images span the prose / content column */
@@ -594,8 +606,8 @@ header:has(.navbar-transparent) {
 
 /* INSAIT button: brand mark fills more of the circle than a generic glyph */
 .person-link--insait .person-link__img {
-  max-width: 82%;
-  max-height: 82%;
+  max-width: 57%;
+  max-height: 57%;
 }
 
 /* Home "Join us" section */
