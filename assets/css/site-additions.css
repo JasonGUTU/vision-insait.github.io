@@ -94,6 +94,105 @@ main {
   display: inline-block !important;
 }
 
+/* "VLab @ INSAIT" lockup: site logo + separator + INSAIT host-institute logo */
+.site-logo-lockup {
+  gap: 0.5rem;
+  line-height: 0;
+}
+
+.site-logo-lockup .navbar-brand,
+.site-logo-lockup .site-logo-brand--landing {
+  margin-right: 0;
+}
+
+.site-logo-lockup-sep {
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: var(--bs-secondary-color, #6c757d);
+  user-select: none;
+}
+
+.navbar-transparent.navbar-dark:not(.navbar-clone) .site-logo-lockup--landing .site-logo-lockup-sep {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.site-logo-insait-link {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.site-logo-insait-link:hover,
+.site-logo-insait-link:focus {
+  opacity: 0.85;
+}
+
+.site-logo-insait {
+  /* Sized just under the VLab mark (~85% of 2rem) so the lockup reads as
+     "host institute" without looking visually shrunken. */
+  height: 1.7rem;
+  width: auto;
+  max-width: min(10rem, 42vw);
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+
+.site-logo-lockup--footer .site-logo-insait {
+  height: 1.9rem;
+}
+
+/* Theme-aware swap (navbar + footer): color in light theme, white in dark theme */
+[data-bs-theme="light"] .site-logo-insait--theme-dark,
+[data-bs-theme="dark"] .site-logo-insait--theme-light {
+  display: none !important;
+}
+
+[data-bs-theme="light"] .site-logo-insait--theme-light,
+[data-bs-theme="dark"] .site-logo-insait--theme-dark {
+  display: inline-block !important;
+}
+
+/* Landing hero (transparent dark): always white */
+.navbar-transparent.navbar-dark:not(.navbar-clone) .site-logo-insait--color {
+  display: none !important;
+}
+
+.navbar-transparent.navbar-dark:not(.navbar-clone) .site-logo-insait--white {
+  display: inline-block !important;
+}
+
+/* Scrolled sticky nav on landing: follow current theme */
+[data-bs-theme="light"] .navbar-clone .site-logo-insait--white {
+  display: none !important;
+}
+
+[data-bs-theme="light"] .navbar-clone .site-logo-insait--color {
+  display: inline-block !important;
+}
+
+[data-bs-theme="dark"] .navbar-clone .site-logo-insait--color {
+  display: none !important;
+}
+
+[data-bs-theme="dark"] .navbar-clone .site-logo-insait--white {
+  display: inline-block !important;
+}
+
+/* On narrow viewports keep the lockup compact but legible */
+@media (max-width: 575.98px) {
+  .site-logo-lockup {
+    gap: 0.35rem;
+  }
+  .site-logo-lockup-sep {
+    font-size: 0.95rem;
+  }
+  .site-logo-insait {
+    height: 1.4rem;
+  }
+}
+
 /* Research: main link → overview; caret → topic submenu */
 .nav-item.dropdown > .nav-research-split .nav-link {
   padding-top: var(--bs-nav-link-padding-y);
@@ -491,6 +590,12 @@ header:has(.navbar-transparent) {
   max-width: 70%;
   max-height: 70%;
   object-fit: contain;
+}
+
+/* INSAIT button: brand mark fills more of the circle than a generic glyph */
+.person-link--insait .person-link__img {
+  max-width: 82%;
+  max-height: 82%;
 }
 
 /* Home "Join us" section */

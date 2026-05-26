@@ -266,7 +266,7 @@ The home page does not show news; the nav/footer link goes to this list.
 |-------|----------|-------------|
 | `title` | **Yes** | Position title. |
 | `location` | Optional | Shown on list and detail (e.g. `On-site · Vision Lab`). |
-| `order` | Optional | Sort on `/job/` (lower = earlier). |
+| `order` | Optional | Sort on `/openings/` (lower = earlier). |
 | `apply_url` | Optional | Apply button target (`mailto:` or web form). |
 
 ### Body
@@ -329,7 +329,7 @@ With `permalink: pretty`:
 | Publications list / paper | `/publications/` , `/publications/<slug>/` |
 | Demos list / project | `/demos/` , `/demos/<slug>/` |
 | News | `/news/` |
-| Jobs list / posting | `/job/` , `/job/<slug>/` |
+| Jobs list / posting | `/openings/` , `/openings/<slug>/` |
 | Legacy blog | `/blog/` → redirects to `/news/` |
 
 ---

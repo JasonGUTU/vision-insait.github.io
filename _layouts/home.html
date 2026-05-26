@@ -224,7 +224,7 @@
                      <small class="text-uppercase ls-md fw-semibold text-primary">{{ join.kicker | default: "Careers · open positions" }}</small>
                      <h2 class="h1 my-3">{{ join.heading | default: "Join us" }}</h2>
                      <p class="mb-5 pe-lg-4 text-body-secondary">{{ join.body | default: "We are recruiting PhD students, postdocs, and visiting researchers across all our directions. If our work resonates with yours, come build the next generation of vision systems with us." }}</p>
-                     <a href="{{ join.cta_url | default: '/job/' | relative_url }}" class="btn btn-danger rounded-pill px-4 py-2">
+                     <a href="{{ join.cta_url | default: '/openings/' | relative_url }}" class="btn btn-danger rounded-pill px-4 py-2">
                         {{ join.cta_label | default: "View open positions" }}
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right ms-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
                      </a>
@@ -232,11 +232,11 @@
                   <div class="col-xl-6 offset-xl-2 col-md-6 col-12">
                      <div class="row g-4 home-join-us__grid">
                         <div class="col-6">
-                           <a href="{{ join.cta_url | default: '/job/' | relative_url }}" class="d-block mb-4 rounded-3 card-lift home-join-us__tile home-join-us__tile--short" style="background-image: url('{{ join_images[0] | relative_url }}');" aria-label="{{ join.heading | default: 'Join us' }}"></a>
-                           <a href="{{ join.cta_url | default: '/job/' | relative_url }}" class="d-block rounded-3 card-lift home-join-us__tile home-join-us__tile--short" style="background-image: url('{{ join_images[1] | relative_url }}');" aria-label="{{ join.heading | default: 'Join us' }}"></a>
+                           <a href="{{ join.cta_url | default: '/openings/' | relative_url }}" class="d-block mb-4 rounded-3 card-lift home-join-us__tile home-join-us__tile--short" style="background-image: url('{{ join_images[0] | relative_url }}');" aria-label="{{ join.heading | default: 'Join us' }}"></a>
+                           <a href="{{ join.cta_url | default: '/openings/' | relative_url }}" class="d-block rounded-3 card-lift home-join-us__tile home-join-us__tile--short" style="background-image: url('{{ join_images[1] | relative_url }}');" aria-label="{{ join.heading | default: 'Join us' }}"></a>
                         </div>
                         <div class="col-6">
-                           <a href="{{ join.cta_url | default: '/job/' | relative_url }}" class="d-block rounded-3 card-lift home-join-us__tile home-join-us__tile--tall" style="background-image: url('{{ join_images[2] | relative_url }}');" aria-label="{{ join.heading | default: 'Join us' }}"></a>
+                           <a href="{{ join.cta_url | default: '/openings/' | relative_url }}" class="d-block rounded-3 card-lift home-join-us__tile home-join-us__tile--tall" style="background-image: url('{{ join_images[2] | relative_url }}');" aria-label="{{ join.heading | default: 'Join us' }}"></a>
                         </div>
                      </div>
                   </div>

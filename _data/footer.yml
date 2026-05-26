@@ -12,7 +12,7 @@ columns:
       - label: People
         url: /people/
       - label: Open positions
-        url: /job/
+        url: /openings/
   - title: Resources
     links:
       - label: Home

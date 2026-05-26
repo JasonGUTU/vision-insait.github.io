@@ -1,0 +1,29 @@
+{%- comment -%}
+Renders the "@ INSAIT" lockup that sits next to the site logo in the
+navbar / footer. Two img variants are emitted so CSS can swap between
+the colored (light theme) and white (dark theme / dark hero) logos.
+
+Params:
+  style: 'theme'   -> swap by [data-bs-theme] (default, used in navbar & footer)
+         'landing' -> swap by .navbar-transparent vs .navbar-clone, mirroring
+                      the existing .site-logo--color / --white pattern
+  class:           -> extra class names appended to the anchor element
+{%- endcomment -%}
+{%- assign logo_cfg = site.logo -%}
+{%- assign insait_url = logo_cfg.insait_url | default: 'https://insait.ai/' -%}
+{%- assign insait_light = logo_cfg.insait | default: '/assets/images/logo/insait-trans.png' -%}
+{%- assign insait_dark = logo_cfg.insait_white | default: '/assets/images/logo/insait-trans-white.png' -%}
+{%- assign style = include.style | default: 'theme' -%}
+{%- assign extra_class = include.class -%}
+{%- if style == 'landing' -%}
+  {%- assign light_class = 'site-logo-insait--color' -%}
+  {%- assign dark_class = 'site-logo-insait--white' -%}
+{%- else -%}
+  {%- assign light_class = 'site-logo-insait--theme-light' -%}
+  {%- assign dark_class = 'site-logo-insait--theme-dark' -%}
+{%- endif -%}
+<span class="site-logo-lockup-sep" aria-hidden="true">@</span>
+<a class="site-logo-insait-link{% if extra_class %} {{ extra_class }}{% endif %}" href="{{ insait_url }}" target="_blank" rel="noopener" aria-label="INSAIT">
+   <img src="{{ insait_light | relative_url }}" alt="INSAIT" class="site-logo-insait {{ light_class }}" loading="eager" decoding="async" />
+   <img src="{{ insait_dark | relative_url }}" alt="INSAIT" class="site-logo-insait {{ dark_class }}" loading="eager" decoding="async" />
+</a>

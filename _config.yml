@@ -21,6 +21,10 @@ logo:
   nav_white: /assets/images/logo/vlab-white.png
   nav_large: /assets/images/logo/VLAB-logo-large.png
   nav_white_large: /assets/images/logo/vlab-white-large.png
+  # INSAIT host-institute lockup ("our logo @ INSAIT")
+  insait: /assets/images/logo/insait-trans.png
+  insait_white: /assets/images/logo/insait-trans-white.png
+  insait_url: https://insait.ai/
 
 # Home page (landing-it-company style) — override in pages if needed
 landing:
@@ -47,7 +51,7 @@ landing:
       across all our directions. If our work resonates with yours, come
       build the next generation of vision systems with us.
     cta_label: "View open positions"
-    cta_url: "/job/"
+    cta_url: "/openings/"
     images:
       - /assets/images/INSAIT/1765184093836.jpeg
       - /assets/images/INSAIT/1776151789707.jpeg
@@ -80,7 +84,7 @@ footer:
         - label: People
           url: /people/
         - label: Open positions
-          url: /job/
+          url: /openings/
     - title: Resources
       links:
         - label: Home
@@ -98,10 +102,10 @@ footer:
     show_email: false
 
 # External brand logos (used by person link buttons, etc.)
-# Drop the INSAIT logo into /assets/images/brand/ (or any path) and set the path below
-# to render the real logo on Faculty cards in place of the "IN" text fallback.
+# Faculty cards / person pages render this logo inside the "INSAIT profile"
+# button. Falls back to a plain "IN" text glyph if unset.
 links:
-  insait_logo:  # e.g. /assets/images/brand/insait.svg
+  insait_logo: /assets/images/logo/insait-trans-small.png
 
 markdown: kramdown
 permalink: pretty
@@ -121,7 +125,7 @@ collections:
     permalink: /demos/:path/
   jobs:
     output: true
-    permalink: /job/:path/
+    permalink: /openings/:path/
 
 defaults:
   - scope:

@@ -13,7 +13,6 @@ topics:
   - space-ai
   - egocentric-vision
 insait_url: https://insait.ai/prof-luc-van-gool/
-homepage: https://vision.ee.ethz.ch/
 google_scholar: https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en
 photo: /assets/images/people/luc-van-gool.jpg
 ---
