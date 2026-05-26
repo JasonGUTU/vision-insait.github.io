@@ -10,4 +10,6 @@ author_line_full: "Roman Flepp, Andrey Ignatov, Radu Timofte, Luc Van Gool"
 authors:
   - luc-van-gool
 paper_url: "https://openaccess.thecvf.com/content/CVPR2024/papers/Flepp_Real-World_Mobile_Image_Denoising_Dataset_with_Efficient_Baselines_CVPR_2024_paper.pdf"
+topics:
+  - visual-media
 ---

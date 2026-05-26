@@ -10,6 +10,8 @@ author_line_full: "Yuanqi Yao, Siao Liu, Haoming Song, Delin Qu, Qizhi Chen, Yan
 authors:
   - yuanqi-yao
 paper_url: "https://arxiv.org/pdf/2504.00420"
+topics:
+  - robotics
 ---
 ## Abstract
 

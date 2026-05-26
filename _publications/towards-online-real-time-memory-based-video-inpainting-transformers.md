@@ -10,4 +10,6 @@ author_line_full: "Guillaume Thiry, Hao Tang, Radu Timofte, Luc Van Gool"
 authors:
   - luc-van-gool
 paper_url: "https://ieeexplore.ieee.org/document/10678062"
+topics:
+  - visual-media
 ---

@@ -12,6 +12,9 @@ authors:
   - danda-paudel
   - luc-van-gool
 paper_url: "https://arxiv.org/pdf/2507.00886"
+topics:
+  - 3d-vision
+  - vision-agent
 ---
 ## Abstract
 

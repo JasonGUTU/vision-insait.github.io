@@ -9,6 +9,8 @@ publication_date: "2024-06-15"
 author_line_full: "Jiezhang Cao, Yue Shi, Kai Zhang, Yulun Zhang, Radu Timofte, Luc Van Gool"
 authors:
   - luc-van-gool
+topics:
+  - visual-media
 ---
 ## Links
 

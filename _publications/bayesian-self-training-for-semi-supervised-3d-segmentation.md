@@ -10,4 +10,6 @@ author_line_full: "Ozan Unal, Christos Sakaridis, Luc Van Gool"
 authors:
   - luc-van-gool
 paper_url: "https://arxiv.org/pdf/2409.08102"
+topics:
+  - 3d-vision
 ---

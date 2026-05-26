@@ -15,4 +15,6 @@ authors:
   - luc-van-gool
   - danda-paudel
 paper_url: "https://arxiv.org/pdf/2512.17817"
+topics:
+  - 3d-vision
 ---

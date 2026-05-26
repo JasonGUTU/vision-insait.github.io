@@ -10,6 +10,9 @@ author_line_full: "Daiwei Zhang, Gengyan Li, Jiajie Li, Mickaël Bressieux, Otma
 authors:
   - luc-van-gool
 paper_url: "https://ieeexplore.ieee.org/document/11125625/authors#authors"
+topics:
+  - egocentric-vision
+  - 3d-vision
 ---
 ## Abstract
 

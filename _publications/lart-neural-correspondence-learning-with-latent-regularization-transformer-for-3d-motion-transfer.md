@@ -10,4 +10,6 @@ author_line_full: "Haoyu Chen, Hao Tang, Radu Timofte, Luc Van Gool, Guoying Zha
 authors:
   - luc-van-gool
 paper_url: "https://openreview.net/pdf?id=g27BggUT3L"
+topics:
+  - 3d-vision
 ---

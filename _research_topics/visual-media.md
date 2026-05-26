@@ -261,6 +261,6 @@ Our long-term ambition is to develop visual media systems that are faithful to r
 <div class="topic-cooperation-logos">
   <img src="{{ '/site-covers/sponsors/Adobe_Inc.png' | relative_url }}" alt="" loading="lazy" decoding="async" />
   <img src="{{ '/site-covers/sponsors/Snap_Inc.png' | relative_url }}" alt="" loading="lazy" decoding="async" />
-  <img src="{{ '/site-covers/sponsors/tencent.png' | relative_url }}" alt="" loading="lazy" decoding="async" />
+  <!-- <img src="{{ '/site-covers/sponsors/tencent.png' | relative_url }}" alt="" loading="lazy" decoding="async" /> -->
   <!-- <img src="{{ '/site-covers/sponsors/Vivo.svg' | relative_url }}" alt="" loading="lazy" decoding="async" /> -->
 </div>

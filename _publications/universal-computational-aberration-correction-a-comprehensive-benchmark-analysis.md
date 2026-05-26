@@ -10,4 +10,6 @@ author_line_full: "Xiaolong Qian, Qi Jiang, Yao Gao, Lei Sun, Zhonghua Yi, Kailu
 authors:
   - lei-sun
   - luc-van-gool
+topics:
+  - visual-media
 ---

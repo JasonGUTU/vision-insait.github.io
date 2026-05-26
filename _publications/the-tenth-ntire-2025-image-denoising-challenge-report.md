@@ -11,4 +11,6 @@ authors:
   - lei-sun
   - luc-van-gool
 paper_url: "https://openaccess.thecvf.com/content/CVPR2025W/NTIRE/html/Sun_The_Tenth_NTIRE_2025_Image_Denoising_Challenge_Report_CVPRW_2025_paper.html"
+topics:
+  - visual-media
 ---

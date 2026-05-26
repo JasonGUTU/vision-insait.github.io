@@ -12,6 +12,8 @@ authors:
   - danda-paudel
   - luc-van-gool
 paper_url: "https://arxiv.org/pdf/2502.10012"
+topics:
+  - robotics
 ---
 ## Abstract
 

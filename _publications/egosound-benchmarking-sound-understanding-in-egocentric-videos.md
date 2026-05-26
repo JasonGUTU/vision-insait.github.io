@@ -10,6 +10,8 @@ author_line_full: "Bingwen Zhu, Bingwen_Zhu, Yuqian Fu, Qiaole Dong, Guolei Sun,
 authors:
   - danda-paudel
 paper_url: "https://www.arxiv.org/pdf/2602.14122"
+topics:
+  - egocentric-vision
 ---
 ## Abstract
 

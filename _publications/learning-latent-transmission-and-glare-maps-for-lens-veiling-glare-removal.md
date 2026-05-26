@@ -10,4 +10,6 @@ author_line_full: "Xiaolong Qian, Qi Jiang, Lei Sun, Zongxi Yu, Kailun Yang, Pei
 authors:
   - lei-sun
 paper_url: "https://arxiv.org/pdf/2511.17353"
+topics:
+  - visual-media
 ---

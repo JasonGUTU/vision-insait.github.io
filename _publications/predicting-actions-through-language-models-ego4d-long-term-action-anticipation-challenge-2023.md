@@ -10,6 +10,8 @@ author_line_full: "Daoji Huang, Otmar Hilliges, Luc Van Gool, Xi Wang Palm"
 authors:
   - luc-van-gool
 paper_url: "https://arxiv.org/pdf/2306.16545"
+topics:
+  - egocentric-vision
 ---
 ## Abstract
 

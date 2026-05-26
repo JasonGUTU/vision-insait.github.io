@@ -11,4 +11,6 @@ authors:
   - sombit-dey
   - luc-van-gool
 paper_url: "https://ieeexplore.ieee.org/document/10943748"
+topics:
+  - 3d-vision
 ---

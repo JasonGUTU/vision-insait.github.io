@@ -10,6 +10,8 @@ author_line_full: "Evangelos Ntavelis, Aliaksandr Siarohin, Kyle Olszewski, Chao
 authors:
   - luc-van-gool
 paper_url: "https://openreview.net/pdf?id=YhAZqWhOnS"
+topics:
+  - 3d-vision
 ---
 ## Abstract
 

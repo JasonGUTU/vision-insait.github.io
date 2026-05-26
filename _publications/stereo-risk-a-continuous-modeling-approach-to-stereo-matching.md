@@ -10,6 +10,8 @@ author_line_full: "Ce Liu, Suryansh Kumar, Shuhang Gu, Radu Timofte, Yao Yao, Lu
 authors:
   - luc-van-gool
 paper_url: "https://openreview.net/pdf/564a60520f502e7842cb3d694a69d28d7f1c8414.pdf?fbclid=IwY2xjawEYYNZleHRuA2FlbQIxMAABHSUR-AtDZIOJsgv86YPMsv9ANV1xyRkiMsYuV58eWyjhmxJra07TvjePhw_aem_zHMExuV983r28hEf2aY_DA"
+topics:
+  - 3d-vision
 ---
 ## Abstract
 

@@ -9,6 +9,8 @@ publication_date: "2024-06-15"
 author_line_full: "Zhaochong An, Guolei Sun, Yun Liu, Fayao Liu, Zongwei Wu, Dan Wang, Luc Van Gool, Serge Belongie"
 authors:
   - luc-van-gool
+topics:
+  - 3d-vision
 ---
 ## Links
 

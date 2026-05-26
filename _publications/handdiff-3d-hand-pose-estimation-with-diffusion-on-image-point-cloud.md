@@ -10,6 +10,8 @@ author_line_full: "Wencan Cheng, Hao Tang, Luc Van Gool, Jong Hwan Ko"
 authors:
   - luc-van-gool
 paper_url: "https://arxiv.org/pdf/2404.03159"
+topics:
+  - 3d-vision
 ---
 ## Abstract
 

@@ -11,4 +11,6 @@ authors:
   - yuedong-tan
   - danda-paudel
 paper_url: "https://arxiv.org/pdf/2411.18466"
+topics:
+  - visual-media
 ---

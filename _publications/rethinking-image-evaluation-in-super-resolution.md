@@ -10,4 +10,6 @@ author_line_full: "Shaolin Su, Josep M. Rocafort, David Serrano-Lozano, Lei Sun,
 authors:
   - lei-sun
 paper_url: "https://arxiv.org/pdf/2503.13074"
+topics:
+  - visual-media
 ---

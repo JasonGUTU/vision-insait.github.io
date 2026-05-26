@@ -12,6 +12,8 @@ authors:
   - danda-paudel
   - ajad-chhatkuli
   - luc-van-gool
+topics:
+  - 3d-vision
 ---
 ## Links
 

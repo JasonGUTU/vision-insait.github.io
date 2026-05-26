@@ -10,4 +10,6 @@ author_line_full: "Liming Kuang, Dani Velikova, Mahdi Saleh, Jan-Nico Zaech, Dan
 authors:
   - danda-paudel
 paper_url: "https://arxiv.org/pdf/2512.09056"
+topics:
+  - 3d-vision
 ---

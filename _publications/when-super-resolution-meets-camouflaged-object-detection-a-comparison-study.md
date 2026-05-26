@@ -10,4 +10,6 @@ author_line_full: "Juan Wen, Shupeng Cheng, Weiyan Hou, Luc Van Gool, Radu Timof
 authors:
   - luc-van-gool
 paper_url: "https://www.sciencedirect.com/science/article/pii/S107731422500044X?via%3Dihub"
+topics:
+  - visual-media
 ---

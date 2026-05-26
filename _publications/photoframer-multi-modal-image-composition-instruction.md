@@ -10,4 +10,6 @@ author_line_full: "Zhiyuan You, Ke Wang, He Zhang, Xin Cai, Jinjin Gu, Tianfan X
 authors:
   - jinjin-gu
 paper_url: "https://arxiv.org/pdf/2512.00993"
+topics:
+  - visual-media
 ---

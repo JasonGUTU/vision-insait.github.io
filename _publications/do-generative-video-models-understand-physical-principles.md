@@ -10,6 +10,8 @@ author_line_full: "Saman Motamed, Laura Culp, Kevin Swersky, Priyank Jaini, Robe
 authors:
   - sam-motamed
 paper_url: "https://arxiv.org/pdf/2501.09038"
+topics:
+  - visual-media
 ---
 ## Abstract
 

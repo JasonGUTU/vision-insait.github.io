@@ -11,6 +11,8 @@ authors:
   - danda-paudel
   - luc-van-gool
 paper_url: "https://arxiv.org/pdf/2505.11907"
+topics:
+  - vision-agent
 ---
 ## Abstract
 

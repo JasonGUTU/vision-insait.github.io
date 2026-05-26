@@ -8,6 +8,8 @@ venue_abbr: "ICCV"
 publication_date: "2025-10-13"
 author_line_full: "Yung-Hsu Yang, Luigi Piccinelli, Mattia Segu, Siyuan Li, Rui Huang, Yuqian Fu, Marc Pollefeys, Hermann Blum, Zuria Bauer"
 paper_url: "https://arxiv.org/pdf/2507.23567"
+topics:
+  - 3d-vision
 ---
 ## Abstract
 

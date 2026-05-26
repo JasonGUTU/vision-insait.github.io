@@ -10,6 +10,8 @@ author_line_full: "Yuheng Zhang, Mengfei Duan, Kunyu Peng, Yuhang Wang, Ruiping 
 authors:
   - kunyu-peng
 paper_url: "https://arxiv.org/pdf/2506.21185"
+topics:
+  - 3d-vision
 ---
 ## Abstract
 

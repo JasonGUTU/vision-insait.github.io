@@ -10,4 +10,6 @@ author_line_full: "Jinfan Hu, Zhiyuan You, Jinjin Gu, Kaiwen Zhu, Tianfan Xue, C
 authors:
   - jinjin-gu
 paper_url: "https://arxiv.org/pdf/2502.12600"
+topics:
+  - visual-media
 ---

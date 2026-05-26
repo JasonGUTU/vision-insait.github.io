@@ -10,6 +10,8 @@ author_line_full: "Luigi Piccinelli, Christos Sakaridis, Mattia Segu, Yung-Hsu Y
 authors:
   - luc-van-gool
 paper_url: "https://arxiv.org/pdf/2503.16591"
+topics:
+  - 3d-vision
 ---
 ## Abstract
 

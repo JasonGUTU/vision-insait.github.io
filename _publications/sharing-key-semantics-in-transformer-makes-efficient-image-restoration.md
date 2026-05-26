@@ -10,4 +10,6 @@ author_line_full: "Bin Ren, Yawei Li, Jingyun Liang, Rakesh Ranjan, Mengyuan Liu
 authors:
   - luc-van-gool
 paper_url: "https://arxiv.org/pdf/2405.20008"
+topics:
+  - visual-media
 ---

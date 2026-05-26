@@ -12,4 +12,6 @@ authors:
   - danda-paudel
   - luc-van-gool
 paper_url: "https://openaccess.thecvf.com/content/ICCV2023/papers/Popovic_Surface_Normal_Clustering_for_Implicit_Representation_of_Manhattan_Scenes_ICCV_2023_paper.pdf"
+topics:
+  - 3d-vision
 ---

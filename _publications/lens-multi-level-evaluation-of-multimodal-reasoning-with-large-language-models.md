@@ -10,4 +10,6 @@ author_line_full: "Ruilin Yao, Bo Zhang, Jirui Huang, Xinwei Long, Yifang Zhang,
 authors:
   - luc-van-gool
 paper_url: "https://arxiv.org/pdf/2505.15616"
+topics:
+  - vision-agent
 ---

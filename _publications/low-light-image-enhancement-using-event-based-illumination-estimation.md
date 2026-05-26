@@ -12,4 +12,6 @@ authors:
   - danda-paudel
   - luc-van-gool
 paper_url: "https://arxiv.org/pdf/2504.09379"
+topics:
+  - visual-media
 ---

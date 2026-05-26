@@ -10,4 +10,6 @@ author_line_full: "Ozan Unal, Dengxin Dai, Lukas Hoyer, Yigit Baran Can, Luc Van
 authors:
   - luc-van-gool
 paper_url: "https://ieeexplore.ieee.org/document/10484032"
+topics:
+  - 3d-vision
 ---

@@ -10,4 +10,6 @@ author_line_full: "Sean Wu, Shamik Basu, Tim Broedermann, Luc Van Gool, Christos
 authors:
   - luc-van-gool
 paper_url: "https://arxiv.org/pdf/2412.09680"
+topics:
+  - 3d-vision
 ---

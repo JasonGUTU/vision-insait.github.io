@@ -11,6 +11,8 @@ authors:
   - danda-paudel
   - luc-van-gool
 paper_url: "https://arxiv.org/pdf/2509.25026"
+topics:
+  - space-ai
 ---
 ## Abstract
 

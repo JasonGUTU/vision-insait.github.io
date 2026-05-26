@@ -10,4 +10,6 @@ author_line_full: "Erik Sandström, Ganlin Zhang, Keisuke Tateno, Michael Oechsl
 authors:
   - luc-van-gool
 paper_url: "https://openaccess.thecvf.com/content/CVPR2025W/VOCVALC/html/Sandstrom_Splat-SLAM_Globally_Optimized_RGB-only_SLAM_with_3D_Gaussians_CVPRW_2025_paper.html"
+topics:
+  - 3d-vision
 ---

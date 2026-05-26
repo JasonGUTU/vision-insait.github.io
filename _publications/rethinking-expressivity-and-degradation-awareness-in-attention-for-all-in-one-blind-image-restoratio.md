@@ -13,4 +13,6 @@ authors:
   - danda-paudel
   - luc-van-gool
 paper_url: "https://openreview.net/pdf?id=IBzmQVia88"
+topics:
+  - visual-media
 ---

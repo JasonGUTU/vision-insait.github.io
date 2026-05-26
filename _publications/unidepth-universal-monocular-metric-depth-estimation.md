@@ -9,4 +9,6 @@ publication_date: "2024-06-15"
 author_line_full: "Luigi Piccinelli, Yung-Hsu Yang, Christos Sakaridis, Mattia Segu, Siyuan Li, Luc Van Gool, Fisher Yu"
 authors:
   - luc-van-gool
+topics:
+  - 3d-vision
 ---

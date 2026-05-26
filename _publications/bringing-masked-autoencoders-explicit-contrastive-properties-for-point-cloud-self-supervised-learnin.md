@@ -11,6 +11,8 @@ authors:
   - danda-paudel
   - luc-van-gool
 paper_url: "https://link.springer.com/chapter/10.1007/978-981-96-0963-5_4"
+topics:
+  - 3d-vision
 ---
 ## Abstract
 

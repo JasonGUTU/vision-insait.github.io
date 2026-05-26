@@ -14,6 +14,9 @@ authors:
   - luc-van-gool
   - danda-paudel
 paper_url: "https://arxiv.org/pdf/2511.17411"
+topics:
+  - robotics
+  - 3d-vision
 ---
 ## Links
 

@@ -8,4 +8,6 @@ venue_abbr: "CVPR"
 publication_date: "2026-06-15"
 author_line_full: "Kailing Li, Qi’ao Xu, Tianwen Qian, Yuqian Fu, Yang Jiao, Xiaoling Wang"
 paper_url: "https://arxiv.org/pdf/2506.17629?"
+topics:
+  - vision-agent
 ---

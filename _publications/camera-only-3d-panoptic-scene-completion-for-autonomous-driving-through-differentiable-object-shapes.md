@@ -10,4 +10,6 @@ author_line_full: "Nicola Marinello, Simen Cassiman, Jonas Heylen, Marc Proesman
 authors:
   - luc-van-gool
 paper_url: "https://openaccess.thecvf.com/content/CVPR2025W/WAD/html/Marinello_Camera-Only_3D_Panoptic_Scene_Completion_for_Autonomous_Driving_through_Differentiable_CVPRW_2025_paper.html"
+topics:
+  - 3d-vision
 ---

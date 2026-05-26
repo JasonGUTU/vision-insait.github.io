@@ -12,4 +12,6 @@ authors:
   - ajad-chhatkuli
   - luc-van-gool
 paper_url: "https://ieeexplore.ieee.org/document/10483912"
+topics:
+  - robotics
 ---

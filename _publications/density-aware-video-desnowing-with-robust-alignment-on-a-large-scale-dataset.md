@@ -9,4 +9,6 @@ publication_date: "2026-02-01"
 author_line_full: "Haoyu Chen, Jingjing Ren, Jiaxing Shen, Sixiang Chen, Jinjin Gu, Ping Tan, Lei Zhu"
 authors:
   - jinjin-gu
+topics:
+  - visual-media
 ---

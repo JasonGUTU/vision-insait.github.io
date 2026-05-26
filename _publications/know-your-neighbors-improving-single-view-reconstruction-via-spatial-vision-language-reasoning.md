@@ -10,4 +10,6 @@ author_line_full: "Rui Li, Tobias Fischer, Mattia Segu, Marc Pollefeys, Luc Van 
 authors:
   - luc-van-gool
 paper_url: "https://arxiv.org/pdf/2404.03658"
+topics:
+  - 3d-vision
 ---

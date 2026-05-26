@@ -10,6 +10,9 @@ author_line_full: "Haoyu Chen, Keda Tao, Yizao Wang, Xinlei Wang, Lei Zhu, Jinji
 authors:
   - jinjin-gu
 paper_url: "https://arxiv.org/pdf/2505.23130"
+topics:
+  - visual-media
+  - vision-agent
 ---
 ## Abstract
 

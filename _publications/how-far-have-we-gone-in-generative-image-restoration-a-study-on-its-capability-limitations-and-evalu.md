@@ -10,6 +10,8 @@ author_line_full: "Xiang Yin, Jinfan Hu, Zhiyuan You, Kainan Yan, Yu Tang, Chao 
 authors:
   - jinjin-gu
 paper_url: "https://arxiv.org/pdf/2603.05010"
+topics:
+  - visual-media
 ---
 ## Abstract
 

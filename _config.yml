@@ -59,14 +59,14 @@ landing:
 
 # Optional: shown on the home page below research cards
 sponsors:
-  - name: Example Research Fund
-    url: https://example.org/sponsor-a
-    logo: /site-covers/sponsors/brand-logo-1.svg
-  - name: Vision Industry Partner
-    url: https://example.org/sponsor-b
-    logo: /site-covers/sponsors/brand-logo-3.svg
-  - name: University Initiative
-    logo: /site-covers/sponsors/brand-logo-5.svg
+  - name: Adobe
+    logo: /site-covers/sponsors/Adobe_Inc.png
+  - name: Snap
+    logo: /site-covers/sponsors/Snap_Inc.png
+  - name: Google
+    logo: /site-covers/sponsors/google.png
+  - name: Vivo
+    logo: /site-covers/sponsors/Vivo.png
 
 # Site footer (also in _data/footer.yml; _includes/footer.html prefers _data)
 footer:

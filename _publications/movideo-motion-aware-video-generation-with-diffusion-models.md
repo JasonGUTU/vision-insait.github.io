@@ -10,4 +10,6 @@ author_line_full: "Jingyun Liang, Yuchen Fan, Kai Zhang, Radu Timofte, Luc Van G
 authors:
   - luc-van-gool
 paper_url: "https://arxiv.org/pdf/2311.11325"
+topics:
+  - visual-media
 ---

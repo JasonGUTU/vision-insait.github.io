@@ -10,4 +10,6 @@ author_line_full: "Zhicheng Zhang, Junyao Hu, Wentao Cheng, Danda Paudel, Jufeng
 authors:
   - danda-paudel
 paper_url: "https://drive.google.com/file/d/1T1AcaP9EujRiMOfRmN8JObqAAiI_xj7h/view?usp=sharing"
+topics:
+  - visual-media
 ---

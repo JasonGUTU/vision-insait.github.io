@@ -10,4 +10,6 @@ author_line_full: "Alexey Gavryushin, Yifei Liu, Daoji Huang, Yen-Ling Kuo, Juli
 authors:
   - luc-van-gool
 paper_url: "https://link.springer.com/chapter/10.1007/978-3-031-91575-8_5"
+topics:
+  - 3d-vision
 ---

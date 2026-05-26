@@ -9,4 +9,6 @@ publication_date: "2026-07-21"
 author_line_full: "Liangbin Xie, Zheyuan Li, Fanghua Yu, Xinqi Lin, Jun-hao Zhuang, Jinfan Hu, Jinjin Gu, Jiantao Zhou, Chao Dong"
 authors:
   - jinjin-gu
+topics:
+  - visual-media
 ---

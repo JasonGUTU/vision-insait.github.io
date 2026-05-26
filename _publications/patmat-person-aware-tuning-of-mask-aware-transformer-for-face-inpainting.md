@@ -10,4 +10,6 @@ author_line_full: "Saman Motamed, Jianjin Xu, Chen Henry Wu, Christian Hane, Jea
 authors:
   - sam-motamed
 paper_url: "https://openaccess.thecvf.com/content/ICCV2023/papers/Motamed_PATMAT_Person_Aware_Tuning_of_Mask-Aware_Transformer_for_Face_Inpainting_ICCV_2023_paper.pdf"
+topics:
+  - visual-media
 ---

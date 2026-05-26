@@ -10,4 +10,6 @@ author_line_full: "Jiameng Li, Yue Shi, Jiezhang Cao, Bingbing Ni, Wenjun Zhang,
 authors:
   - luc-van-gool
 paper_url: "https://ieeexplore.ieee.org/document/11125005"
+topics:
+  - 3d-vision
 ---

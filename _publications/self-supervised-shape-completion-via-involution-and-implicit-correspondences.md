@@ -11,4 +11,6 @@ authors:
   - ajad-chhatkuli
   - luc-van-gool
 paper_url: "https://link.springer.com/chapter/10.1007/978-3-031-73636-0_13"
+topics:
+  - 3d-vision
 ---

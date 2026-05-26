@@ -10,6 +10,8 @@ author_line_full: "Xinqi Lin, Fanghua Yu, Jinfan Hu, Zhiyuan You, Wu Shi, Jimmy 
 authors:
   - jinjin-gu
 paper_url: "https://arxiv.org/pdf/2507.20590"
+topics:
+  - visual-media
 ---
 ## Abstract
 

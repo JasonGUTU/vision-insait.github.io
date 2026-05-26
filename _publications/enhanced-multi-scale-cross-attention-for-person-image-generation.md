@@ -10,4 +10,6 @@ author_line_full: "Hao Tang, Ling Shao, Nicu Sebe, Luc Van Gool"
 authors:
   - luc-van-gool
 paper_url: "https://ieeexplore.ieee.org/document/10847781"
+topics:
+  - visual-media
 ---

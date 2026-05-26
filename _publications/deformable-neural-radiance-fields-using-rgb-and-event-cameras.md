@@ -13,6 +13,8 @@ authors:
   - ajad-chhatkuli
   - luc-van-gool
 paper_url: "https://openaccess.thecvf.com/content/ICCV2023/papers/Ma_Deformable_Neural_Radiance_Fields_using_RGB_and_Event_Cameras_ICCV_2023_paper.pdf"
+topics:
+  - 3d-vision
 ---
 ## Abstract
 

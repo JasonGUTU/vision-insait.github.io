@@ -10,6 +10,8 @@ author_line_full: "Ke Li, Luc Van Gool, Dengxin Dai"
 authors:
   - luc-van-gool
 paper_url: "https://ieeexplore.ieee.org/document/10685469"
+topics:
+  - visual-media
 ---
 ## Abstract
 
