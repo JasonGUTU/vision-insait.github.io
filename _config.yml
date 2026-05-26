@@ -85,6 +85,8 @@ footer:
           url: /people/
         - label: Open positions
           url: /openings/
+        - label: Sponsorship
+          url: /sponsorship/
     - title: Resources
       links:
         - label: Home
