@@ -69,35 +69,6 @@ description: Partner with our group to advance the frontiers of visual AI throug
          </div>
          <div class="col-md-6">
             <div class="d-flex">
-               <div class="icon-xl icon-shape rounded-circle bg-danger bg-opacity-10 flex-shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-mic-fill text-danger" viewBox="0 0 16 16">
-                     <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
-                     <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
-                  </svg>
-               </div>
-               <div class="ms-4">
-                  <h4>Seminar access</h4>
-                  <p class="mb-0">Invitations to exclusive research seminars, technical deep-dives,
-                     and annual sponsor meetings hosted by our group.</p>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-6">
-            <div class="d-flex">
-               <div class="icon-xl icon-shape rounded-circle bg-success bg-opacity-10 flex-shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-display text-success" viewBox="0 0 16 16">
-                     <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a1.5 1.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145"/>
-                  </svg>
-               </div>
-               <div class="ms-4">
-                  <h4>Demo days</h4>
-                  <p class="mb-0">Hands-on demonstrations of the latest prototypes, systems,
-                     and research outcomes from our labs &mdash; on site or virtually.</p>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-6">
-            <div class="d-flex">
                <div class="icon-xl icon-shape rounded-circle bg-primary bg-opacity-10 flex-shrink-0">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-journal-text text-primary" viewBox="0 0 16 16">
                      <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
@@ -158,54 +129,3 @@ description: Partner with our group to advance the frontiers of visual AI throug
    </div>
 </section>
 {% endif %}
-
-<!-- get in touch / contact -->
-<section class="py-xl-9 py-5 border-top">
-   <div class="container">
-      <div class="row justify-content-center">
-         <div class="col-xl-8 col-lg-10 col-12">
-            <div class="text-center mb-5">
-               <small class="text-uppercase ls-md fw-semibold text-primary">Get in touch</small>
-               <h2 class="mt-3 mb-3">Talk to us about partnership</h2>
-               <p class="text-body-secondary mb-0">
-                  Tell us a little about your organization and the research themes you care about.
-                  We will get back to you to set up a conversation with the relevant faculty.
-               </p>
-            </div>
-
-            <form action="mailto:{{ site.email }}" method="post" enctype="text/plain" class="card border-0 shadow-sm">
-               <div class="card-body p-4 p-md-5">
-                  <div class="row g-4">
-                     <div class="col-md-6">
-                        <label for="sp-name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="sp-name" name="name" required>
-                     </div>
-                     <div class="col-md-6">
-                        <label for="sp-email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="sp-email" name="email" required>
-                     </div>
-                     <div class="col-12">
-                        <label for="sp-org" class="form-label">Organization</label>
-                        <input type="text" class="form-control" id="sp-org" name="organization">
-                     </div>
-                     <div class="col-12">
-                        <label for="sp-message" class="form-label">Message</label>
-                        <textarea class="form-control" id="sp-message" name="message" rows="5" placeholder="Briefly describe the topics, scale, or timeline you have in mind."></textarea>
-                     </div>
-                     <div class="col-12 d-grid d-md-flex justify-content-md-end">
-                        <button type="submit" class="btn btn-primary rounded-pill px-4 py-2">
-                           Send message
-                           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right ms-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
-                        </button>
-                     </div>
-                  </div>
-               </div>
-            </form>
-
-            <p class="text-center text-muted small mt-4 mb-0">
-               Or email us directly at <a href="mailto:{{ site.email }}" class="text-decoration-none">{{ site.email }}</a>.
-            </p>
-         </div>
-      </div>
-   </div>
-</section>

@@ -1,7 +1,6 @@
 title: Vision Group
 email: vision@example.edu
-description: >-
-  Research group website (Jekyll + Block template assets).
+description: Vision Group at Insight 2026
 # Jekyll loads configs left-to-right; later files override earlier keys.
 #
 # Production (GitHub Pages, default build): only _config.yml is used — set url/baseurl
@@ -25,12 +24,12 @@ logo:
   insait: /assets/images/logo/insait-trans.png
   insait_white: /assets/images/logo/insait-trans-white.png
   insait_url: https://insait.ai/
-
+ 
 # Home page (landing-it-company style) — override in pages if needed
 landing:
   hero_video: "/site-covers/home/hero-video.mp4"
-  hero_title: "Empowering research through cutting-edge vision & learning"
-  hero_subtitle: "Innovative methods and systems — from perception to multimodal intelligence — tailored for scientific impact."
+  hero_title: "Building Visual Intelligence at INSAIT"
+  hero_subtitle: "Vision Lab at INSAIT develops computer vision and multimodal AI systems for images, videos, and interactive visual worlds."
   primary_cta_label: "People"
   primary_cta_url: "/people/"
   secondary_cta_label: "Research topics"
