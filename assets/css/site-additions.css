@@ -392,6 +392,66 @@ h3.topic-section-title {
   scroll-margin-top: 5.5rem;
 }
 
+/* Topic page: horizontal project carousel (nav styles shared with .home-projects-swiper-wrap) */
+.topic-projects-swiper-wrap {
+  --home-projects-nav-size: 2.5rem;
+  padding-inline: 0.25rem;
+}
+
+@media (min-width: 1200px) {
+  .topic-projects-swiper-wrap {
+    padding-inline: 1.5rem;
+  }
+}
+
+.topic-project-card figure.lift {
+  margin: 0;
+}
+
+.topic-project-card figure.lift img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Demos page: horizontal topic filter + gallery */
+.demos-topic-filter {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-align: center;
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 2rem;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.demos-topic-filter:hover {
+  border-color: var(--bs-danger);
+  color: var(--bs-danger);
+}
+
+.demos-topic-filter.active,
+.demos-topic-filter[aria-pressed="true"] {
+  background-color: var(--bs-danger);
+  border-color: var(--bs-danger);
+  color: #fff;
+}
+
+.demos-topic-filter.active:hover,
+.demos-topic-filter[aria-pressed="true"]:hover {
+  color: #fff;
+}
+
+.demos-gallery-item--hidden {
+  display: none !important;
+}
+
 .topic-pub-item--extra.d-none {
   display: none !important;
 }

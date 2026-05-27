@@ -15,8 +15,10 @@
 <link rel="stylesheet" href="{{ '/assets/fonts/css/boxicons.min.css' | relative_url }}" />
 <link rel="stylesheet" href="{{ '/assets/css/theme.min.css' | relative_url }}" />
 <link rel="stylesheet" href="{{ '/assets/css/site-additions.css' | relative_url }}" />
-{% if page.landing %}
+{% if page.landing or page.layout == 'topic' %}
 <link rel="stylesheet" href="{{ '/assets/libs/swiper/swiper-bundle.min.css' | relative_url }}" />
+{% endif %}
+{% if page.landing %}
 <link rel="stylesheet" href="{{ '/assets/libs/glightbox/dist/css/glightbox.min.css' | relative_url }}" />
 {% endif %}
 <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>

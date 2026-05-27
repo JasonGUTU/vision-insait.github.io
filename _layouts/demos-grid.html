@@ -10,13 +10,21 @@ layout: default
             {% if content != blank %}
             <div class="prose text-muted mb-0">{{ content }}</div>
             {% endif %}
+            <nav class="demos-topic-filters d-flex flex-wrap gap-2 mt-4" aria-label="Filter by research topic">
+               <button type="button" class="demos-topic-filter active" data-topic-filter="all" aria-pressed="true">All</button>
+               {% assign topics_sorted = site.research_topics | sort: "order" %}
+               {% for t in topics_sorted %}
+               <button type="button" class="demos-topic-filter" data-topic-filter="{{ t.topic_id }}" aria-pressed="false">{{ t.title }}</button>
+               {% endfor %}
+            </nav>
          </div>
       </div>
    </div>
 </section>
 <section class="gallery mb-xl-9 mb-5">
    <div class="container">
-      <div class="row">
+      <p id="demos-gallery-empty" class="text-muted d-none mb-0">No projects in this research direction yet.</p>
+      <div class="row" id="demos-gallery">
          {% assign projects_sorted = site.projects | sort: "release_date" | reverse %}
          {% for proj in projects_sorted %}
          {% if proj.external_url %}
@@ -33,7 +41,12 @@ layout: default
          {% assign cover = '/site-covers/demos/portfolio-' | append: pi | append: '.jpg' %}
          {% endif %}
          {% assign stagger = forloop.index0 | modulo: 2 %}
-         <div class="gallery-item gallery-item-3{% if stagger == 1 %} mt-md-5{% endif %}">
+         {% if proj.topics %}
+         {% assign proj_topics_attr = proj.topics | join: ' ' %}
+         {% else %}
+         {% assign proj_topics_attr = '' %}
+         {% endif %}
+         <div class="gallery-item gallery-item-3{% if stagger == 1 %} mt-md-5{% endif %}" data-topics="{{ proj_topics_attr }}">
             <figure class="lift position-relative btn-arrow mb-5">
                <a href="{{ demo_href }}" class="gallery-item-inner"{% if proj.external_url %} target="_blank" rel="noopener noreferrer"{% endif %}>
                   <img src="{{ cover | relative_url }}" alt="{{ proj.title | escape }}" class="img-fluid rounded-3 w-100" width="960" height="640" loading="lazy" decoding="async" />
@@ -67,3 +80,4 @@ layout: default
       </div>
    </div>
 </section>
+<script src="{{ '/assets/js/demos-topic-filter.js' | relative_url }}" defer></script>

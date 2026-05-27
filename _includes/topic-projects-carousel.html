@@ -1,0 +1,52 @@
+{% assign projects_by_release = site.projects | sort: "release_date" | reverse %}
+<div class="home-projects-swiper-wrap topic-projects-swiper-wrap position-relative">
+   <div class="swiper home-projects-swiper topic-projects-swiper">
+      <div class="swiper-wrapper">
+         {% for proj in projects_by_release %}
+         {% if proj.topics and proj.topics contains include.tid %}
+         {% if proj.external_url %}
+         {% assign project_link = proj.external_url %}
+         {% elsif proj.url %}
+         {% assign project_link = proj.url | relative_url %}
+         {% else %}
+         {% assign project_link = proj.id | append: '/' | relative_url %}
+         {% endif %}
+         {% assign pi = forloop.index0 | modulo: 6 | plus: 1 %}
+         {% if proj.cover_image %}
+         {% assign cover = proj.cover_image %}
+         {% else %}
+         {% assign cover = '/site-covers/demos/portfolio-' | append: pi | append: '.jpg' %}
+         {% endif %}
+         <div class="swiper-slide h-auto">
+            <article class="topic-project-card h-100 d-flex flex-column">
+               <figure class="lift position-relative btn-arrow mb-3">
+                  <a href="{{ project_link }}" class="d-block"{% if proj.external_url %} target="_blank" rel="noopener noreferrer"{% endif %}>
+                     <img src="{{ cover | relative_url }}" alt="{{ proj.title | escape }}" class="img-fluid rounded-3 w-100" loading="lazy" decoding="async" />
+                     <div class="icon-shape icon-lg bg-white rounded-circle icon-arrow shadow-lg position-absolute bottom-0 end-0 m-3">
+                        <i class="bi bi-arrow-up-right"></i>
+                     </div>
+                  </a>
+               </figure>
+               <h4 class="h5 mb-2">
+                  <a href="{{ project_link }}" class="text-reset text-decoration-none"{% if proj.external_url %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ proj.title }}</a>
+               </h4>
+               {% if proj.tagline %}<p class="text-muted small mb-2 flex-grow-1">{{ proj.tagline }}</p>{% endif %}
+               {% if proj.release_date %}<p class="small text-muted mb-3">{{ proj.release_date | date: "%b %-d, %Y" }}</p>{% endif %}
+               <div class="d-flex flex-wrap gap-2 mt-auto">
+                  <a href="{{ project_link }}" class="btn btn-sm btn-outline-dark"{% if proj.external_url %} target="_blank" rel="noopener noreferrer"{% endif %}>{% if proj.external_url %}Visit site{% else %}View project{% endif %}</a>
+                  {% if proj.demo_url %}{% unless proj.external_url %}<a href="{{ proj.demo_url }}" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">Live demo</a>{% endunless %}{% endif %}
+               </div>
+            </article>
+         </div>
+         {% endif %}
+         {% endfor %}
+      </div>
+   </div>
+   <div class="home-projects-swiper__pagination topic-projects-swiper__pagination swiper-pagination"></div>
+   <button type="button" class="home-projects-swiper__nav home-projects-swiper__nav--prev topic-projects-swiper__nav topic-projects-swiper__nav--prev" aria-label="Previous projects">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>
+   </button>
+   <button type="button" class="home-projects-swiper__nav home-projects-swiper__nav--next topic-projects-swiper__nav topic-projects-swiper__nav--next" aria-label="Next projects">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+   </button>
+</div>

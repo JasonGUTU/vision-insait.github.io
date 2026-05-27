@@ -57,45 +57,7 @@ layout: default
       {% if proj.topics and proj.topics contains tid %}{% assign proj_found = true %}{% endif %}
       {% endfor %}
       {% if proj_found %}
-      <div class="row gy-5">
-         {% assign projects_by_release = site.projects | sort: "release_date" | reverse %}
-         {% for proj in projects_by_release %}
-         {% if proj.topics and proj.topics contains tid %}
-         {% if proj.external_url %}
-         {% assign project_link = proj.external_url %}
-         {% elsif proj.url %}
-         {% assign project_link = proj.url | relative_url %}
-         {% else %}
-         {% assign project_link = proj.id | append: '/' | relative_url %}
-         {% endif %}
-         {% assign pi = forloop.index0 | modulo: 6 | plus: 1 %}
-         {% if proj.cover_image %}
-         {% assign cover = proj.cover_image %}
-         {% else %}
-         {% assign cover = '/site-covers/demos/portfolio-' | append: pi | append: '.jpg' %}
-         {% endif %}
-         <div class="col-lg-4 col-md-6 col-12">
-            <figure class="lift position-relative btn-arrow mb-4">
-               <a href="{{ project_link }}" class="d-block"{% if proj.external_url %} target="_blank" rel="noopener noreferrer"{% endif %}>
-                  <img src="{{ cover | relative_url }}" alt="{{ proj.title | escape }}" class="img-fluid rounded-3 w-100" loading="lazy" decoding="async" />
-                  <div class="icon-shape icon-lg bg-white rounded-circle icon-arrow shadow-lg position-absolute bottom-0 end-0 m-3">
-                     <i class="bi bi-arrow-up-right"></i>
-                  </div>
-               </a>
-            </figure>
-            <h3 class="h5 mb-2">
-               <a href="{{ project_link }}" class="text-reset text-decoration-none"{% if proj.external_url %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ proj.title }}</a>
-            </h3>
-            {% if proj.tagline %}<p class="text-muted small mb-2">{{ proj.tagline }}</p>{% endif %}
-            {% if proj.release_date %}<p class="small text-muted mb-3">{{ proj.release_date | date: "%b %-d, %Y" }}</p>{% elsif proj.tagline %}<div class="mb-3"></div>{% endif %}
-            <div class="d-flex flex-wrap gap-2">
-               <a href="{{ project_link }}" class="btn btn-sm btn-outline-dark"{% if proj.external_url %} target="_blank" rel="noopener noreferrer"{% endif %}>{% if proj.external_url %}Visit site{% else %}View project{% endif %}</a>
-               {% if proj.demo_url %}{% unless proj.external_url %}<a href="{{ proj.demo_url }}" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">Live demo</a>{% endunless %}{% endif %}
-            </div>
-         </div>
-         {% endif %}
-         {% endfor %}
-      </div>
+      {% include topic-projects-carousel.html tid=tid %}
       {% else %}
       <p class="text-muted">No demos are tagged with <code>{{ tid }}</code> yet. Add <code>topics: [ {{ tid }} ]</code> to a project in <code>_projects/</code>.</p>
       {% endif %}
