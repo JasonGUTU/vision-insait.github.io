@@ -71,7 +71,7 @@ Our long-term ambition is to build Vision Agents that are perceptually grounded,
 ### In Cooperation With
 
 <div class="topic-cooperation-logos">
-  <img src="{{ '/site-covers/sponsors/Adobe-Logo-2020-present.png' | relative_url }}" alt="" loading="lazy" decoding="async" />
+  <img src="{{ '/site-covers/sponsors/Adobe_Inc.png' | relative_url }}" alt="" loading="lazy" decoding="async" />
   <img src="{{ '/site-covers/sponsors/Snap_Inc.png' | relative_url }}" alt="" loading="lazy" decoding="async" />
   <img src="{{ '/site-covers/sponsors/google.png' | relative_url }}" alt="" loading="lazy" decoding="async" />
 </div>
