@@ -22,6 +22,8 @@
         var topics = (item.getAttribute("data-topics") || "").split(/\s+/).filter(Boolean);
         var show = topicId === "all" || topics.indexOf(topicId) !== -1;
         item.classList.toggle("demos-gallery-item--hidden", !show);
+        // Make filtering work even if custom CSS is stale/missing on CDN.
+        item.style.display = show ? "" : "none";
         if (show) visible += 1;
       });
       if (emptyEl) {

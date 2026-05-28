@@ -431,6 +431,7 @@ h3.topic-section-title {
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
+/* If Bootstrap button classes are present, only handle active state */
 .demos-topic-filter:hover {
   border-color: var(--bs-danger);
   color: var(--bs-danger);
