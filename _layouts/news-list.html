@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<section class="py-5 py-lg-8">
+   <div class="container">
+      <div class="row">
+         <div class="col-12 col-lg-10 col-xl-8">
+            <small class="text-uppercase ls-md fw-semibold text-primary">Updates</small>
+            <h1 class="mt-2 mb-3">{{ page.title }}</h1>
+            {% assign page_intro = content | strip %}
+            {% if page_intro != "" %}
+            <div class="prose text-muted mb-0">{{ page_intro | markdownify }}</div>
+            {% else %}
+            <p class="text-muted mb-0 lead fs-6">Highlights from the Vision Lab and INSAIT — papers, releases, media, and group news.</p>
+            {% endif %}
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="mb-xl-8 mb-5">
+   <div class="container">
+      <div class="row">
+         <div class="col-12 col-lg-10 col-xl-9">
+            {% assign news_sorted = site.data.news | sort: "date" | reverse %}
+            {% assign news_year = "" %}
+            {% for item in news_sorted %}
+            {% assign item_year = item.date | date: "%Y" %}
+            {% if item_year != news_year %}
+            <h2 class="news-year-heading h5 text-muted fw-semibold mb-0{% unless forloop.first %} mt-5 pt-1{% endunless %}">{{ item_year }}</h2>
+            {% assign news_year = item_year %}
+            {% endif %}
+            {% include news-row.html item=item %}
+            {% endfor %}
+         </div>
+      </div>
+   </div>
+</section>

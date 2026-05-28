@@ -1,0 +1,270 @@
+# Vision Lab news feed (used by /news/)
+# body: Markdown (inline links to people, demos, publications)
+- date: '2026-05-27'
+  body: INSAIT announces [17 papers at CVPR 2026](https://insait.ai/insait-among-europes-top-institutions-at-cvpr-2026/),
+    its strongest computer-vision presence so far. The accepted work spans robotics,
+    spatial reasoning, egocentric vision, earth observation, visual agents, and agentic
+    vision.
+  link_url: https://insait.ai/insait-among-europes-top-institutions-at-cvpr-2026/
+- date: '2026-05-20'
+  body: '[Nikolay Nikolov](/people/nikolay-nikolov/) presents INSAIT''s latest Physical
+    AI work at Google Cloud Day Sofia, focusing on systems that scale beyond robots
+    trained only from demonstrations.'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7462758282538176512/
+- date: '2026-05-12'
+  body: Bulgarian government ministers visit INSAIT and meet the Computer Vision group
+    leadership, including [Luc Van Gool](/people/luc-van-gool/), to discuss the institute's
+    next stage of development and strategic role for Bulgaria.
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7459865655576600576/
+- date: '2026-04-30'
+  body: '[Asen Nachkov](/people/asen-nachkov/) discusses autonomous-vehicle research
+    and [DiffSim Trinity](/demos/diffsim-trinity/) in Bulgarian media. The work studies
+    differentiable simulation as a path toward safer, more data-efficient autonomous
+    driving.'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7455523842334203905/
+- date: '2026-04-23'
+  body: Lorenzo Venturoli joins INSAIT for a Master's thesis in 3D computer vision,
+    bringing experience in 3D semantics, SLAM, and multimodal benchmarks.
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7452986614546456576/
+- date: '2026-04-21'
+  body: '[EgoNight](/demos/egonight/) is released at ICLR 2026 as a benchmark for
+    nighttime egocentric vision. The project introduces aligned day-night videos,
+    nighttime VQA, depth estimation, and cross-illumination retrieval to test vision
+    systems beyond daytime conditions.'
+  link_url: https://insait.ai/insait-introduces-egonight-a-benchmark-for-egocentric-ai-vision-in-low-light-conditions/
+- date: '2026-04-10'
+  body: '[Anna-Maria Halacheva](/people/anna-maria-halacheva/) discusses Articulate3D,
+    robotics, and her research path on the Superhuman podcast with Georgi Nenov.'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7448269480448757760/
+- date: '2026-04-08'
+  body: '[VOID](/demos/void/) is launched in collaboration with Netflix as an open
+    model for video object and interaction deletion. The model removes objects while
+    reconstructing physically plausible scene dynamics rather than only filling pixels.'
+  link_url: https://insait.ai/insait-and-netflix-develop-ai-model-that-realistically-removes-objects-from-video/
+- date: '2026-03-31'
+  body: '[Hongyu An](/people/hongyu-an/) joins INSAIT as a PhD student in Computer
+    Vision with [Luc Van Gool](/people/luc-van-gool/) and [Jinjin Gu](/people/jinjin-gu/).
+    His work focuses on image/video super-resolution, restoration, and generative
+    diffusion models.'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7444645195289280513/
+- date: '2026-03-25'
+  body: '[Mengshun Hu](/people/mengshun-hu/) joins INSAIT as a postdoctoral researcher
+    in Computer Vision. His research focuses on video restoration, space-time video
+    super-resolution, and emerging VideoAgent systems.'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7442489517087031297/
+- date: '2026-03-16'
+  body: INSAIT announces 8 accepted ICLR 2026 papers, placing Bulgaria first in Eastern
+    Europe by accepted publications at the conference. Several of the accepted works
+    connect to vision, multimodal AI, and embodied reasoning.
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7439235939564105728/
+- date: '2026-02-25'
+  body: '[Taewoo Kim](/people/taewoo-kim/) joins INSAIT as a postdoctoral researcher
+    in Computer Vision and computational imaging. His work connects event-based cameras,
+    low-light enhancement, video generation/editing, and agentic AI.'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7432340644636979200/
+- date: '2026-02-18'
+  body: INSAIT launches the [CVPR 2026 Workshop on Agentic AI for Visual Media](/demos/aavm-cvpr-2026/),
+    led by [Jinjin Gu](/people/jinjin-gu/) and [Lei Sun](/people/lei-sun/) in collaboration
+    with Snap and Adobe. The workshop focuses on AI systems that reason, plan, and
+    execute multi-step visual-media workflows.
+  link_url: https://insait.ai/insait-launches-cvpr-2026-workshop-on-agentic-ai-for-visual-media/
+- date: '2026-01-22'
+  body: '[Dannong Xu](/people/dannong-xu/) joins INSAIT as a PhD student in Computer
+    Vision, working on multimodal learning, large language models, and visual reasoning.'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7420018881118916610/
+- date: '2026-01-19'
+  body: '[Asen Nachkov](/people/asen-nachkov/) discusses [DiffSim Trinity](/demos/diffsim-trinity/)
+    and safer autonomous driving on Bloomberg TV Bulgaria, explaining how differentiable
+    simulation supports more reliable planning.'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7418932064646967296/
+- date: '2026-01-16'
+  body: '[Asen Nachkov](/people/asen-nachkov/) explains autonomous vehicles and real-world
+    decision-making on Bulgarian National Radio, highlighting the role of simulation
+    and prediction in driving systems.'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7417853102936018945/
+- date: '2026-01-08'
+  body: '[Ruibo Ming](/people/ruibo-ming/) joins INSAIT as a PhD student in the Computer
+    Vision group, working on video generation, autonomous driving, 3D reconstruction,
+    and multimodal systems.'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7414947968514076672/
+- date: '2025-12-26'
+  body: '[Anna-Maria Halacheva](/people/anna-maria-halacheva/) discusses INSAIT''s
+    CSRankings success and AI talent development on bTV, following the institute''s
+    rise in European computer-science rankings.'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7410295032437678080/
+- date: '2025-12-22'
+  body: INSAIT reaches 13th in Europe and 1st in Eastern Europe in CSRankings, with
+    computer vision ranked 6th in Europe among the institute's tracked research areas.
+  link_url: https://insait.ai/bulgarias-insait-ranks-13th-in-europe-overtaking-universities-in-oxford-london-amsterdam-and-berlin/
+- date: '2025-12-17'
+  body: '[Nikola Popovic](/people/nikola-popovic/) presents INSAIT''s large-scale
+    3D dataset work in a Bulgarian National Radio interview, explaining why open 3D
+    data matters for language-aware scene understanding.'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7406973353695215616/
+- date: '2025-12-16'
+  body: INSAIT releases [SceneSplat-49k](https://insait.ai/insait-releases-the-worlds-largest-open-source-3d-dataset-and-benchmark-for-language-aware-ai-systems/),
+    the largest open-source 3D Gaussian Splatting scene collection, together with
+    a benchmark for language-aware 3D AI systems.
+  link_url: https://insait.ai/insait-releases-the-worlds-largest-open-source-3d-dataset-and-benchmark-for-language-aware-ai-systems/
+- date: '2025-12-05'
+  body: INSAIT attends NeurIPS 2025 with 7 accepted papers and multiple workshop activities,
+    including work connected to world models, video AI, and interactive environments.
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7402640911760785408/
+- date: '2025-11-25'
+  body: Prof. Angela Yao visits INSAIT and meets the Computer Vision group, sharing
+    perspectives from her work in human-centric and visual AI research.
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7399047999395377153/
+- date: '2025-11-20'
+  body: '[StateSpaceDiffuser](/demos/statespace-diffuser/) is accepted to NeurIPS
+    2025 as a diffusion-based world model for long-context spatial consistency. The
+    work is led by [Nedko Savov](/people/nedko-savov/) with collaborators including
+    [Deheng Zhang](/people/deheng-zhang/), [Danda Paudel](/people/danda-paudel/),
+    and [Luc Van Gool](/people/luc-van-gool/).'
+  link_url: https://insait.ai/insait-researchers-advance-video-ai-with-statespacediffuser/
+- date: '2025-11-17'
+  body: Cheng Tang joins INSAIT as a Computer Vision intern with [Luc Van Gool](/people/luc-van-gool/),
+    focusing on RL-driven multimodal reasoning enhancement.
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7396101380656222208/
+- date: '2025-11-05'
+  body: '[Letian Shi](/people/letian-shi/) joins INSAIT as a doctoral student in the
+    Computer Vision group, working with [Luc Van Gool](/people/luc-van-gool/) and
+    [Danda Paudel](/people/danda-paudel/).'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7391756028796735489/
+- date: '2025-11-04'
+  body: INSAIT presents 3 accepted robotics papers at IROS 2025, including work on
+    autonomous-vehicle policies trained with differentiable simulation.
+  link_url: https://insait.ai/insait-with-three-accepted-papers-at-iros-2025-one-of-the-worlds-leading-robotics-conferences/
+- date: '2025-10-27'
+  body: '[Nikolay Nikolov](/people/nikolay-nikolov/) presents [SPEAR-1](/demos/spear-1/)
+    and robotic foundation models on bTV, describing how 3D understanding can improve
+    robot behavior in the physical world.'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7388494825379102720/
+- date: '2025-10-25'
+  body: '[SPEAR-1](/demos/spear-1/) is featured on Bulgarian National Television as
+    a robotics foundation model built around spatial reasoning and 3D understanding.'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7387755521057001472/
+- date: '2025-10-20'
+  body: Jan-Nico Zaech gives an ICCV 2025 workshop keynote on robotic AI and industrial
+    transfer, highlighting how foundation data can support more capable robots.
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7385948624750383105/
+- date: '2025-10-17'
+  body: '[Stefan Ailuro](/people/stefan-ailuro/) joins INSAIT as a PhD student in
+    Computer Vision, working with [Luc Van Gool](/people/luc-van-gool/) and [Danda
+    Paudel](/people/danda-paudel/).'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7384852904169476096/
+- date: '2025-10-16'
+  body: INSAIT announces 13 ICCV 2025 papers and a major computer-vision presence
+    in Hawaii, including work across 3D vision, robotics, perception, and multimodal
+    AI.
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7384496163737112576/
+- date: '2025-10-08'
+  body: INSAIT co-organizes the OpenSUN3D challenges at ICCV 2025 with Stanford, ETH
+    Zurich, Google, NVIDIA, Microsoft, and TUM, advancing open-world 3D scene understanding.
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7381588953218580480/
+- date: '2025-10-03'
+  body: INSAIT's robotics team presents at CoRL 2025 and qualifies for the Real Robot
+    Challenge, bringing the group's embodied-AI work into a leading robotics venue.
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7379783760738865153/
+- date: '2025-09-29'
+  body: '[Generalist Robot Manipulation Beyond Action Labeled Data](/demos/motovla/)
+    is accepted to CoRL 2025. The work studies how robot policies can learn from broader
+    visual and 3D data, not only action-labeled demonstrations.'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7378331877440573440/
+- date: '2025-09-27'
+  body: GAIA 2025 takes place in Sofia, bringing together researchers and industry
+    around geospatial AI, foundation models, and Earth observation.
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7377606778261413889/
+- date: '2025-09-23'
+  body: INSAIT announces GAIA 2025, the first international symposium on Geospatial
+    AI and Applications with Foundation Models, hosted in Sofia.
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7376163674966892544/
+- date: '2025-09-18'
+  body: '[Xiaoye Wang](/people/xiaoye-wang/) joins INSAIT for a long-term research
+    visit in 3D computer vision, working with [Luc Van Gool](/people/luc-van-gool/)
+    and [Danda Paudel](/people/danda-paudel/).'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7374336456741240832/
+- date: '2025-09-01'
+  body: INSAIT opens Google co-funded PhD positions in egocentric vision and multimodal
+    LLMs, supporting research on first-person perception, streaming multimodal models,
+    and real-world visual understanding.
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7368181720291983360/
+- date: '2025-08-29'
+  body: '[Yuanqi Yao](https://insait.ai/yuanqi-yao/) joins INSAIT as a PhD student
+    in Computer Vision and Robotics, focusing on embodied AI, robotic manipulation,
+    and vision-language-action models.'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7367099788351201280/
+- date: '2025-08-25'
+  body: Google gives INSAIT $150,000 to support multimodal LLM research under [Luc
+    Van Gool](/people/luc-van-gool/), extending the institute's work in vision-language
+    and egocentric AI.
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7365646617946861569/
+- date: '2025-08-13'
+  body: '[Berke Gokmen](/people/berke-gokmen/) joins INSAIT for a long-term research
+    visit in Computer Vision and AI, working on 3D scene generation and generative
+    vision models.'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7361305455190519808/
+- date: '2025-08-07'
+  body: INSAIT co-organizes the OpenSUN3D Workshop at ICCV 2025, focused on open-vocabulary
+    and open-world 3D scene understanding.
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7359124591870382080/
+- date: '2025-08-05'
+  body: INSAIT co-organizes the Physics-IQ Challenge at ICCV 2025, a benchmark for
+    evaluating whether generative models produce physically plausible videos.
+  link_url: https://insait.ai/insait-co-organizes-physics-iq-challenge-at-iccv-2025/
+- date: '2025-07-23'
+  body: Prof. Richard Hartley visits INSAIT and meets the Computer Vision group, giving
+    a talk on modeling probability distributions in data manifolds using diffusion.
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7353692849156059136/
+- date: '2025-07-21'
+  body: INSAIT co-organizes the NeurIPS 2025 Workshop on Embodied World Models for
+    Decision-Making, connecting simulation, video-language-action models, robotics,
+    and autonomous driving.
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7352973752411840512/
+- date: '2025-07-18'
+  body: '[GaussianVLM](/demos/gaussianvlm/) is released as a 3D vision-language model
+    for understanding immersive Gaussian-splat scenes reconstructed from ordinary
+    video.'
+  link_url: https://insait.ai/gaussianvlm/
+- date: '2025-07-11'
+  body: '[Zhendong Li](/people/zhendong-li/) joins INSAIT as a doctoral student in
+    Computer Vision, working with [Luc Van Gool](/people/luc-van-gool/) and [Danda
+    Paudel](/people/danda-paudel/).'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7349342719099437057/
+- date: '2025-07-10'
+  body: INSAIT welcomes the 2025 AI Summer Research Fellows, selected from more than
+    4,000 applicants, with projects spanning computer vision, robotics, foundational
+    models, and trustworthy AI.
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7348978015478890496/
+- date: '2025-07-01'
+  body: INSAIT starts a joint research program with MIT CSAIL, expanding collaboration
+    across frontier AI, systems, and related research directions.
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7345713769286676480/
+- date: '2025-06-27'
+  body: '[ObjectRelator](https://arxiv.org/pdf/2411.19083) wins 2nd place in the Ego-Exo4D
+    Challenge at the CVPR 2025 EgoVis Workshop, advancing cross-view object relation
+    understanding for egocentric and exocentric video.'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7344266727276347393/
+- date: '2025-06-19'
+  body: INSAIT's work on [multi-modal semantic segmentation under sensor failures](/publications/benchmarking-multi-modal-semantic-segmentation-under-sensor-failures-missing-and-noisy-modality-robu/)
+    wins Best Paper at the CVPR 2025 TMM-OpenWorld Workshop. The paper studies robustness
+    when sensors are missing or noisy in real-world multimodal systems.
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7341369237979942913/
+- date: '2025-06-14'
+  body: INSAIT presents 7 accepted papers at CVPR 2025, strengthening Bulgaria's presence
+    at the leading computer-vision conference.
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7339565454857764864/
+- date: '2025-06-13'
+  body: '[SceneSplat](/demos/scenesplat/) is released for instant 3D object discovery
+    from text in photorealistic Gaussian-splat scenes. The system enables open-vocabulary
+    interaction directly in 3D space.'
+  link_url: https://insait.ai/insait-and-collaborators-launch-scenesplat-a-breakthrough-in-open-vocabulary-3d-scene-understanding/
+- date: '2025-06-09'
+  body: '[EarthMind](https://insait.ai/insait-unveils-earthmind-a-pioneering-ai-model-for-earth-observation/)
+    is released as a foundation model for multimodal Earth observation and geospatial
+    AI, combining visual, radar, and multi-spectral satellite data.'
+  link_url: https://insait.ai/insait-unveils-earthmind-a-pioneering-ai-model-for-earth-observation/
+- date: '2025-06-06'
+  body: '[Exploration-Driven Generative Interactive Environments](/publications/exploration-driven-generative-interactive-environments/)
+    is accepted to CVPR 2025. The work introduces an auto-exploration pipeline for
+    training generative interactive environments without human demonstrations.'
+  link_url: https://www.linkedin.com/feed/update/urn:li:activity:7336652935277219840/

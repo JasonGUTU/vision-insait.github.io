@@ -1,0 +1,22 @@
+{% assign item = include.item %}
+<article class="news-row d-flex gap-3 gap-md-4 align-items-start">
+   <div class="news-row__date flex-shrink-0 text-center" aria-hidden="true">
+      <span class="news-row__day d-block">{{ item.date | date: "%-d" }}</span>
+      <span class="news-row__month d-block text-uppercase">{{ item.date | date: "%b" }}</span>
+   </div>
+   <div class="news-row__content min-w-0 flex-grow-1">
+      <div class="news-row__body text-body mb-0">
+         {{ item.body | markdownify }}
+      </div>
+      {% if item.link_url %}
+      {% assign link_external = false %}
+      {% if item.link_url contains '://' %}
+      {% assign link_external = true %}
+      {% endif %}
+      <a href="{{ item.link_url }}" class="news-row__link small fw-medium text-decoration-none mt-2 d-inline-flex align-items-center gap-1"{% if link_external %} target="_blank" rel="noopener noreferrer"{% endif %}>
+         Read coverage
+         <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+      </a>
+      {% endif %}
+   </div>
+</article>
