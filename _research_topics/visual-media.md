@@ -66,7 +66,7 @@ intro_video: /site-covers/home/hero-video.mp4
   /* Standalone (centered, narrower) variant for stand-alone compare blocks. */
   .vm-compare.vm-compare-standalone { max-width: 80%; }
   .vm-media-caption {
-    text-align: center; font-size: 0.85rem; color: #666;
+    text-align: center; font-size: 0.85rem; color: var(--bs-secondary-color, #666);
     margin: -1.25rem auto 2.5rem; max-width: 80%;
   }
   .vm-media-caption a { color: inherit; text-decoration: underline; }
@@ -82,7 +82,7 @@ intro_video: /site-covers/home/hero-video.mp4
     box-shadow: 0 2px 12px rgba(0,0,0,0.3);
     transform: translate(-50%, -50%);
     display: flex; align-items: center; justify-content: center;
-    color: #111; font-size: 1.1rem; pointer-events: none;
+    color: var(--bs-emphasis-color, #111); font-size: 1.1rem; pointer-events: none;
   }
   .vm-compare .vm-compare-knob::before { content: "‹"; margin-right: 2px; }
   .vm-compare .vm-compare-knob::after  { content: "›"; margin-left: 2px; }

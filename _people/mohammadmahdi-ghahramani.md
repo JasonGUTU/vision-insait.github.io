@@ -7,6 +7,7 @@ role: phd
 start_date: "2022-09-17"
 order: 0
 topics:
+  - space-ai
 working_with:
   - danda-paudel
   - luc-van-gool

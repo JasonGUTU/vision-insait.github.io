@@ -9,8 +9,9 @@ description: Vision Group at INSAIT 2026
 #   - Project page (e.g. https://user.github.io/repo/) → baseurl: "/repo"
 #
 # Local previews (root URL, styles + links resolve correctly):
-#   bundle exec jekyll serve --config _config.yml,_config_local.yml
-#   Then open http://localhost:4000/ (or the URL printed by Jekyll).
+#   rake serve
+#   or: bundle exec jekyll serve --config _config.yml,_config.dev.yml
+#   Then open http://127.0.0.1:4000/ (or the URL printed by Jekyll).
 url: "https://vision.insait.ai"
 baseurl: ""
 
@@ -154,15 +155,14 @@ defaults:
       type: "jobs"
     values:
       layout: job
-  - scope:
-      path: "_posts"
-      type: "posts"
-    values:
-      layout: post
-
 exclude:
   - template
   - vendor
   - Gemfile
   - Gemfile.lock
   - README.md
+  - docs
+  - scripts
+  - data
+  - .venv-face
+  - .venv

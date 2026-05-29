@@ -20,7 +20,7 @@ Email: [email protected]
 
 **About me**
 
-I am Sombit Dey, a first-year doctoral student at the Institute for Computer Science,
+I am Sombit Dey, a doctoral student at the Institute for Computer Science,
 Artificial Intelligence and Technology from April 2023, working on Computer Vision and Robotics. I am supervised by Prof Danda Paudel and Prof Luc Van Gool.
 
 My research interests lie in Deep Learning, Computer Vision, and Robotics. My research focus is at the intersection of robotics and foundational multi-modal models.

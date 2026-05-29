@@ -257,6 +257,46 @@ main {
   --bs-primary-bg-subtle: rgba(236, 95, 88, 0.12);
   --bs-primary-border-subtle: rgba(236, 95, 88, 0.35);
   --bs-focus-ring-color: rgba(240, 120, 114, 0.35);
+  /* Light-mode sets --bs-body-color on :root; override for dark backgrounds. */
+  --bs-body-color: #e2e8f0;
+  --bs-body-color-rgb: 226, 232, 240;
+  --bs-emphasis-color: #f8fafc;
+  --bs-emphasis-color-rgb: 248, 250, 252;
+  --bs-secondary-color: rgba(226, 232, 240, 0.75);
+  --bs-secondary-color-rgb: 226, 232, 240;
+  --bs-tertiary-color: rgba(226, 232, 240, 0.5);
+  --bs-tertiary-color-rgb: 226, 232, 240;
+  --bs-heading-color: #f8fafc;
+}
+
+/* Research topic pages: ensure markdown body inherits readable text in dark mode */
+[data-bs-theme="dark"] .topic-article.prose,
+[data-bs-theme="dark"] .topic-article.prose p,
+[data-bs-theme="dark"] .topic-article.prose li,
+[data-bs-theme="dark"] .topic-article.prose td,
+[data-bs-theme="dark"] .topic-article.prose th,
+[data-bs-theme="dark"] .topic-article.prose strong,
+[data-bs-theme="dark"] .topic-article.prose em,
+[data-bs-theme="dark"] .topic-article.prose blockquote,
+[data-bs-theme="dark"] .topic-main h1,
+[data-bs-theme="dark"] .topic-main .lead {
+  color: var(--bs-body-color);
+}
+
+[data-bs-theme="dark"] .topic-article.prose h1,
+[data-bs-theme="dark"] .topic-article.prose h2,
+[data-bs-theme="dark"] .topic-article.prose h3,
+[data-bs-theme="dark"] .topic-article.prose h4,
+[data-bs-theme="dark"] h3.topic-section-title {
+  color: var(--bs-heading-color);
+}
+
+[data-bs-theme="dark"] .topic-article .vm-media-caption {
+  color: var(--bs-secondary-color);
+}
+
+[data-bs-theme="dark"] .topic-article .vm-compare .vm-compare-knob {
+  color: var(--bs-emphasis-color);
 }
 
 .prose a,

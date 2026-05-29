@@ -83,11 +83,11 @@ flowchart LR
 ├── publications/index.md    # Publication archive
 ├── demos/index.md           # Projects grid
 ├── news/index.md            # Text news list (single file to edit)
-├── job/index.md             # Job list
+├── openings/index.md        # Open positions list
 └── blog/index.md            # Redirects to /news/ (legacy path)
 ```
 
-**Jekyll collections** (see `_config.yml`) turn each folder into typed content with fixed URL patterns. **`_posts/`** is optional legacy blog material. **News** is a single page at **`news/index.md`** (not a collection).
+**Jekyll collections** (see `_config.yml`) turn each folder into typed content with fixed URL patterns. **News** is driven by **`_data/news.yml`** and **`news/index.md`** (not a collection). See [docs/MAINTENANCE.md](docs/MAINTENANCE.md) for template sources, scripts, and unused paths.
 
 ---
 
@@ -244,17 +244,17 @@ Project description (shown when the page is not a pure redirect). If only `exter
 
 ---
 
-## News (`news/index.md`)
+## News (`_data/news.yml`)
 
-Group news is a **single Markdown page** at `/news/`. Edit **`news/index.md`** only — no per-item files or topic tagging.
+Group news is listed at `/news/` from **`_data/news.yml`** (layout `news-list`). Edit the YAML only — no per-item Markdown files or topic tagging.
 
-Add one bullet per line (newest first):
-
-```markdown
-* **May 12, 2026** — Short announcement text.
+```yaml
+- date: 2026-05-12
+  title: Short headline
+  body: Optional longer text.
 ```
 
-The home page does not show news; the nav/footer link goes to this list.
+Sort with newest dates first. The home page does not show news; the nav/footer link goes to this list. **`/blog/`** redirects here for legacy links.
 
 ---
 
@@ -359,7 +359,7 @@ Routine editors should **not** change `_layouts/` or `_includes/`. Reference map
 | Member | `person.html` | `_people/*.md` + pubs via `authors` |
 | Publications | `publications-list.html`, `publication.html` | `_publications/` |
 | Demos | `demos-grid.html`, `project.html` | `_projects/` |
-| News | `page.html` | `news/index.md` |
+| News | `news-list.html` | `_data/news.yml` + `news/index.md` |
 | Jobs | `job-list.html`, `job.html` | `_jobs/` |
 
 ---
@@ -385,7 +385,7 @@ Routine editors should **not** change `_layouts/` or `_includes/`. Reference map
 
 ### Updating news
 
-1. Edit `news/index.md` and add a bullet with **date** and short text (newest at the top).
+1. Edit `_data/news.yml` (newest entries first).
 2. Run `rake serve` and check `/news/`.
 
 ### Adding a research direction

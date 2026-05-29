@@ -20,7 +20,7 @@ Email: [email protected]
 
 **About me**
 
-I am Saman (Sam) Motamed, a first year PhD student at the [Institute for Computer Science, Artificial Intelligence and Technology](https://insait.ai/), [Sofia University](https://www.uni-sofia.bg/) from April 2023. I am supervised by [Prof.](https://insait.ai/prof-luc-van-gool/) [Luc Van Gool](https://insait.ai/prof-luc-van-gool/).
+I am Saman (Sam) Motamed, a PhD student at the [Institute for Computer Science, Artificial Intelligence and Technology](https://insait.ai/), [Sofia University](https://www.uni-sofia.bg/) from April 2023. I am supervised by [Prof.](https://insait.ai/prof-luc-van-gool/) [Luc Van Gool](https://insait.ai/prof-luc-van-gool/).
 
 Broadly speaking, my interests revolve around generative vision models, unsupervised learning, and harnessing the power of large vision and language models towards personalised tasks.
 
