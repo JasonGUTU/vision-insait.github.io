@@ -2,7 +2,7 @@
 title: FireScope
 tagline: Wildfire risk mapping with a chain-of-thought oracle — CVPR 2026.
 cover_image: /assets/images/portfolio/firescope.png
-release_date: 2026-06-15
+release_date: 2026-05-29
 project_year: "2026"
 sidebar_tags: Demo, Remote Sensing, VLM
 external_url: https://firescope.ai/research/

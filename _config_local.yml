@@ -1,0 +1,8 @@
+# Backward-compatible alias for local preview (same as _config.dev.yml).
+# Prefer: rake serve  →  uses _config.yml + _config.dev.yml
+# Or: bundle exec jekyll serve --config _config.yml,_config.dev.yml
+#
+# This file exists so older commands that pass --config _config.yml,_config_local.yml
+# keep working after the rename documented in docs/MAINTENANCE.md.
+
+url: "http://127.0.0.1:4000"
