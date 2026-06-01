@@ -8,6 +8,7 @@ start_date: "2022-09-12"
 order: 0
 topics:
   - 3d-vision
+  - robotics
 working_with:
   - danda-paudel
   - luc-van-gool

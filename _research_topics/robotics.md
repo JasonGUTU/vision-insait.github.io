@@ -2,132 +2,84 @@
 topic_id: robotics
 title: Robotics
 order: 1
-summary: Reference page for editing Research Topics — use this file as the template for your own topic.
+summary: Foundation models for physical intelligence—perception, language, action, and real-world deployment.
 hero_image: /assets/images/blog/robotics.png
-intro_video: /site-covers/home/hero-video.mp4
+intro_video: /assets/images/topics/robotics-hero.mp4
 ---
 
-This page is the **reference template** for all Research Topic pages. Edit your own file in `_research_topics/` (for example `3d-vision.md`), preview at `/research/topics/<topic-id>/`, and do **not** change `_layouts/topic.html` or other templates.
+<style>
+  /* Float hero video beside the opening sections (magazine layout). */
+  .ro-float-right {
+    float: right;
+    width: 55%;
+    margin: 0.25rem 0 1.25rem 1.5rem;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+  .ro-float-right .ratio {
+    width: 100%;
+    --bs-aspect-ratio: 56.25%;
+  }
+  /* Match site topic video embeds: video fills the ratio box (_hero.scss safe). */
+  .ro-float-right .ratio > video {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center;
+  }
+  /* Let the float span the first two subsections; clear before the themes list. */
+  .ro-float-right ~ h4:nth-of-type(3) {
+    clear: right;
+  }
+  @media (max-width: 700px) {
+    .ro-float-right {
+      float: none;
+      width: 100%;
+      margin: 0 0 1.5rem 0;
+    }
+  }
+</style>
 
-We build representations that fuse **vision**, proprioception, and language so robots can follow sparse instructions, recover from contact-rich failures, and reuse skills across cells and grippers. Our work builds on *sim-to-real transfer* and related ideas in manipulation and navigation.
-
-### Which file to edit
-
-Each direction has one Markdown file; the filename must match `topic_id`:
-
-| Direction | File | Preview path |
-|-----------|------|----------------|
-| Robotics | `robotics.md` | `/research/topics/robotics/` |
-| Space AI | `space-ai.md` | `/research/topics/space-ai/` |
-| 3D Vision | `3d-vision.md` | `/research/topics/3d-vision/` |
-| Egocentric Vision | `egocentric-vision.md` | `/research/topics/egocentric-vision/` |
-| Visual Media | `visual-media.md` | `/research/topics/visual-media/` |
-| Vision Agent | `vision-agent.md` | `/research/topics/vision-agent/` |
-
-The YAML block at the top of each file sets the page title, summary, and hero image. The sections **Projects and demos**, **Publications**, and **People** are filled automatically from other folders when items are tagged with your `topic_id` — you do not write those in this file.
-
-#### YAML fields (top of the file)
-
-| Field | Purpose |
-|-------|---------|
-| `topic_id` | Must match the filename; do not change |
-| `title` | Main page heading (H1) |
-| `order` | Sort order on the Research list |
-| `summary` | Short lead line under the title |
-| `hero_image` | Banner image path, e.g. `/assets/images/blog/blog-img-2.jpg` or `/site-covers/topics/robotics/hero.jpg` |
-
-Do not use `topic_sponsors` or `collaborators` in YAML. Partner logos go in the **In Cooperation With** section below.
-
-### Headings and text
-
-The page title is already H1 from `title` in YAML. In the body, use **only** `###` (section) and `####` (subsection). Do not use `##`, `#####`, or HTML heading tags.
-
-#### Example subsection
-
-Domain randomization, system identification, and tactile feedback for closing the reality gap. Use **bold** for key terms and *italic* for paper or dataset names.
-
-### Manipulation and contact-rich control
-
-Policies that reason over force, slip, and partial observability during assembly and tool use.
-
-#### Sim-to-real transfer
-
-How we close the gap between simulation and deployment on real hardware.
-
-#### Data-efficient learning
-
-Few-shot adaptation from teleoperation or sparse human corrections.
-
-### Perception and language
-
-#### Vision–proprioception fusion
-
-Representations that align egocentric video, depth, and joint states for closed-loop control.
-
-#### Instruction following
-
-Grounding free-form language in scene graphs and affordances for multi-step rearrangement.
-
-### Images
-
-**Hero image:** set `hero_image` in YAML (see above).
-
-**Inline image** in the body:
-
-```markdown
-![Short description of the image](/assets/images/blog/blog-img-7.jpg)
-```
-
-Live example:
-
-<figure class="my-4 mb-0">
-  <img src="{{ '/assets/images/blog/blog-img-7.jpg' | relative_url }}" alt="Representative robotics scene" class="img-fluid rounded-3 w-100" loading="lazy" decoding="async" />
+<figure class="ro-float-right">
+  <div class="ratio ratio-16x9">
+    <video class="object-fit-cover"
+           src="{{ '/assets/images/topics/robotics-hero.mp4' | relative_url }}"
+           autoplay muted loop playsinline preload="auto"
+           aria-label="Robotics research highlight video"></video>
+  </div>
 </figure>
 
-Upload your own files under `site-covers/topics/<topic-id>/` and use paths starting with `/`.
+Robotics is a core direction for building AI systems that can understand, reason, and act in the physical world. While recent advances in AI have transformed language, vision, and digital content creation, the next frontier is **physical intelligence**: systems that can operate safely and effectively in factories, logistics centers, hospitals, homes, and everyday human environments. The world is facing growing physical challenges, from labor shortages in manufacturing and service industries to the need for intuitive assistive robots that can support aging societies, healthcare, education, and domestic life. Meeting these demands requires robotics to move beyond rigid, single-purpose machines and toward general-purpose agents that can adapt to diverse tasks, embodiments, and environments.
 
-### Video
 
-Do not use a bare `<video>` tag (it will not size correctly). Wrap the player in a 16:9 container:
+#### Foundation Models for Physical Intelligence
 
-```html
-<div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm bg-dark my-4">
-  <video class="object-fit-cover" controls playsinline muted loop poster="{{ '/assets/images/blog/blog-img-7.jpg' | relative_url }}">
-    <source src="{{ '/site-covers/home/hero-video.mp4' | relative_url }}" type="video/mp4" />
-  </video>
-</div>
-```
+Our vision is to develop **Robotics Foundation Models** as the universal intelligence layer for physical AI. These models should connect perception, language, action, memory, and world understanding into a single framework, allowing robots to interpret human instructions, understand visual and spatial context, and execute complex tasks in real time. Instead of designing a separate model for every robot, object, and environment, we aim to build end-to-end models that can generalize across related robot embodiments, learn from diverse sources of data, and transfer knowledge across tasks. This shift is essential for scaling robotics from controlled demonstrations to real-world deployment.
 
-Example embed (paths already in the repo):
 
-<div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm bg-dark my-4">
-  <video class="object-fit-cover" controls playsinline muted loop poster="{{ '/assets/images/blog/blog-img-7.jpg' | relative_url }}">
-    <source src="{{ '/site-covers/home/hero-video.mp4' | relative_url }}" type="video/mp4" />
-  </video>
-</div>
+#### Reasoning, manipulation, and learning
 
-### In Cooperation With
+A central challenge in robotics is that physical intelligence requires both high-level reasoning and low-level precision. A robot must understand what a human wants, plan a sequence of actions, adapt to uncertainty, and control its body with accuracy. This is especially important for manipulation, where robots must handle deformable objects, cluttered scenes, tool use, contact-rich interactions, and long-horizon tasks. Beyond simple grippers, we are particularly interested in dexterous manipulation, including bi-manual systems and five-finger hands that can approach human-like flexibility. To scale these capabilities, robotics models must learn from many forms of experience, including teleoperation data, human demonstration, egocentric video, 3D data, simulation, and real robot interaction. By combining imitation learning, reinforcement learning, and foundation-model pre-training and post-training, robotics can become a bridge between digital intelligence and physical action.
 
-Add this section at the end of your file. Write a short line about partners, then list logos in HTML:
 
-Joint workshops with ETH Robotics and industry partners on sim-to-real transfer, tactile sensing, and safe deployment in shared workspaces.
+#### Strategic research themes
 
-<div class="topic-cooperation-logos">
-  <a href="https://example.org/agile-lab" target="_blank" rel="noopener" title="Agile Systems Lab">
-    <img src="{{ '/site-covers/sponsors/brand-logo-1.svg' | relative_url }}" alt="Agile Systems Lab" loading="lazy" decoding="async" />
-  </a>
-  <img src="{{ '/site-covers/sponsors/brand-logo-3.svg' | relative_url }}" alt="Eurobotics Initiative" loading="lazy" decoding="async" />
-</div>
+More concretely, our Robotics agenda includes the following strategic research themes:
 
-- With a website: wrap `<img>` in `<a href="..." target="_blank" rel="noopener">`
-- Without a link: use `<img src="..." alt="..." />` only
-- Prefer SVG or PNG under `site-covers/sponsors/` or `site-covers/topics/<topic-id>/`
+- **Robotics foundation models** — End-to-end models that integrate vision, language, action, and world understanding, with the goal of supporting multiple robot embodiments and diverse real-world tasks.
+- **Vision-Language-Action models** — Models that translate visual observations and human instructions into executable robot actions, enabling robots to follow natural language commands, interpret context, and adapt to changing environments.
+- **World-Action models** — Models that learn how the physical world changes as a result of actions, supporting prediction, planning, simulation, and long-horizon decision making.
+- **Generalization across robot embodiments** — Methods that allow policies and representations to transfer across related robots, sensors, grippers, hands, arms, and platforms, reducing the need to train isolated systems from scratch.
+- **Dexterous manipulation** — Robot manipulation with high degrees of freedom, including bi-manual coordination, five-finger hands, contact-rich control, tool use, object reorientation, and fine-grained physical interaction.
+- **Learning from human data** — Approaches that transform human demonstrations, egocentric videos, teleoperation trajectories, and 3D human-object interaction data into useful supervision for robotic intelligence.
+- **Imitation and reinforcement learning for robotics** — Pre-training and post-training pipelines that combine imitation learning for scalable skill acquisition with reinforcement learning for robustness, adaptation, and task-specific improvement.
+- **Embodied perception and action** — Systems that connect visual perception, spatial reasoning, object affordances, physical constraints, and action execution, allowing robots to act based on a grounded understanding of the environment.
+- **Real-world deployment and reliable autonomy** — Robotics systems that are robust, safe, efficient, and deployable in realistic environments, with attention to latency, uncertainty, failure recovery, human oversight, and long-term reliability.
+- **Human-centered robotic assistants** — Robots that can collaborate naturally with people through language, visual context, demonstration, and feedback, with applications in homes, workplaces, healthcare, logistics, and service environments.
 
-#### Before you submit
 
-- Edit only your assigned `_research_topics/<topic-id>.md`
-- Use only `###` and `####` for headings
-- Keep `topic_id` aligned with the filename
-- Update `summary` and `hero_image`; upload image and video files to the repo
-- Wrap inline videos in `<div class="ratio ratio-16x9 ...">`
-- Run `bundle exec jekyll serve` and check the page locally
+Our long-term ambition is to build general-purpose physical agents that can understand human goals, learn from human and robot experience, and act reliably in the real world. By connecting foundation models, dexterous manipulation, multimodal learning, imitation and reinforcement learning, and embodied world modeling, we aim to move robotics from specialized automation toward adaptable, intelligent, and human-centered physical AI.

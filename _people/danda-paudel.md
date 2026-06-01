@@ -8,6 +8,7 @@ start_date: "2023-09-01"
 order: 0
 topics:
   - 3d-vision
+  - robotics
   - space-ai
   - egocentric-vision
 insait_url: https://insait.ai/dr-danda-paudel/
