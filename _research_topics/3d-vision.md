@@ -4,8 +4,68 @@ title: 3D Vision
 order: 3
 summary: Spatial intelligence for the physical world—reconstruction, understanding, generation, and embodied interaction.
 hero_image: /assets/images/blog/3d.png
-intro_video: /site-covers/home/hero-video.mp4
+intro_video: /assets/images/topics/3d-vision-features.mp4
 ---
+
+<style>
+  /* Staggered magazine layout: opening video left, mid-page video right. */
+  .dv-float-left,
+  .dv-float-right {
+    width: 40%;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+  .dv-float-left {
+    float: left;
+    margin: 0.25rem 1.5rem 1.25rem 0;
+  }
+  .dv-float-right {
+    float: right;
+    margin: 0.25rem 0 1.25rem 1.5rem;
+  }
+  .dv-float-left .ratio,
+  .dv-float-right .ratio {
+    width: 100%;
+    --bs-aspect-ratio: 56.25%;
+  }
+  /* Match site topic video embeds: video fills the ratio box (_hero.scss safe). */
+  .dv-float-left .ratio > video,
+  .dv-float-right .ratio > video {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center;
+  }
+  /* Left float spans the intro and first subsection. */
+  .dv-float-left ~ h4:nth-of-type(2) {
+    clear: left;
+  }
+  /* Right float spans the second subsection; clear before the third. */
+  .dv-float-right ~ h4:nth-of-type(3) {
+    clear: right;
+  }
+  @media (max-width: 700px) {
+    .dv-float-left,
+    .dv-float-right {
+      float: none;
+      width: 100%;
+      margin: 0 0 1.5rem 0;
+    }
+  }
+</style>
+
+<figure class="dv-float-left">
+  <div class="ratio ratio-16x9">
+    <video class="object-fit-cover"
+           src="{{ '/assets/images/topics/3d-vision-features.mp4' | relative_url }}"
+           autoplay muted loop playsinline preload="auto"
+           aria-label="3D feature representation research highlight"></video>
+  </div>
+</figure>
 
 3D Vision is a foundational direction for building AI systems that understand, reconstruct, generate, and interact with the physical world. While 2D vision focuses on images and videos as visual observations, 3D vision asks a deeper question: how can machines recover the structure of the world behind visual signals, reason about space and geometry, and use that understanding to support perception, creation, simulation, and action? This makes 3D Vision a strategic research area that connects computer vision, graphics, robotics, embodied AI, augmented reality, digital twins, and world modeling.
 
@@ -18,6 +78,15 @@ Our vision is to develop 3D visual systems that move beyond passive reconstructi
 
 The first goal of 3D Vision is to recover the structure of scenes, objects, and environments from visual observations. This includes reasoning about geometry, depth, surfaces, volumes, camera motion, and multi-view consistency. More broadly, it asks how visual systems should represent the world so that the representation is accurate, efficient, editable, and useful for downstream reasoning. We study implicit surfaces, point clouds, meshes, neural fields, and Gaussian splatting as complementary scene representations, with emphasis on scalability, photorealism, and interfaces that support editing, querying, and fusion across views and modalities.
 
+
+<figure class="dv-float-right">
+  <div class="ratio ratio-16x9">
+    <video class="object-fit-cover"
+           src="{{ '/assets/images/topics/3d-vision-localization.mp4' | relative_url }}"
+           autoplay muted loop playsinline preload="auto"
+           aria-label="3D localization and spatial reasoning research highlight"></video>
+  </div>
+</figure>
 
 #### Scene understanding and dynamic 3D perception
 
