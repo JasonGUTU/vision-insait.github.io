@@ -99,7 +99,10 @@ layout: default
          </div>
          <div id="topic-publications" class="col-12 col-lg-7 topic-page-section">
             <h3 class="topic-section-title mb-3">Publications</h3>
-            {% assign topic_pubs = site.publications | where: "topics", tid | sort: "publication_date" | reverse %}
+            {% assign topic_pubs_all = site.publications | where: "topics", tid | sort: "publication_date" | reverse %}
+            {% assign topic_pubs_featured = topic_pubs_all | where: "featured", true | sort: "publication_date" | reverse %}
+            {% assign topic_pubs_other = topic_pubs_all | where_exp: "item", "item.featured != true" %}
+            {% assign topic_pubs = topic_pubs_featured | concat: topic_pubs_other %}
             {% assign pub_count = topic_pubs.size %}
             {% if pub_count > 0 %}
             <div class="topic-pubs-panel border-top" data-topic-pubs-collapsed>

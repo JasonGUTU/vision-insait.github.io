@@ -18,6 +18,7 @@ authors:
 paper_url: "https://arxiv.org/abs/2603.10126"
 topics:
   - robotics
+featured: true
 ---
 ## Links
 

@@ -17,6 +17,7 @@ paper_url: "https://arxiv.org/pdf/2511.17411"
 topics:
   - robotics
   - 3d-vision
+featured: true
 ---
 ## Links
 

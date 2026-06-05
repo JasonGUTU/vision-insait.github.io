@@ -15,4 +15,5 @@ authors:
 paper_url: "https://arxiv.org/pdf/2409.15250"
 topics:
   - robotics
+featured: true
 ---
