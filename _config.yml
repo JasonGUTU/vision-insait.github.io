@@ -67,6 +67,12 @@ sponsors:
     logo: /site-covers/sponsors/google.png
   - name: Vivo
     logo: /site-covers/sponsors/Vivo.png
+  - name: Toyota
+    logo: /site-covers/sponsors/Toyota.png
+  - name: Netflix
+    logo: /site-covers/sponsors/Netflix.png
+  - name: European Union
+    logo: /assets/images/client-logo/eu_funded_en-modified.png
 
 # Site footer (also in _data/footer.yml; _includes/footer.html prefers _data)
 footer:

@@ -44,4 +44,5 @@ In this framing, Egocentric Vision is a strategic research direction because it 
 
 <div class="topic-cooperation-logos">
   <img src="{{ '/site-covers/sponsors/google.png' | relative_url }}" alt="" loading="lazy" decoding="async" />
+  <img src="{{ '/assets/images/client-logo/eu_funded_en-modified.png' | relative_url }}" alt="" loading="lazy" decoding="async" />
 </div>

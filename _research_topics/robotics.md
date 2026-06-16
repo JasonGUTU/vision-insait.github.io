@@ -65,3 +65,10 @@ Representative research problems and themes in our Robotics agenda include:
 - **Dexterous manipulation** — End-to-end robotics models for bi-manual 5-finger hands.
 - **Learning manipulation from egocentric human videos** — Effectively utilizing human video data to boost robotics foundation model performance.
 - **Imitation and reinforcement learning for robotics manipulation** — Pre-training and post-training robotics policies via IL and/or RL.
+
+
+### In Cooperation With
+
+<div class="topic-cooperation-logos">
+  <img src="{{ '/site-covers/sponsors/Toyota.png' | relative_url }}" alt="" loading="lazy" decoding="async" />
+</div>
