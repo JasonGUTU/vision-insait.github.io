@@ -1,5 +1,11 @@
 # Vision Lab news feed (used by /news/)
 # body: Markdown (inline links to people, demos, publications)
+- date: '2026-06-08'
+  body: >-
+    INSAIT [showcases 17 accepted papers at CVPR 2026](https://insait.ai/insait-showcases-17-accepted-papers-and-emerging-ai-research-at-cvpr-2026/)
+    at booth #440 in Denver, with live demos across robotics, spatial reasoning, earth
+    observation, egocentric vision, visual agents, and visual media.
+  link_url: https://insait.ai/insait-showcases-17-accepted-papers-and-emerging-ai-research-at-cvpr-2026/
 - date: '2026-05-27'
   body: INSAIT announces [17 papers at CVPR 2026](https://insait.ai/insait-among-europes-top-institutions-at-cvpr-2026/),
     its strongest computer-vision presence so far. The accepted work spans robotics,
