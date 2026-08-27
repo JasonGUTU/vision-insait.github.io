@@ -1,5 +1,12 @@
 # Vision Lab news feed (used by /news/)
 # body: Markdown (inline links to people, demos, publications)
+- date: '2026-08-13'
+  body: >-
+    [Mario Markov](/people/mario-markov/) discusses [FireScope](/demos/firescope/)
+    on Bulgarian National Radio, covering how the wildfire-risk platform is evolving
+    into a long-term prevention and decision-support tool. FireScope is now available
+    in Bulgarian and 42 additional languages across Europe and Asia.
+  link_url: https://insait.ai/how-can-ai-help-us-better-understand-and-prevent-wildfire-risk/
 - date: '2026-06-08'
   body: >-
     INSAIT [showcases 17 accepted papers at CVPR 2026](https://insait.ai/insait-showcases-17-accepted-papers-and-emerging-ai-research-at-cvpr-2026/)
